@@ -173,6 +173,22 @@
     });
   }
 
+  /* -----------------------------------------------------------
+     Stripe checkout buttons — until real Payment Link URLs are
+     pasted in, clicking shows an inline note instead of a dead link.
+     ----------------------------------------------------------- */
+  function initStripeCheckout() {
+    $$("[data-stripe-checkout]").forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        var href = a.getAttribute("href") || "";
+        if (href.indexOf("PENDING_") === -1) return; // real Stripe link — let it navigate
+        e.preventDefault();
+        var note = a.parentElement ? a.parentElement.querySelector("[data-stripe-pending-note]") : null;
+        if (note) note.hidden = false;
+      });
+    });
+  }
+
   function boot() {
     safe(initNav, "initNav");
     safe(initAnchorScroll, "initAnchorScroll");
@@ -181,6 +197,7 @@
     safe(initContactForms, "initContactForms");
     safe(mountYear, "mountYear");
     safe(initFilters, "initFilters");
+    safe(initStripeCheckout, "initStripeCheckout");
     document.documentElement.classList.add("is-ready");
   }
 
