@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Albert Ruiz de la Oliva — Science. Medical Affairs. AI.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f6f1fb"/>
+    </linearGradient>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="hsl(272,100%,45%)"/>
+      <stop offset="1" stop-color="hsl(280,80%,55%)"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1040" cy="60" r="260" fill="hsl(272,100%,45%)" opacity="0.06"/>
+  <circle cx="90" cy="600" r="220" fill="hsl(280,80%,55%)" opacity="0.06"/>
+  <rect x="90" y="80" width="72" height="72" rx="18" fill="url(#grad)"/>
+  <text x="126" y="128" font-family="Poppins, Arial, sans-serif" font-weight="700" font-size="28" fill="#ffffff" text-anchor="middle">AR</text>
+  <text x="90" y="280" font-family="Poppins, Arial, sans-serif" font-weight="700" font-size="58" fill="#241a2e">Science. Medical Affairs. AI.</text>
+  <text x="90" y="345" font-family="Poppins, Arial, sans-serif" font-weight="700" font-size="58" fill="url(#grad)">Building What's Next</text>
+  <text x="90" y="410" font-family="Poppins, Arial, sans-serif" font-weight="400" font-size="26" fill="#5c5468">Albert Ruiz de la Oliva — Medical Science Liaison</text>
+  <text x="90" y="450" font-family="Poppins, Arial, sans-serif" font-weight="400" font-size="26" fill="#5c5468">Medical Affairs × AI × Digital Innovation × Community</text>
+</svg>
