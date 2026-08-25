@@ -23,7 +23,7 @@ function guardar($fuera, $dentro, $key) {
   return (@file_put_contents($dentro, $c) !== false) ? 'en la carpeta privada' : false;
 }
 function validar($key) {
-  if (!function_exists('curl_init')) return true;
+  if (!function_exists('curl_init')) return ['ok' => true];
   $ch = curl_init('https://api.brevo.com/v3/account');
   curl_setopt_array($ch, [
     CURLOPT_RETURNTRANSFER => true,
@@ -31,9 +31,15 @@ function validar($key) {
     CURLOPT_HTTPHEADER => ['accept: application/json', 'api-key: ' . $key],
   ]);
   $r = curl_exec($ch);
+  $err = curl_error($ch);
   $c = (int) curl_getinfo($ch, CURLINFO_HTTP_CODE);
   curl_close($ch);
-  return ($r !== false && $c === 200);
+  if ($r === false) return ['ok' => false, 'detail' => 'No se ha podido contactar con Brevo (' . $err . ').'];
+  if ($c === 200) return ['ok' => true];
+  $brevoMsg = '';
+  $decoded = json_decode((string) $r, true);
+  if (is_array($decoded) && isset($decoded['message'])) $brevoMsg = $decoded['message'];
+  return ['ok' => false, 'detail' => 'Brevo respondió ' . $c . ($brevoMsg !== '' ? ': "' . $brevoMsg . '"' : '') . '.'];
 }
 
 $msg = ''; $tono = 'warn';
@@ -41,8 +47,8 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
   $k = trim((string) ($_POST['clave'] ?? ''));
   if ($k === '') {
     $msg = 'Pega tu clave API de Brevo.';
-  } elseif (!validar($k)) {
-    $msg = 'Brevo no ha aceptado esa clave. Compruébala en tu cuenta de Brevo (SMTP & API → API Keys) y vuelve a pegarla.';
+  } elseif (!($v = validar($k))['ok']) {
+    $msg = 'Brevo no ha aceptado esa clave. ' . $v['detail'] . ' Compruébala en tu cuenta de Brevo (SMTP & API → API Keys) y vuelve a pegarla.';
   } else {
     $donde = guardar($FUERA, $DENTRO, $k);
     if ($donde === false) {
