@@ -77,8 +77,10 @@ function brevo_key() {
   return $k;
 }
 
-const DMSL_SENDER_EMAIL = 'hello@albertruizdelaoliva.com';
-const DMSL_SENDER_NAME  = 'Albert Ruiz de la Oliva — DMSL Course';
+// Must match a sender verified in Brevo (Senders, Domains & Dedicated IPs) —
+// otherwise Brevo rejects the send. Confirmed verified on Albert's account.
+const DMSL_SENDER_EMAIL = 'contacto.dmsl@albertruiz.com';
+const DMSL_SENDER_NAME  = 'Digital Medical Science Liaison (DMSL)';
 
 function dmsl_send_email($to_email, $to_name, $subject, $html) {
   $key = brevo_key();

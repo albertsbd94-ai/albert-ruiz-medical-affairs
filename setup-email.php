@@ -98,10 +98,9 @@ $tieneClave = leer($FUERA, $DENTRO) !== '';
     <p>Pega aquí tu clave API de Brevo. Se valida en directo contra Brevo y se
     guarda en el servidor — nunca en el navegador, nunca en este chat.</p>
     <p style="font-size:13.5px;">Antes de pegarla: en tu cuenta de Brevo, ve a
-    <strong>SMTP &amp; API → API Keys → Generate a new API key</strong>, y
-    verifica el remitente <code>hello@albertruizdelaoliva.com</code> en
-    <strong>Senders, Domains &amp; Dedicated IPs</strong> (si no lo verificas,
-    Brevo rechazará los envíos).</p>
+    <strong>SMTP &amp; API → API Keys → Generate a new API key</strong>. Los
+    correos se envían como <code>contacto.dmsl@albertruiz.com</code>, que ya
+    tienes verificado en <strong>Senders, Domains &amp; Dedicated IPs</strong>.</p>
   <?php endif; ?>
   <form method="post">
     <input name="clave" type="password" placeholder="xkeysib-..." autocomplete="off" required>
