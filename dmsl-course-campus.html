@@ -463,7 +463,7 @@ let PENDING_EMAIL = null;     // email awaiting OTP verification
 let PENDING_VIEW = 'dashboard'; // where to go once login/verification succeeds
 
 let STATE = defaultState();
-let VIEW = 'hero';
+let VIEW = 'auth';
 let CURRENT_MODULE = 1;
 let CURRENT_TAB = 'overview';
 let QUIZ_ANSWERS = {};
@@ -630,7 +630,9 @@ function logout(){
   CURRENT_USER = null;
   STATE = defaultState();
   CURRENT_MODULE = 1;
-  VIEW = 'hero';
+  VIEW = 'auth';
+  AUTH_MODE = 'login';
+  AUTH_ERROR = '';
   render();
 }
 
@@ -907,7 +909,7 @@ function renderTopbar(){
       <button class="nav-btn" onclick="logout()">Log out</button>
     `;
   } else if(VIEW==='auth'){
-    rightContent = `<button class="nav-btn" onclick="goTo('hero')">&larr; Back</button>`;
+    rightContent = `<a class="nav-btn" href="/dmsl-course.html">&larr; DMSL Course</a>`;
   } else {
     rightContent = CURRENT_USER
       ? `<button class="nav-btn" onclick="goTo('dashboard')">Enter Academy</button>`
@@ -1417,7 +1419,10 @@ function renderCertificatePage(){
 <script>
 /* ===== Boot ===== */
 (function init(){
-  VIEW = 'hero';
+  // The marketing pitch lives on /dmsl-course.html now — arriving here
+  // goes straight to log in / create account, not a duplicate landing.
+  VIEW = 'auth';
+  AUTH_MODE = 'login';
   render();
   // Real session check — an HttpOnly cookie, not localStorage. Runs after
   // the first paint so the page isn't blocked on a network round-trip.
