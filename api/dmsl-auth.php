@@ -2,114 +2,34 @@
 /**
  * api/dmsl-auth.php — real accounts for the DMSL Course campus.
  *
- * The ONLY file that touches the Brevo key and the accounts database.
  * Endpoints (all JSON in/out):
- *   POST ?action=register       {name, email, password}
- *   POST ?action=verify         {email, code}
- *   POST ?action=resend         {email}
- *   POST ?action=login          {email, password}
- *   POST ?action=logout         {}
+ *   POST ?action=register        {name, email, password, purchase_code}
+ *   POST ?action=verify          {email, code}
+ *   POST ?action=resend          {email}
+ *   POST ?action=login           {email, password}
+ *   POST ?action=forgot-password {email, lang}
+ *   POST ?action=reset-password  {email, token, password}
+ *   POST ?action=logout          {}
  *   GET  ?action=me
- *   POST ?action=save-progress  {progress: {...}}
+ *   POST ?action=save-progress   {progress: {...}}
  *
  * Accounts + sessions live in a JSON file OUTSIDE public_html so a site
  * redeploy (which wipes public_html) never erases a customer. Passwords are
  * always bcrypt-hashed. Email confirmation is a real 6-digit code sent
  * through Brevo's transactional email API — never shown in the response.
+ *
+ * Registration requires a purchase code, generated and emailed by
+ * api/stripe-webhook.php after a successful payment on either plan (both
+ * plans work for both the English and Spanish campus — the code isn't
+ * tied to a language, only to a paid Stripe Checkout session). Storage,
+ * Brevo sending and purchase-code helpers live in dmsl-common.php, shared
+ * with stripe-webhook.php.
  */
 
 header('Content-Type: application/json; charset=utf-8');
 header('X-Content-Type-Options: nosniff');
 
-// ---------------------------------------------------------------------
-// 1. Storage — outside public_html, with an in-folder fallback (denied
-//    from the web by datos/.htaccess) if the outside path isn't writable.
-// ---------------------------------------------------------------------
-function dmsl_db_path() {
-  $fuera = dirname(__DIR__, 2) . '/dmsl_data'; // api/ -> public_html -> domain root
-  if (is_dir($fuera) || @mkdir($fuera, 0750, true)) {
-    if (is_writable($fuera)) return $fuera . '/usuarios.json';
-  }
-  $dentro = __DIR__ . '/../datos';
-  @mkdir($dentro, 0750, true);
-  return $dentro . '/usuarios.json';
-}
-
-function dmsl_load_db() {
-  $path = dmsl_db_path();
-  if (!is_file($path)) return ['usuarios' => [], 'sesiones' => []];
-  $fh = @fopen($path, 'r');
-  if (!$fh) return ['usuarios' => [], 'sesiones' => []];
-  flock($fh, LOCK_SH);
-  $raw = stream_get_contents($fh);
-  flock($fh, LOCK_UN);
-  fclose($fh);
-  $data = json_decode($raw, true);
-  if (!is_array($data)) $data = [];
-  if (!isset($data['usuarios'])) $data['usuarios'] = [];
-  if (!isset($data['sesiones'])) $data['sesiones'] = [];
-  return $data;
-}
-
-function dmsl_save_db($data) {
-  $path = dmsl_db_path();
-  $fh = @fopen($path, 'c+');
-  if (!$fh) return false;
-  flock($fh, LOCK_EX);
-  ftruncate($fh, 0);
-  rewind($fh);
-  fwrite($fh, json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
-  fflush($fh);
-  flock($fh, LOCK_UN);
-  fclose($fh);
-  return true;
-}
-
-// ---------------------------------------------------------------------
-// 2. Brevo key — pasted once via setup-email.php, never in chat, never
-//    shipped to the browser.
-// ---------------------------------------------------------------------
-function brevo_key() {
-  $k = getenv('BREVO_API_KEY');
-  if (!$k && is_file(dirname(__DIR__, 2) . '/brevo_api_key.php')) $k = @include dirname(__DIR__, 2) . '/brevo_api_key.php';
-  if (!$k && is_file(__DIR__ . '/../datos/brevo_config.php')) $k = @include __DIR__ . '/../datos/brevo_config.php';
-  $k = is_string($k) ? trim($k) : '';
-  return $k;
-}
-
-// Must match a sender verified in Brevo (Senders, Domains & Dedicated IPs) —
-// otherwise Brevo rejects the send. Confirmed verified on Albert's account.
-const DMSL_SENDER_EMAIL = 'contacto.dmsl@albertruiz.com';
-const DMSL_SENDER_NAME  = 'Digital Medical Science Liaison (DMSL)';
-
-function dmsl_send_email($to_email, $to_name, $subject, $html) {
-  $key = brevo_key();
-  if ($key === '') return ['ok' => false, 'error' => 'email_not_configured'];
-  $ch = curl_init('https://api.brevo.com/v3/smtp/email');
-  curl_setopt_array($ch, [
-    CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_POST => true,
-    CURLOPT_TIMEOUT => 20,
-    CURLOPT_HTTPHEADER => [
-      'accept: application/json',
-      'content-type: application/json',
-      'api-key: ' . $key,
-    ],
-    CURLOPT_POSTFIELDS => json_encode([
-      'sender' => ['name' => DMSL_SENDER_NAME, 'email' => DMSL_SENDER_EMAIL],
-      'to' => [['email' => $to_email, 'name' => $to_name ?: $to_email]],
-      'subject' => $subject,
-      'htmlContent' => $html,
-    ]),
-  ]);
-  $resp = curl_exec($ch);
-  $code = (int) curl_getinfo($ch, CURLINFO_HTTP_CODE);
-  $err = curl_error($ch);
-  curl_close($ch);
-  if ($resp === false) return ['ok' => false, 'error' => 'network: ' . $err];
-  if ($code < 200 || $code >= 300) return ['ok' => false, 'error' => 'brevo_http_' . $code, 'body' => $resp];
-  return ['ok' => true];
-}
+require_once __DIR__ . '/dmsl-common.php';
 
 function otp_email_html($name, $code) {
   $safeName = htmlspecialchars($name ?: '', ENT_QUOTES, 'UTF-8');
@@ -145,7 +65,8 @@ function reset_email_html($name, $link, $lang) {
 }
 
 // ---------------------------------------------------------------------
-// 3. Small helpers
+// 3. Small helpers local to this file (storage/email/rate-limit helpers
+//    now live in dmsl-common.php, shared with stripe-webhook.php)
 // ---------------------------------------------------------------------
 function json_body() {
   $raw = file_get_contents('php://input');
@@ -157,24 +78,7 @@ function respond($status, $payload) {
   echo json_encode($payload, JSON_UNESCAPED_UNICODE);
   exit;
 }
-function normalize_email($email) { return strtolower(trim((string) $email)); }
-function is_valid_email($email) { return (bool) filter_var($email, FILTER_VALIDATE_EMAIL); }
-function random_token($bytes = 32) { return bin2hex(random_bytes($bytes)); }
 function generate_otp() { return str_pad((string) random_int(0, 999999), 6, '0', STR_PAD_LEFT); }
-
-// Per-IP rate limiting for register/login/resend — file-based, a few lines.
-function rate_limited($bucket, $max, $window_seconds) {
-  $ip = $_SERVER['REMOTE_ADDR'] ?? '0.0.0.0';
-  $file = sys_get_temp_dir() . '/dmsl_rl_' . $bucket . '_' . md5($ip) . '.json';
-  $now = time();
-  $stamps = is_file($file) ? json_decode((string) @file_get_contents($file), true) : [];
-  if (!is_array($stamps)) $stamps = [];
-  $stamps = array_values(array_filter($stamps, function ($t) use ($now, $window_seconds) { return $t > $now - $window_seconds; }));
-  if (count($stamps) >= $max) return true;
-  $stamps[] = $now;
-  @file_put_contents($file, json_encode($stamps), LOCK_EX);
-  return false;
-}
 
 function default_progress() {
   return ['modules' => new stdClass(), 'lastModule' => null, 'studentName' => '', 'xp' => 0];
@@ -222,14 +126,33 @@ if ($action === 'register' && $method === 'POST') {
   $name = trim((string) ($body['name'] ?? ''));
   $email = normalize_email($body['email'] ?? '');
   $password = (string) ($body['password'] ?? '');
+  $purchaseCode = normalize_purchase_code($body['purchase_code'] ?? '');
   if ($name === '') respond(400, ['ok' => false, 'error' => 'Please enter your full name.']);
   if (!is_valid_email($email)) respond(400, ['ok' => false, 'error' => 'Please enter a valid email address.']);
   if (strlen($password) < 6) respond(400, ['ok' => false, 'error' => 'Password must be at least 6 characters.']);
+  if ($purchaseCode === '') respond(400, ['ok' => false, 'error' => 'Please enter your purchase code. You\'ll find it in the confirmation email from your enrolment payment.']);
 
   $existing = $db['usuarios'][$email] ?? null;
   if ($existing && !empty($existing['verificado'])) {
     respond(409, ['ok' => false, 'error' => 'An account with this email already exists. Please log in.']);
   }
+
+  // The purchase code must exist, not already be spent, and not be
+  // reserved by a different, still-unverified registration attempt.
+  $codeRec = $db['codigos'][$purchaseCode] ?? null;
+  if (!$codeRec) respond(400, ['ok' => false, 'error' => 'This purchase code is not valid. Please check your purchase confirmation email and try again.']);
+  if (!empty($codeRec['usado'])) respond(400, ['ok' => false, 'error' => 'This purchase code has already been used to create an account.']);
+  if (!empty($codeRec['reservado_email']) && $codeRec['reservado_email'] !== $email) {
+    respond(400, ['ok' => false, 'error' => 'This purchase code is already linked to a different email address.']);
+  }
+  // Retrying registration (e.g. a typo the first time) with a different
+  // code than before — release the old reservation so it isn't stuck.
+  $prevCode = $existing['codigo_compra'] ?? null;
+  if ($prevCode && $prevCode !== $purchaseCode && isset($db['codigos'][$prevCode]) && ($db['codigos'][$prevCode]['reservado_email'] ?? null) === $email) {
+    $db['codigos'][$prevCode]['reservado_email'] = null;
+  }
+  $db['codigos'][$purchaseCode]['reservado_email'] = $email;
+
   $code = generate_otp();
   $db['usuarios'][$email] = [
     'email' => $email,
@@ -240,6 +163,7 @@ if ($action === 'register' && $method === 'POST') {
     'otp_expira' => time() + 15 * 60,
     'creado' => $existing['creado'] ?? gmdate('c'),
     'progreso' => $existing['progreso'] ?? default_progress(),
+    'codigo_compra' => $purchaseCode,
   ];
   dmsl_save_db($db);
 
@@ -276,6 +200,14 @@ if ($action === 'verify' && $method === 'POST') {
   if (($rec['otp_expira'] ?? 0) < time()) respond(400, ['ok' => false, 'error' => 'This code has expired. Please request a new one.']);
   $db['usuarios'][$email]['verificado'] = true;
   unset($db['usuarios'][$email]['otp'], $db['usuarios'][$email]['otp_expira']);
+  // The purchase code is only permanently spent once the account is
+  // actually confirmed — an abandoned, never-verified registration
+  // doesn't burn the buyer's code.
+  $usedCode = $rec['codigo_compra'] ?? null;
+  if ($usedCode && isset($db['codigos'][$usedCode])) {
+    $db['codigos'][$usedCode]['usado'] = true;
+    $db['codigos'][$usedCode]['usado_en'] = gmdate('c');
+  }
   $token = issue_session($db, $email);
   dmsl_save_db($db);
   respond(200, ['ok' => true, 'email' => $email, 'name' => $rec['nombre'] ?? '', 'progress' => $db['usuarios'][$email]['progreso']]);

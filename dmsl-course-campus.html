@@ -544,18 +544,21 @@ async function doRegister(){
   const emailEl = document.getElementById('regEmail');
   const passEl = document.getElementById('regPassword');
   const pass2El = document.getElementById('regPassword2');
+  const codeEl = document.getElementById('regCode');
   const name = nameEl ? nameEl.value : '';
   const email = normalizeEmail(emailEl ? emailEl.value : '');
   const pass = passEl ? passEl.value : '';
   const pass2 = pass2El ? pass2El.value : '';
+  const purchaseCode = codeEl ? codeEl.value.trim() : '';
   AUTH_ERROR = '';
   if(!name.trim()){ AUTH_ERROR='Please enter your full name.'; render(); return; }
   if(!isValidEmail(email)){ AUTH_ERROR='Please enter a valid email address.'; render(); return; }
   if(pass.length<6){ AUTH_ERROR='Password must be at least 6 characters.'; render(); return; }
   if(pass!==pass2){ AUTH_ERROR='Passwords do not match.'; render(); return; }
+  if(!purchaseCode){ AUTH_ERROR='Please enter your purchase code — check your purchase confirmation email.'; render(); return; }
   AUTH_BUSY = true; render();
   try{
-    const data = await apiCall('register', {name: name.trim(), email, password: pass});
+    const data = await apiCall('register', {name: name.trim(), email, password: pass, purchase_code: purchaseCode});
     AUTH_BUSY = false;
     if(!data.ok){ AUTH_ERROR = data.error || 'Something went wrong. Please try again.'; render(); return; }
     PENDING_EMAIL = email;
@@ -1224,8 +1227,11 @@ function renderResetForm(){
 function renderRegisterForm(){
   return `
   <h2 style="font-size:22px;margin-bottom:6px;">Create your account</h2>
-  <p style="font-size:13.5px;color:var(--muted);margin-bottom:6px;">Register with your email to track your progress and earn your certificate.</p>
+  <p style="font-size:13.5px;color:var(--muted);margin-bottom:6px;">Register with your purchase code and email to track your progress and earn your certificate.</p>
   ${AUTH_ERROR? `<div class="auth-error">${AUTH_ERROR}</div>` : ''}
+  <label>Purchase code</label>
+  <input type="text" id="regCode" placeholder="XXXX-XXXX-XXXX" autocomplete="off" ${AUTH_BUSY?'disabled':''}>
+  <p style="font-size:11.5px;color:var(--muted);margin:4px 0 0;">Sent to your email after enrolling on the <a href="/dmsl-course.html#pricing" style="color:var(--primary);">DMSL Course</a> page.</p>
   <label>Full name</label>
   <input type="text" id="regName" placeholder="Dr. Jane Smith" autocomplete="name" ${AUTH_BUSY?'disabled':''}>
   <label>Email</label>

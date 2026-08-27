@@ -544,18 +544,21 @@ async function doRegister(){
   const emailEl = document.getElementById('regEmail');
   const passEl = document.getElementById('regPassword');
   const pass2El = document.getElementById('regPassword2');
+  const codeEl = document.getElementById('regCode');
   const name = nameEl ? nameEl.value : '';
   const email = normalizeEmail(emailEl ? emailEl.value : '');
   const pass = passEl ? passEl.value : '';
   const pass2 = pass2El ? pass2El.value : '';
+  const purchaseCode = codeEl ? codeEl.value.trim() : '';
   AUTH_ERROR = '';
   if(!name.trim()){ AUTH_ERROR='Por favor, introduce tu nombre completo.'; render(); return; }
   if(!isValidEmail(email)){ AUTH_ERROR='Por favor, introduce una dirección de email válida.'; render(); return; }
   if(pass.length<6){ AUTH_ERROR='La contraseña debe tener al menos 6 caracteres.'; render(); return; }
   if(pass!==pass2){ AUTH_ERROR='Las contraseñas no coinciden.'; render(); return; }
+  if(!purchaseCode){ AUTH_ERROR='Por favor, introduce tu código de compra — revisa tu email de confirmación de compra.'; render(); return; }
   AUTH_BUSY = true; render();
   try{
-    const data = await apiCall('register', {name: name.trim(), email, password: pass});
+    const data = await apiCall('register', {name: name.trim(), email, password: pass, purchase_code: purchaseCode});
     AUTH_BUSY = false;
     if(!data.ok){ AUTH_ERROR = data.error || 'Algo salió mal. Por favor, inténtalo de nuevo.'; render(); return; }
     PENDING_EMAIL = email;
@@ -1224,8 +1227,11 @@ function renderResetForm(){
 function renderRegisterForm(){
   return `
   <h2 style="font-size:22px;margin-bottom:6px;">Crea tu cuenta</h2>
-  <p style="font-size:13.5px;color:var(--muted);margin-bottom:6px;">Regístrate con tu email para seguir tu progreso y obtener tu certificado.</p>
+  <p style="font-size:13.5px;color:var(--muted);margin-bottom:6px;">Regístrate con tu código de compra y tu email para seguir tu progreso y obtener tu certificado.</p>
   ${AUTH_ERROR? `<div class="auth-error">${AUTH_ERROR}</div>` : ''}
+  <label>Código de compra</label>
+  <input type="text" id="regCode" placeholder="XXXX-XXXX-XXXX" autocomplete="off" ${AUTH_BUSY?'disabled':''}>
+  <p style="font-size:11.5px;color:var(--muted);margin:4px 0 0;">Enviado a tu email tras matricularte en la página del <a href="/dmsl-course-es.html#pricing" style="color:var(--primary);">DMSL Course</a>.</p>
   <label>Nombre completo</label>
   <input type="text" id="regName" placeholder="Dra. Ana García" autocomplete="name" ${AUTH_BUSY?'disabled':''}>
   <label>Email</label>
