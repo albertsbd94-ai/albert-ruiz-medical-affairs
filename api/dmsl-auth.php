@@ -122,6 +122,28 @@ function otp_email_html($name, $code) {
     . '</div>';
 }
 
+function reset_email_html($name, $link, $lang) {
+  $safeName = htmlspecialchars($name ?: '', ENT_QUOTES, 'UTF-8');
+  $es = $lang === 'es';
+  $hi = $es ? ('Hola ' . ($safeName !== '' ? $safeName : '')) : ('Hi ' . ($safeName !== '' ? $safeName : 'there'));
+  $body = $es
+    ? 'Hemos recibido una solicitud para restablecer la contraseña de tu cuenta del DMSL Course. Haz clic en el siguiente botón para elegir una nueva contraseña:'
+    : 'We received a request to reset the password for your DMSL Course account. Click the button below to choose a new password:';
+  $btn = $es ? 'Restablecer contraseña' : 'Reset password';
+  $expiry = $es
+    ? 'Este enlace caduca en 30 minutos. Si no has solicitado esto, puedes ignorar este correo — tu contraseña no cambiará.'
+    : 'This link expires in 30 minutes. If you didn\'t request this, you can ignore this email — your password will not change.';
+  $sign = $es ? '— Albert Ruiz de la Oliva, DMSL Course' : '— Albert Ruiz de la Oliva, DMSL Course';
+  return '<div style="font-family:Poppins,Arial,sans-serif;max-width:480px;margin:0 auto;padding:32px 24px;">'
+    . '<p style="font-size:15px;color:#2b2233;">' . $hi . ',</p>'
+    . '<p style="font-size:15px;color:#2b2233;">' . $body . '</p>'
+    . '<div style="text-align:center;padding:22px 0;"><a href="' . htmlspecialchars($link, ENT_QUOTES, 'UTF-8') . '" style="display:inline-block;background:#7A00E6;color:#fff;font-weight:700;font-size:15px;text-decoration:none;padding:14px 28px;border-radius:999px;">' . $btn . '</a></div>'
+    . '<p style="font-size:12.5px;color:#9a93a5;word-break:break-all;">' . htmlspecialchars($link, ENT_QUOTES, 'UTF-8') . '</p>'
+    . '<p style="font-size:13.5px;color:#6b6275;">' . $expiry . '</p>'
+    . '<p style="font-size:13.5px;color:#6b6275;margin-top:24px;">' . $sign . '</p>'
+    . '</div>';
+}
+
 // ---------------------------------------------------------------------
 // 3. Small helpers
 // ---------------------------------------------------------------------
@@ -277,6 +299,54 @@ if ($action === 'login' && $method === 'POST') {
   $token = issue_session($db, $email);
   dmsl_save_db($db);
   respond(200, ['ok' => true, 'email' => $email, 'name' => $rec['nombre'] ?? '', 'progress' => $rec['progreso'] ?? default_progress()]);
+}
+
+if ($action === 'forgot-password' && $method === 'POST') {
+  if (rate_limited('forgot', 6, 900)) respond(429, ['ok' => false, 'error' => 'Too many attempts. Please try again later.']);
+  $body = json_body();
+  $email = normalize_email($body['email'] ?? '');
+  $lang = ($body['lang'] ?? '') === 'es' ? 'es' : 'en';
+  $campusPath = $lang === 'es' ? '/dmsl-course-campus-es.html' : '/dmsl-course-campus.html';
+  $rec = $db['usuarios'][$email] ?? null;
+  // Always respond ok — never reveal whether an account exists for this email.
+  if ($rec && !empty($rec['verificado'])) {
+    $rawToken = random_token();
+    $db['usuarios'][$email]['reset_hash'] = hash('sha256', $rawToken);
+    $db['usuarios'][$email]['reset_expira'] = time() + 30 * 60;
+    dmsl_save_db($db);
+    $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+    $host = $_SERVER['HTTP_HOST'] ?? 'www.albertruizdelaoliva.com';
+    $link = $scheme . '://' . $host . $campusPath . '?reset=' . $rawToken . '&email=' . rawurlencode($email);
+    $subject = $lang === 'es' ? 'Restablece tu contraseña — DMSL Course' : 'Reset your password — DMSL Course';
+    dmsl_send_email($email, $rec['nombre'] ?? '', $subject, reset_email_html($rec['nombre'] ?? '', $link, $lang));
+  }
+  respond(200, ['ok' => true]);
+}
+
+if ($action === 'reset-password' && $method === 'POST') {
+  if (rate_limited('reset', 10, 900)) respond(429, ['ok' => false, 'error' => 'Too many attempts. Please try again later.']);
+  $body = json_body();
+  $email = normalize_email($body['email'] ?? '');
+  $token = trim((string) ($body['token'] ?? ''));
+  $password = (string) ($body['password'] ?? '');
+  if (strlen($password) < 6) respond(400, ['ok' => false, 'error' => 'Password must be at least 6 characters.']);
+  $rec = $db['usuarios'][$email] ?? null;
+  if (!$rec || empty($rec['reset_hash']) || $token === '' || !hash_equals((string) $rec['reset_hash'], hash('sha256', $token))) {
+    respond(400, ['ok' => false, 'error' => 'This reset link is invalid or has already been used. Please request a new one.']);
+  }
+  if (($rec['reset_expira'] ?? 0) < time()) {
+    respond(400, ['ok' => false, 'error' => 'This reset link has expired. Please request a new one.']);
+  }
+  $db['usuarios'][$email]['hash'] = password_hash($password, PASSWORD_BCRYPT);
+  unset($db['usuarios'][$email]['reset_hash'], $db['usuarios'][$email]['reset_expira']);
+  // Invalidate every existing session for this account — a leaked old
+  // session shouldn't survive a password reset.
+  foreach ($db['sesiones'] as $tok => $s) {
+    if (($s['email'] ?? null) === $email) unset($db['sesiones'][$tok]);
+  }
+  issue_session($db, $email);
+  dmsl_save_db($db);
+  respond(200, ['ok' => true, 'email' => $email, 'name' => $rec['nombre'] ?? '', 'progress' => $db['usuarios'][$email]['progreso']]);
 }
 
 if ($action === 'logout' && $method === 'POST') {

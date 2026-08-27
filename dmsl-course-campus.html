@@ -422,6 +422,8 @@ ul{list-style:none;}
 .auth-card input{width:100%;padding:12px 14px;border:1.5px solid var(--border);border-radius:12px;font-size:14px;font-family:inherit;}
 .auth-card input:focus{outline:none;border-color:var(--primary);}
 .auth-error{background:var(--danger-bg);border-left:4px solid var(--danger);color:#8f2b3f;padding:10px 14px;border-radius:10px;font-size:13px;margin:10px 0 0;}
+.auth-info{background:var(--success-bg);border-left:4px solid var(--success);color:#166534;padding:10px 14px;border-radius:10px;font-size:13px;margin:10px 0 0;}
+.auth-forgot-link{display:block;text-align:right;font-size:12.5px;color:var(--primary);margin-top:8px;font-weight:600;}
 .demo-note{font-size:11.5px;color:var(--muted);margin-top:24px;text-align:center;line-height:1.5;}
 .otp-inbox{background:var(--surface);border:1.5px dashed var(--accent);border-radius:16px;padding:16px 18px;margin:18px 0 6px;}
 .otp-inbox-label{font-size:12px;font-weight:700;color:var(--primary-dark);margin-bottom:6px;}
@@ -460,10 +462,13 @@ function defaultState(){
 
 /* ===== Auth / account state ===== */
 let CURRENT_USER = null;      // normalized email of the logged-in user, or null
-let AUTH_MODE = 'login';      // 'login' | 'register' | 'verify'
+let AUTH_MODE = 'login';      // 'login' | 'register' | 'verify' | 'forgot' | 'reset'
 let AUTH_ERROR = '';
+let AUTH_INFO = '';           // neutral (non-error) confirmation message, e.g. after requesting a reset
 let PENDING_EMAIL = null;     // email awaiting OTP verification
 let PENDING_VIEW = 'dashboard'; // where to go once login/verification succeeds
+let RESET_TOKEN = null;       // token from a password-reset link, awaiting a new password
+let RESET_EMAIL = null;       // email that goes with RESET_TOKEN
 
 let STATE = defaultState();
 let VIEW = 'auth';
@@ -530,6 +535,7 @@ function requireAuth(view){
 function switchAuthMode(mode){
   AUTH_MODE = mode;
   AUTH_ERROR = '';
+  AUTH_INFO = '';
   render();
 }
 async function doRegister(){
@@ -625,6 +631,50 @@ async function resendCode(){
   }catch(e){
     AUTH_BUSY = false;
     showToast('Could not send the code — please try again.');
+    render();
+  }
+}
+async function doForgotPassword(){
+  if(AUTH_BUSY) return;
+  const emailEl = document.getElementById('forgotEmail');
+  const email = normalizeEmail(emailEl ? emailEl.value : '');
+  AUTH_ERROR = ''; AUTH_INFO = '';
+  if(!isValidEmail(email)){ AUTH_ERROR='Please enter a valid email address.'; render(); return; }
+  AUTH_BUSY = true; render();
+  try{
+    await apiCall('forgot-password', {email, lang:'en'});
+    AUTH_BUSY = false;
+    AUTH_INFO = 'If an account exists for that email, we\'ve sent a link to reset your password. Check your inbox (and spam folder).';
+    render();
+  }catch(e){
+    AUTH_BUSY = false;
+    AUTH_ERROR = 'Could not reach the server. Please check your connection and try again.';
+    render();
+  }
+}
+async function doResetPassword(){
+  if(AUTH_BUSY) return;
+  const passEl = document.getElementById('resetPassword');
+  const pass2El = document.getElementById('resetPassword2');
+  const pass = passEl ? passEl.value : '';
+  const pass2 = pass2El ? pass2El.value : '';
+  AUTH_ERROR = '';
+  if(!RESET_TOKEN || !RESET_EMAIL){ AUTH_ERROR='This reset link is invalid. Please request a new one.'; render(); return; }
+  if(pass.length<6){ AUTH_ERROR='Password must be at least 6 characters.'; render(); return; }
+  if(pass!==pass2){ AUTH_ERROR='Passwords do not match.'; render(); return; }
+  AUTH_BUSY = true; render();
+  try{
+    const data = await apiCall('reset-password', {email: RESET_EMAIL, token: RESET_TOKEN, password: pass});
+    AUTH_BUSY = false;
+    if(!data.ok){ AUTH_ERROR = data.error || 'This reset link is invalid or has expired.'; render(); return; }
+    CURRENT_USER = data.email;
+    STATE = stateFromProgress(data.progress);
+    RESET_TOKEN = null; RESET_EMAIL = null;
+    showToast('Password updated — welcome back!');
+    goTo('dashboard');
+  }catch(e){
+    AUTH_BUSY = false;
+    AUTH_ERROR = 'Could not reach the server. Please check your connection and try again.';
     render();
   }
 }
@@ -891,7 +941,7 @@ function copyPrompt(btn, text){
 function render(){
   if(PROTECTED_VIEWS.includes(VIEW) && !CURRENT_USER){
     VIEW = 'auth';
-    if(AUTH_MODE!=='register' && AUTH_MODE!=='verify'){ AUTH_MODE='login'; }
+    if(!['register','verify','forgot','reset'].includes(AUTH_MODE)){ AUTH_MODE='login'; }
   }
   const app = document.getElementById('app');
   app.innerHTML = renderTopbar() + renderLayout();
@@ -1108,6 +1158,8 @@ function renderCurriculum(){
 /* ===== Auth screens ===== */
 function renderAuth(){
   if(AUTH_MODE==='verify') return renderVerifyForm();
+  if(AUTH_MODE==='forgot') return renderForgotForm();
+  if(AUTH_MODE==='reset') return renderResetForm();
   return `
   <div class="auth-card">
     <img src="${LOGO_ON_LIGHT}" alt="Digital MSL" style="width:56px;height:56px;display:block;margin:0 auto 18px;">
@@ -1129,8 +1181,44 @@ function renderLoginForm(){
   <input type="email" id="loginEmail" placeholder="you@example.com" autocomplete="email" ${AUTH_BUSY?'disabled':''}>
   <label>Password</label>
   <input type="password" id="loginPassword" placeholder="Your password" autocomplete="current-password" onkeydown="if(event.key==='Enter') doLogin()" ${AUTH_BUSY?'disabled':''}>
+  <a class="auth-forgot-link" onclick="switchAuthMode('forgot')">Forgot your password?</a>
   <button class="btn btn-primary" style="width:100%;justify-content:center;margin-top:16px;" onclick="doLogin()" ${AUTH_BUSY?'disabled':''}>${AUTH_BUSY?'Logging in…':'Log In'}</button>
   `;
+}
+
+function renderForgotForm(){
+  return `
+  <div class="auth-card">
+    <img src="${LOGO_ON_LIGHT}" alt="Digital MSL" style="width:56px;height:56px;display:block;margin:0 auto 18px;">
+    <h2 style="font-size:22px;margin-bottom:6px;">Reset your password</h2>
+    <p style="font-size:13.5px;color:var(--muted);margin-bottom:6px;">Enter the email you registered with and we'll send you a link to set a new password.</p>
+    ${AUTH_ERROR? `<div class="auth-error">${AUTH_ERROR}</div>` : ''}
+    ${AUTH_INFO? `<div class="auth-info">${AUTH_INFO}</div>` : ''}
+    <label>Email</label>
+    <input type="email" id="forgotEmail" placeholder="you@example.com" autocomplete="email" onkeydown="if(event.key==='Enter') doForgotPassword()" ${AUTH_BUSY?'disabled':''}>
+    <button class="btn btn-primary" style="width:100%;justify-content:center;margin-top:16px;" onclick="doForgotPassword()" ${AUTH_BUSY?'disabled':''}>${AUTH_BUSY?'Sending…':'Send reset link'}</button>
+    <div style="text-align:center;margin-top:16px;">
+      <button class="nav-btn" style="color:var(--muted);padding:6px 0;" onclick="switchAuthMode('login')">&larr; Back to login</button>
+    </div>
+  </div>`;
+}
+
+function renderResetForm(){
+  return `
+  <div class="auth-card">
+    <img src="${LOGO_ON_LIGHT}" alt="Digital MSL" style="width:56px;height:56px;display:block;margin:0 auto 18px;">
+    <h2 style="font-size:22px;margin-bottom:6px;">Choose a new password</h2>
+    <p style="font-size:13.5px;color:var(--muted);margin-bottom:6px;">Setting a new password for <strong style="color:var(--fg);">${escapeHtml(RESET_EMAIL||'')}</strong>.</p>
+    ${AUTH_ERROR? `<div class="auth-error">${AUTH_ERROR}</div>` : ''}
+    <label>New password</label>
+    <input type="password" id="resetPassword" placeholder="At least 6 characters" autocomplete="new-password" ${AUTH_BUSY?'disabled':''}>
+    <label>Confirm new password</label>
+    <input type="password" id="resetPassword2" placeholder="Repeat your new password" autocomplete="new-password" onkeydown="if(event.key==='Enter') doResetPassword()" ${AUTH_BUSY?'disabled':''}>
+    <button class="btn btn-primary" style="width:100%;justify-content:center;margin-top:16px;" onclick="doResetPassword()" ${AUTH_BUSY?'disabled':''}>${AUTH_BUSY?'Saving…':'Set new password'}</button>
+    <div style="text-align:center;margin-top:16px;">
+      <button class="nav-btn" style="color:var(--muted);padding:6px 0;" onclick="switchAuthMode('login')">&larr; Back to login</button>
+    </div>
+  </div>`;
 }
 
 function renderRegisterForm(){
@@ -1442,6 +1530,18 @@ function renderCertificatePage(){
   // goes straight to log in / create account, not a duplicate landing.
   VIEW = 'auth';
   AUTH_MODE = 'login';
+  // A password-reset email link lands here as ?reset=<token>&email=<email>.
+  // Detect it, show the "choose a new password" screen, then scrub the
+  // token out of the URL so it doesn't linger in history/referrers.
+  const params = new URLSearchParams(window.location.search);
+  const resetToken = params.get('reset');
+  const resetEmail = params.get('email');
+  if(resetToken && resetEmail){
+    RESET_TOKEN = resetToken;
+    RESET_EMAIL = normalizeEmail(resetEmail);
+    AUTH_MODE = 'reset';
+    window.history.replaceState({}, '', window.location.pathname);
+  }
   render();
   // Real session check — an HttpOnly cookie, not localStorage. Runs after
   // the first paint so the page isn't blocked on a network round-trip.

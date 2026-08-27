@@ -422,6 +422,8 @@ ul{list-style:none;}
 .auth-card input{width:100%;padding:12px 14px;border:1.5px solid var(--border);border-radius:12px;font-size:14px;font-family:inherit;}
 .auth-card input:focus{outline:none;border-color:var(--primary);}
 .auth-error{background:var(--danger-bg);border-left:4px solid var(--danger);color:#8f2b3f;padding:10px 14px;border-radius:10px;font-size:13px;margin:10px 0 0;}
+.auth-info{background:var(--success-bg);border-left:4px solid var(--success);color:#166534;padding:10px 14px;border-radius:10px;font-size:13px;margin:10px 0 0;}
+.auth-forgot-link{display:block;text-align:right;font-size:12.5px;color:var(--primary);margin-top:8px;font-weight:600;}
 .demo-note{font-size:11.5px;color:var(--muted);margin-top:24px;text-align:center;line-height:1.5;}
 .otp-inbox{background:var(--surface);border:1.5px dashed var(--accent);border-radius:16px;padding:16px 18px;margin:18px 0 6px;}
 .otp-inbox-label{font-size:12px;font-weight:700;color:var(--primary-dark);margin-bottom:6px;}
@@ -460,10 +462,13 @@ function defaultState(){
 
 /* ===== Auth / account state ===== */
 let CURRENT_USER = null;      // normalized email of the logged-in user, or null
-let AUTH_MODE = 'login';      // 'login' | 'register' | 'verify'
+let AUTH_MODE = 'login';      // 'login' | 'register' | 'verify' | 'forgot' | 'reset'
 let AUTH_ERROR = '';
+let AUTH_INFO = '';           // mensaje neutro (no de error), p.ej. tras pedir un reset
 let PENDING_EMAIL = null;     // email awaiting OTP verification
 let PENDING_VIEW = 'dashboard'; // where to go once login/verification succeeds
+let RESET_TOKEN = null;       // token del enlace de recuperación, esperando nueva contraseña
+let RESET_EMAIL = null;       // email asociado a RESET_TOKEN
 
 let STATE = defaultState();
 let VIEW = 'auth';
@@ -530,6 +535,7 @@ function requireAuth(view){
 function switchAuthMode(mode){
   AUTH_MODE = mode;
   AUTH_ERROR = '';
+  AUTH_INFO = '';
   render();
 }
 async function doRegister(){
@@ -625,6 +631,50 @@ async function resendCode(){
   }catch(e){
     AUTH_BUSY = false;
     showToast('No se pudo enviar el código — por favor, inténtalo de nuevo.');
+    render();
+  }
+}
+async function doForgotPassword(){
+  if(AUTH_BUSY) return;
+  const emailEl = document.getElementById('forgotEmail');
+  const email = normalizeEmail(emailEl ? emailEl.value : '');
+  AUTH_ERROR = ''; AUTH_INFO = '';
+  if(!isValidEmail(email)){ AUTH_ERROR='Por favor, introduce una dirección de email válida.'; render(); return; }
+  AUTH_BUSY = true; render();
+  try{
+    await apiCall('forgot-password', {email, lang:'es'});
+    AUTH_BUSY = false;
+    AUTH_INFO = 'Si existe una cuenta con ese email, te hemos enviado un enlace para restablecer tu contraseña. Revisa tu bandeja de entrada (y la carpeta de spam).';
+    render();
+  }catch(e){
+    AUTH_BUSY = false;
+    AUTH_ERROR = 'No se pudo conectar con el servidor. Comprueba tu conexión e inténtalo de nuevo.';
+    render();
+  }
+}
+async function doResetPassword(){
+  if(AUTH_BUSY) return;
+  const passEl = document.getElementById('resetPassword');
+  const pass2El = document.getElementById('resetPassword2');
+  const pass = passEl ? passEl.value : '';
+  const pass2 = pass2El ? pass2El.value : '';
+  AUTH_ERROR = '';
+  if(!RESET_TOKEN || !RESET_EMAIL){ AUTH_ERROR='Este enlace de restablecimiento no es válido. Por favor, solicita uno nuevo.'; render(); return; }
+  if(pass.length<6){ AUTH_ERROR='La contraseña debe tener al menos 6 caracteres.'; render(); return; }
+  if(pass!==pass2){ AUTH_ERROR='Las contraseñas no coinciden.'; render(); return; }
+  AUTH_BUSY = true; render();
+  try{
+    const data = await apiCall('reset-password', {email: RESET_EMAIL, token: RESET_TOKEN, password: pass});
+    AUTH_BUSY = false;
+    if(!data.ok){ AUTH_ERROR = data.error || 'Este enlace de restablecimiento no es válido o ha caducado.'; render(); return; }
+    CURRENT_USER = data.email;
+    STATE = stateFromProgress(data.progress);
+    RESET_TOKEN = null; RESET_EMAIL = null;
+    showToast('¡Contraseña actualizada — bienvenido de nuevo!');
+    goTo('dashboard');
+  }catch(e){
+    AUTH_BUSY = false;
+    AUTH_ERROR = 'No se pudo conectar con el servidor. Comprueba tu conexión e inténtalo de nuevo.';
     render();
   }
 }
@@ -891,7 +941,7 @@ function copyPrompt(btn, text){
 function render(){
   if(PROTECTED_VIEWS.includes(VIEW) && !CURRENT_USER){
     VIEW = 'auth';
-    if(AUTH_MODE!=='register' && AUTH_MODE!=='verify'){ AUTH_MODE='login'; }
+    if(!['register','verify','forgot','reset'].includes(AUTH_MODE)){ AUTH_MODE='login'; }
   }
   const app = document.getElementById('app');
   app.innerHTML = renderTopbar() + renderLayout();
@@ -1108,6 +1158,8 @@ function renderCurriculum(){
 /* ===== Auth screens ===== */
 function renderAuth(){
   if(AUTH_MODE==='verify') return renderVerifyForm();
+  if(AUTH_MODE==='forgot') return renderForgotForm();
+  if(AUTH_MODE==='reset') return renderResetForm();
   return `
   <div class="auth-card">
     <img src="${LOGO_ON_LIGHT}" alt="Digital MSL" style="width:56px;height:56px;display:block;margin:0 auto 18px;">
@@ -1129,8 +1181,44 @@ function renderLoginForm(){
   <input type="email" id="loginEmail" placeholder="tucorreo@ejemplo.com" autocomplete="email" ${AUTH_BUSY?'disabled':''}>
   <label>Contraseña</label>
   <input type="password" id="loginPassword" placeholder="Tu contraseña" autocomplete="current-password" onkeydown="if(event.key==='Enter') doLogin()" ${AUTH_BUSY?'disabled':''}>
+  <a class="auth-forgot-link" onclick="switchAuthMode('forgot')">¿Olvidaste tu contraseña?</a>
   <button class="btn btn-primary" style="width:100%;justify-content:center;margin-top:16px;" onclick="doLogin()" ${AUTH_BUSY?'disabled':''}>${AUTH_BUSY?'Iniciando sesión…':'Iniciar Sesión'}</button>
   `;
+}
+
+function renderForgotForm(){
+  return `
+  <div class="auth-card">
+    <img src="${LOGO_ON_LIGHT}" alt="Digital MSL" style="width:56px;height:56px;display:block;margin:0 auto 18px;">
+    <h2 style="font-size:22px;margin-bottom:6px;">Restablece tu contraseña</h2>
+    <p style="font-size:13.5px;color:var(--muted);margin-bottom:6px;">Introduce el email con el que te registraste y te enviaremos un enlace para elegir una nueva contraseña.</p>
+    ${AUTH_ERROR? `<div class="auth-error">${AUTH_ERROR}</div>` : ''}
+    ${AUTH_INFO? `<div class="auth-info">${AUTH_INFO}</div>` : ''}
+    <label>Email</label>
+    <input type="email" id="forgotEmail" placeholder="tucorreo@ejemplo.com" autocomplete="email" onkeydown="if(event.key==='Enter') doForgotPassword()" ${AUTH_BUSY?'disabled':''}>
+    <button class="btn btn-primary" style="width:100%;justify-content:center;margin-top:16px;" onclick="doForgotPassword()" ${AUTH_BUSY?'disabled':''}>${AUTH_BUSY?'Enviando…':'Enviar enlace de recuperación'}</button>
+    <div style="text-align:center;margin-top:16px;">
+      <button class="nav-btn" style="color:var(--muted);padding:6px 0;" onclick="switchAuthMode('login')">&larr; Volver al inicio de sesión</button>
+    </div>
+  </div>`;
+}
+
+function renderResetForm(){
+  return `
+  <div class="auth-card">
+    <img src="${LOGO_ON_LIGHT}" alt="Digital MSL" style="width:56px;height:56px;display:block;margin:0 auto 18px;">
+    <h2 style="font-size:22px;margin-bottom:6px;">Elige una nueva contraseña</h2>
+    <p style="font-size:13.5px;color:var(--muted);margin-bottom:6px;">Estableciendo una nueva contraseña para <strong style="color:var(--fg);">${escapeHtml(RESET_EMAIL||'')}</strong>.</p>
+    ${AUTH_ERROR? `<div class="auth-error">${AUTH_ERROR}</div>` : ''}
+    <label>Nueva contraseña</label>
+    <input type="password" id="resetPassword" placeholder="Al menos 6 caracteres" autocomplete="new-password" ${AUTH_BUSY?'disabled':''}>
+    <label>Confirmar nueva contraseña</label>
+    <input type="password" id="resetPassword2" placeholder="Repite tu nueva contraseña" autocomplete="new-password" onkeydown="if(event.key==='Enter') doResetPassword()" ${AUTH_BUSY?'disabled':''}>
+    <button class="btn btn-primary" style="width:100%;justify-content:center;margin-top:16px;" onclick="doResetPassword()" ${AUTH_BUSY?'disabled':''}>${AUTH_BUSY?'Guardando…':'Guardar nueva contraseña'}</button>
+    <div style="text-align:center;margin-top:16px;">
+      <button class="nav-btn" style="color:var(--muted);padding:6px 0;" onclick="switchAuthMode('login')">&larr; Volver al inicio de sesión</button>
+    </div>
+  </div>`;
 }
 
 function renderRegisterForm(){
@@ -1442,6 +1530,18 @@ function renderCertificatePage(){
   // goes straight to log in / create account, not a duplicate landing.
   VIEW = 'auth';
   AUTH_MODE = 'login';
+  // Un enlace de recuperación de contraseña llega aquí como
+  // ?reset=<token>&email=<email>. Lo detectamos, mostramos la pantalla de
+  // "elegir nueva contraseña" y limpiamos el token de la URL.
+  const params = new URLSearchParams(window.location.search);
+  const resetToken = params.get('reset');
+  const resetEmail = params.get('email');
+  if(resetToken && resetEmail){
+    RESET_TOKEN = resetToken;
+    RESET_EMAIL = normalizeEmail(resetEmail);
+    AUTH_MODE = 'reset';
+    window.history.replaceState({}, '', window.location.pathname);
+  }
   render();
   // Real session check — an HttpOnly cookie, not localStorage. Runs after
   // the first paint so the page isn't blocked on a network round-trip.
