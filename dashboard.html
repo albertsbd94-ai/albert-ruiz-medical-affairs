@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DMSL Course — Dashboard</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#7A00E6;
+  --primary-dark:#5E12A1;
+  --accent:#AB30E8;
+  --teal:#0891b2;
+  --fg:#1F242E;
+  --muted:#737373;
+  --border:#E6E1EB;
+  --surface:#F0EAF7;
+  --bg:#FFFFFF;
+  --grad:linear-gradient(135deg,#7A00E6 0%,#5E12A1 100%);
+  --shadow:0 10px 30px rgba(94,18,161,.12);
+  --shadow-sm:0 4px 14px rgba(94,18,161,.08);
+  --radius:16px;
+  --success:#16a34a;
+  --success-bg:#f1f9f3;
+  --warning:#d08b28;
+  --warning-bg:#fdf6ea;
+  --danger:#c23b53;
+  --danger-bg:#fdf3f4;
+  --font:'Poppins',system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:var(--font);color:var(--fg);background:#FAF8FC;line-height:1.5;font-size:15px;-webkit-font-smoothing:antialiased;}
+h1,h2,h3{font-family:var(--font);font-weight:700;letter-spacing:-.01em;}
+a{color:var(--primary);text-decoration:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;}
+.num{font-weight:800;font-variant-numeric:tabular-nums;}
+
+/* ===== Login screen ===== */
+.login-wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;}
+.login-card{background:var(--bg);border:1px solid var(--border);border-radius:22px;box-shadow:var(--shadow);padding:38px;max-width:400px;width:100%;}
+.login-logo{width:44px;height:44px;border-radius:14px;background:var(--grad);display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px;margin-bottom:18px;}
+.login-card h1{font-size:21px;margin-bottom:4px;}
+.login-sub{color:var(--muted);font-size:13.5px;margin-bottom:24px;}
+.login-card label{font-size:12px;font-weight:700;color:var(--muted);display:block;margin-bottom:6px;margin-top:14px;}
+.login-card input{width:100%;padding:12px 14px;border:1.5px solid var(--border);border-radius:12px;font-size:14px;font-family:inherit;}
+.login-card input:focus{outline:none;border-color:var(--primary);}
+.login-error{background:var(--danger-bg);border-left:4px solid var(--danger);color:#8f2b3f;padding:10px 14px;border-radius:10px;font-size:13px;margin-top:14px;}
+.btn{padding:12px 20px;border-radius:12px;font-size:14px;font-weight:700;transition:.15s;display:inline-flex;align-items:center;justify-content:center;gap:6px;}
+.btn-primary{background:var(--grad);color:#fff;box-shadow:var(--shadow-sm);width:100%;margin-top:22px;}
+.btn-primary:disabled{opacity:.6;cursor:default;}
+.btn-ghost{background:var(--surface);color:var(--primary-dark);}
+
+/* ===== App shell ===== */
+#app{min-height:100vh;display:flex;flex-direction:column;}
+.topbar{position:sticky;top:0;z-index:50;background:var(--grad);color:#fff;padding:0 24px;height:62px;display:flex;align-items:center;justify-content:space-between;box-shadow:var(--shadow);}
+.topbar-title{font-weight:700;font-size:15px;}
+.topbar-title small{display:block;font-weight:500;font-size:11px;color:rgba(255,255,255,.75);}
+.topbar-right{display:flex;align-items:center;gap:10px;}
+.nav-btn{padding:8px 14px;border-radius:999px;font-size:13px;font-weight:600;color:rgba(255,255,255,.85);}
+.nav-btn:hover{background:rgba(255,255,255,.14);color:#fff;}
+.layout{flex:1;display:flex;width:100%;max-width:1320px;margin:0 auto;min-height:0;}
+.sidebar{width:220px;flex:none;padding:20px 12px;border-right:1px solid var(--border);position:sticky;top:62px;align-self:flex-start;height:calc(100vh - 62px);overflow-y:auto;}
+.sidebar-item{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:12px;font-size:13.5px;font-weight:600;color:var(--fg);cursor:pointer;margin-bottom:2px;}
+.sidebar-item:hover{background:var(--surface);}
+.sidebar-item.active{background:var(--surface);color:var(--primary-dark);}
+.sidebar-item .badge{margin-left:auto;background:var(--danger);color:#fff;font-size:10.5px;font-weight:800;border-radius:999px;padding:2px 7px;}
+.main{flex:1;min-width:0;padding:28px 26px 60px;}
+.section-title{font-size:22px;margin-bottom:2px;}
+.section-sub{color:var(--muted);font-size:13.5px;margin-bottom:22px;}
+
+/* ===== Stat tiles ===== */
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin-bottom:26px;}
+.stat-card{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow-sm);}
+.stat-card .label{font-size:11.5px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px;}
+.stat-card .value{font-size:26px;color:var(--fg);}
+.stat-card .sub{font-size:12px;color:var(--muted);margin-top:4px;}
+.stat-card .value.accent{color:var(--primary);}
+
+/* ===== Charts ===== */
+.chart-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:16px;margin-bottom:16px;}
+@media (max-width:900px){.chart-grid{grid-template-columns:1fr;}}
+.chart-card{background:var(--bg);border:1px solid var(--border);border-radius:18px;padding:22px;box-shadow:var(--shadow-sm);}
+.chart-card h3{font-size:14.5px;margin-bottom:2px;}
+.chart-card .chart-sub{font-size:12px;color:var(--muted);margin-bottom:14px;}
+.legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:10px;font-size:12px;color:var(--muted);}
+.legend span{display:inline-flex;align-items:center;gap:6px;}
+.legend i{width:10px;height:10px;border-radius:3px;display:inline-block;}
+.chart-empty{color:var(--muted);font-size:13px;padding:30px 0;text-align:center;}
+
+/* Tooltip */
+#chartTooltip{position:fixed;pointer-events:none;background:#1F242E;color:#fff;font-size:12px;padding:7px 10px;border-radius:8px;
+  box-shadow:0 6px 18px rgba(0,0,0,.25);opacity:0;transition:opacity .1s;z-index:999;max-width:220px;line-height:1.4;}
+#chartTooltip.show{opacity:1;}
+
+/* ===== Table ===== */
+.table-wrap{background:var(--bg);border:1px solid var(--border);border-radius:18px;overflow:auto;box-shadow:var(--shadow-sm);}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:640px;}
+th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);padding:12px 16px;border-bottom:1px solid var(--border);white-space:nowrap;}
+td{padding:11px 16px;border-bottom:1px solid var(--border);vertical-align:middle;}
+tr:last-child td{border-bottom:none;}
+.pill{display:inline-block;padding:3px 10px;border-radius:999px;font-size:11px;font-weight:700;}
+.pill-ok{background:var(--success-bg);color:#166534;}
+.pill-pending{background:var(--warning-bg);color:#92600f;}
+.mini-bar{width:70px;height:6px;border-radius:6px;background:var(--surface);overflow:hidden;display:inline-block;vertical-align:middle;margin-right:8px;}
+.mini-bar>div{height:100%;background:var(--grad);}
+.plan-tag{font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;}
+.plan-semipresencial{background:rgba(122,0,230,.1);color:var(--primary);}
+.plan-online{background:rgba(8,145,178,.1);color:var(--teal);}
+.plan-other{background:var(--surface);color:var(--muted);}
+
+/* ===== Inbox (Soporte / Sugerencias) ===== */
+.inbox-item{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:16px 18px;margin-bottom:12px;box-shadow:var(--shadow-sm);}
+.inbox-item.unread{border-left:4px solid var(--primary);}
+.inbox-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap;margin-bottom:8px;}
+.inbox-from{font-weight:700;font-size:13.5px;}
+.inbox-from small{display:block;font-weight:500;color:var(--muted);font-size:12px;}
+.inbox-date{font-size:11.5px;color:var(--muted);white-space:nowrap;}
+.inbox-msg{font-size:13.5px;color:var(--fg);line-height:1.55;white-space:pre-wrap;margin-bottom:10px;}
+.inbox-actions{display:flex;gap:10px;}
+.inbox-actions a,.inbox-actions button{font-size:12px;font-weight:700;color:var(--primary);}
+.loading{color:var(--muted);font-size:13px;padding:30px 0;text-align:center;}
+</style>
+</head>
+<body>
+<div id="chartTooltip"></div>
+<div id="app"></div>
+
+<script>
+/* ===== Config ===== */
+const ADMIN_API = '/api/admin-auth.php';
+const DATA_API = '/api/admin-data.php';
+const PLAN_LABELS = {semipresencial:'Semi-presential', online:'Online (self-paced)', other:'Other'};
+const PLAN_COLORS = {semipresencial:'#7A00E6', online:'#0891b2', other:'#9aa3b2'};
+const BUCKET_COLORS = {'0-25':'#EBDBFA','25-50':'#CBA3F2','50-75':'#A768E8','75-99':'#8B2FE0','100':'#5E12A1'};
+const BUCKET_LABELS = {'0-25':'0–24%','25-50':'25–49%','50-75':'50–74%','75-99':'75–99%','100':'100%'};
+
+/* ===== State ===== */
+let AUTHED = false;
+let ADMIN_EMAIL = '';
+let LOGIN_EMAIL = '';
+let LOGIN_PASSWORD = '';
+let LOGIN_BUSY = false;
+let LOGIN_ERROR = '';
+let VIEW = 'overview';
+let OVERVIEW = null;
+let ALUMNOS = null;
+let SOPORTE = null;
+let SUGERENCIAS = null;
+let LOADING = false;
+let BOOT_CHECKED = false;
+
+async function apiCall(base, action, method, body){
+  const res = await fetch(base + '?action=' + action, {
+    method: method || (body === undefined ? 'GET' : 'POST'),
+    credentials: 'include',
+    headers: body === undefined ? {} : {'Content-Type':'application/json'},
+    body: body === undefined ? undefined : JSON.stringify(body),
+  });
+  let data; try{ data = await res.json(); }catch(e){ data = {}; }
+  if(!res.ok && data.ok === undefined) data.ok = false;
+  return data;
+}
+
+function escapeHtml(str){
+  return String(str==null?'':str).replace(/[&<>"']/g, function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+  });
+}
+function fmtDate(iso){
+  if(!iso) return '—';
+  try{ const d = new Date(iso); return d.toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'}); }catch(e){ return iso; }
+}
+function fmtMoney(cents, currency){
+  const c = (currency||'EUR').toUpperCase();
+  try{ return new Intl.NumberFormat('en-GB',{style:'currency',currency:c}).format((cents||0)/100); }
+  catch(e){ return ((cents||0)/100).toFixed(2) + ' ' + c; }
+}
+
+/* ===== Render root ===== */
+function render(){
+  const app = document.getElementById('app');
+  app.innerHTML = AUTHED ? renderApp() : renderLogin();
+  if(AUTHED) afterRenderCharts();
+}
+
+function renderLogin(){
+  return `
+  <div class="login-wrap">
+    <div class="login-card">
+      <div class="login-logo">&#128274;</div>
+      <h1>DMSL Course Dashboard</h1>
+      <div class="login-sub">Private area. Sign in to view purchases, student progress, support and suggestions.</div>
+      <form onsubmit="event.preventDefault();doLogin();">
+        <label>Email</label>
+        <input type="email" autocomplete="username" value="${escapeHtml(LOGIN_EMAIL)}" oninput="LOGIN_EMAIL=this.value">
+        <label>Password</label>
+        <input type="password" autocomplete="current-password" value="${escapeHtml(LOGIN_PASSWORD)}" oninput="LOGIN_PASSWORD=this.value">
+        ${LOGIN_ERROR?`<div class="login-error">${escapeHtml(LOGIN_ERROR)}</div>`:''}
+        <button type="submit" class="btn btn-primary" ${LOGIN_BUSY?'disabled':''}>${LOGIN_BUSY?'Signing in…':'Sign in'}</button>
+      </form>
+    </div>
+  </div>`;
+}
+
+async function doLogin(){
+  if(LOGIN_BUSY) return;
+  if(!LOGIN_EMAIL || !LOGIN_PASSWORD){ LOGIN_ERROR='Please enter your email and password.'; render(); return; }
+  LOGIN_BUSY = true; LOGIN_ERROR=''; render();
+  const data = await apiCall(ADMIN_API, 'login', 'POST', {email:LOGIN_EMAIL, password:LOGIN_PASSWORD});
+  LOGIN_BUSY = false;
+  if(data && data.ok){
+    AUTHED = true; ADMIN_EMAIL = data.email; LOGIN_PASSWORD='';
+    VIEW = 'overview';
+    render();
+    loadOverview();
+    return;
+  }
+  LOGIN_ERROR = (data && data.error) || 'Something went wrong. Please try again.';
+  render();
+}
+async function doLogout(){
+  await apiCall(ADMIN_API, 'logout', 'POST', {});
+  AUTHED = false; ADMIN_EMAIL=''; OVERVIEW=null; ALUMNOS=null; SOPORTE=null; SUGERENCIAS=null; VIEW='overview';
+  render();
+}
+
+/* ===== App shell ===== */
+function renderApp(){
+  const soporteUnread = OVERVIEW ? OVERVIEW.inbox.soporteUnread : 0;
+  const sugerenciasUnread = OVERVIEW ? OVERVIEW.inbox.sugerenciasUnread : 0;
+  return `
+  <header class="topbar">
+    <div class="topbar-title">DMSL Course<small>Private Dashboard</small></div>
+    <div class="topbar-right">
+      <span class="nav-btn" style="cursor:default;">${escapeHtml(ADMIN_EMAIL)}</span>
+      <button class="nav-btn" onclick="doLogout()">Log out</button>
+    </div>
+  </header>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-item ${VIEW==='overview'?'active':''}" onclick="goTo('overview')">&#128202; Overview</div>
+      <div class="sidebar-item ${VIEW==='alumnos'?'active':''}" onclick="goTo('alumnos')">&#127891; Students</div>
+      <div class="sidebar-item ${VIEW==='soporte'?'active':''}" onclick="goTo('soporte')">&#128172; Support ${soporteUnread?`<span class="badge">${soporteUnread}</span>`:''}</div>
+      <div class="sidebar-item ${VIEW==='sugerencias'?'active':''}" onclick="goTo('sugerencias')">&#128161; Suggestions ${sugerenciasUnread?`<span class="badge">${sugerenciasUnread}</span>`:''}</div>
+    </aside>
+    <main class="main">${renderView()}</main>
+  </div>`;
+}
+function goTo(view){
+  VIEW = view;
+  render();
+  if(view==='overview' && !OVERVIEW) loadOverview();
+  if(view==='alumnos' && !ALUMNOS) loadAlumnos();
+  if(view==='soporte' && !SOPORTE) loadSoporte();
+  if(view==='sugerencias' && !SUGERENCIAS) loadSugerencias();
+}
+function renderView(){
+  if(VIEW==='alumnos') return renderAlumnos();
+  if(VIEW==='soporte') return renderInbox('soporte');
+  if(VIEW==='sugerencias') return renderInbox('sugerencias');
+  return renderOverview();
+}
+
+/* ===== Loaders ===== */
+async function loadOverview(){
+  const data = await apiCall(DATA_API, 'overview', 'GET');
+  if(data && data.ok){ OVERVIEW = data.overview; render(); }
+}
+async function loadAlumnos(){
+  const data = await apiCall(DATA_API, 'alumnos', 'GET');
+  if(data && data.ok){
+    ALUMNOS = data.alumnos.slice().sort(function(a,b){
+      if(b.completionPercent !== a.completionPercent) return b.completionPercent - a.completionPercent;
+      return String(b.actualizado||b.creado||'').localeCompare(String(a.actualizado||a.creado||''));
+    });
+    render();
+  }
+}
+async function loadSoporte(){
+  const data = await apiCall(DATA_API, 'soporte', 'GET');
+  if(data && data.ok){ SOPORTE = data.mensajes; render(); }
+}
+async function loadSugerencias(){
+  const data = await apiCall(DATA_API, 'sugerencias', 'GET');
+  if(data && data.ok){ SUGERENCIAS = data.mensajes; render(); }
+}
+async function markRead(tipo, id){
+  await apiCall(DATA_API, 'marcar-leido', 'POST', {tipo:tipo, id:id});
+  if(tipo==='soporte' && SOPORTE){ const m = SOPORTE.find(function(x){return x.id===id;}); if(m) m.leido = true; }
+  if(tipo==='sugerencias' && SUGERENCIAS){ const m = SUGERENCIAS.find(function(x){return x.id===id;}); if(m) m.leido = true; }
+  if(OVERVIEW){
+    if(tipo==='soporte') OVERVIEW.inbox.soporteUnread = Math.max(0, OVERVIEW.inbox.soporteUnread-1);
+    if(tipo==='sugerencias') OVERVIEW.inbox.sugerenciasUnread = Math.max(0, OVERVIEW.inbox.sugerenciasUnread-1);
+  }
+  render();
+}
+
+/* ===== Overview (KPIs + charts) ===== */
+function renderOverview(){
+  if(!OVERVIEW) return `<div class="section-title">Overview</div><div class="loading">Loading KPIs…</div>`;
+  const o = OVERVIEW;
+  const currencies = Object.keys(o.purchases.revenueByCurrency||{});
+  const revenueLine = currencies.length
+    ? currencies.map(function(c){ return fmtMoney(o.purchases.revenueByCurrency[c], c); }).join(' · ')
+    : fmtMoney(0,'EUR');
+
+  return `
+  <div class="section-title">Overview</div>
+  <div class="section-sub">Purchases and student progress across both campuses (English + Spanish).</div>
+
+  <div class="stat-grid">
+    <div class="stat-card"><div class="label">Total revenue</div><div class="value accent">${revenueLine}</div><div class="sub">${o.purchases.total} purchase${o.purchases.total===1?'':'s'}</div></div>
+    <div class="stat-card"><div class="label">Accounts activated</div><div class="value">${o.purchases.usedCodes}/${o.purchases.total}</div><div class="sub">${o.purchases.conversionPercent}% of buyers registered</div></div>
+    <div class="stat-card"><div class="label">Students</div><div class="value">${o.students.total}</div><div class="sub">${o.students.verified} verified · ${o.students.pending} pending verification</div></div>
+    <div class="stat-card"><div class="label">Avg. course completion</div><div class="value">${o.students.avgCompletionPercent}%</div><div class="sub">across verified students</div></div>
+    <div class="stat-card"><div class="label">Completed 100%</div><div class="value">${o.students.completionBuckets['100']}</div><div class="sub">of ${o.students.verified} verified students</div></div>
+    <div class="stat-card"><div class="label">Last student activity</div><div class="value" style="font-size:17px;">${fmtDate(o.students.lastActive)}</div><div class="sub">most recent progress save</div></div>
+  </div>
+
+  <div class="chart-grid">
+    <div class="chart-card">
+      <h3>Cumulative revenue</h3>
+      <div class="chart-sub">Running total since the first purchase</div>
+      ${renderLineChart(o.purchases.series)}
+    </div>
+    <div class="chart-card">
+      <h3>Purchases by plan</h3>
+      <div class="chart-sub">Count and revenue per plan</div>
+      ${renderPlanChart(o.purchases.countByPlan, o.purchases.revenueByPlan, o.purchases.revenueByCurrency)}
+    </div>
+  </div>
+
+  <div class="chart-grid">
+    <div class="chart-card">
+      <h3>Student completion</h3>
+      <div class="chart-sub">Verified students grouped by % of lessons completed</div>
+      ${renderBucketChart(o.students.completionBuckets)}
+    </div>
+    <div class="chart-card">
+      <h3>Campus language split</h3>
+      <div class="chart-sub">Purchases by landing page language</div>
+      ${renderLangChart(o.purchases.byLang)}
+    </div>
+  </div>
+  `;
+}
+
+/* ---- SVG line chart: cumulative revenue over time ---- */
+function renderLineChart(series){
+  if(!series || !series.length) return `<div class="chart-empty">No purchases yet.</div>`;
+  const W = 520, H = 200, PAD = 34;
+  const max = Math.max.apply(null, series.map(function(p){return p.cumulativeRevenue;})) || 1;
+  const n = series.length;
+  const x = function(i){ return n<=1 ? PAD : PAD + (i/(n-1)) * (W - PAD*2); };
+  const y = function(v){ return H - PAD - (v/max) * (H - PAD*1.6); };
+  let path = '';
+  series.forEach(function(p,i){ path += (i===0?'M':'L') + x(i).toFixed(1) + ' ' + y(p.cumulativeRevenue).toFixed(1) + ' '; });
+  const area = path + `L${x(n-1).toFixed(1)} ${(H-PAD).toFixed(1)} L${x(0).toFixed(1)} ${(H-PAD).toFixed(1)} Z`;
+  const dots = series.map(function(p,i){
+    const tip = escapeHtml(fmtDate(p.date+'T00:00:00Z')) + '<br>' + p.count + ' purchase' + (p.count===1?'':'s') + '<br>Total: ' + escapeHtml(fmtMoney(p.cumulativeRevenue,'EUR'));
+    return `<circle cx="${x(i).toFixed(1)}" cy="${y(p.cumulativeRevenue).toFixed(1)}" r="4" fill="#7A00E6" stroke="#fff" stroke-width="1.5"
+      onmousemove="showTip(event,'${tip}')" onmouseleave="hideTip()" style="cursor:pointer;"></circle>`;
+  }).join('');
+  const firstLabel = escapeHtml(fmtDate(series[0].date+'T00:00:00Z'));
+  const lastLabel = escapeHtml(fmtDate(series[n-1].date+'T00:00:00Z'));
+  return `
+  <svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto;overflow:visible;">
+    <line x1="${PAD}" y1="${H-PAD}" x2="${W-PAD}" y2="${H-PAD}" stroke="#E6E1EB" stroke-width="1"></line>
+    <path d="${area}" fill="rgba(122,0,230,.10)" stroke="none"></path>
+    <path d="${path}" fill="none" stroke="#7A00E6" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"></path>
+    ${dots}
+  </svg>
+  <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-top:2px;">
+    <span>${firstLabel}</span><span>${lastLabel}</span>
+  </div>`;
+}
+
+/* ---- Bar chart: purchases by plan ---- */
+function renderPlanChart(countByPlan, revenueByPlan, revenueByCurrency){
+  const plans = ['semipresencial','online'];
+  const maxCount = Math.max(1, countByPlan.semipresencial, countByPlan.online);
+  const currency = Object.keys(revenueByCurrency||{})[0] || 'EUR';
+  const bars = plans.map(function(p){
+    const count = countByPlan[p] || 0;
+    const pct = Math.round((count/maxCount)*100);
+    const tip = escapeHtml(PLAN_LABELS[p]) + '<br>' + count + ' purchase' + (count===1?'':'s') + '<br>' + escapeHtml(fmtMoney(revenueByPlan[p]||0, currency));
+    return `
+    <div style="margin-bottom:16px;" onmousemove="showTip(event,'${tip}')" onmouseleave="hideTip()">
+      <div style="display:flex;justify-content:space-between;font-size:12.5px;margin-bottom:5px;">
+        <span style="font-weight:700;">${escapeHtml(PLAN_LABELS[p])}</span>
+        <span class="num" style="color:${PLAN_COLORS[p]};">${count}</span>
+      </div>
+      <div style="height:14px;border-radius:8px;background:var(--surface);overflow:hidden;">
+        <div style="height:100%;width:${Math.max(pct,count?4:0)}%;background:${PLAN_COLORS[p]};border-radius:8px;"></div>
+      </div>
+    </div>`;
+  }).join('');
+  return bars + `
+  <div class="legend">
+    <span><i style="background:${PLAN_COLORS.semipresencial}"></i>Semi-presential</span>
+    <span><i style="background:${PLAN_COLORS.online}"></i>Online (self-paced)</span>
+  </div>`;
+}
+
+/* ---- Bar chart: completion buckets ---- */
+function renderBucketChart(buckets){
+  const keys = ['0-25','25-50','50-75','75-99','100'];
+  const total = keys.reduce(function(s,k){ return s + (buckets[k]||0); }, 0);
+  if(!total) return `<div class="chart-empty">No verified students yet.</div>`;
+  const max = Math.max.apply(null, keys.map(function(k){ return buckets[k]||0; })) || 1;
+  const bars = keys.map(function(k){
+    const v = buckets[k]||0;
+    const h = Math.max(4, Math.round((v/max)*120));
+    const tip = escapeHtml(BUCKET_LABELS[k]) + ' completion<br>' + v + ' student' + (v===1?'':'s');
+    return `
+    <div style="display:flex;flex-direction:column;align-items:center;gap:6px;flex:1;" onmousemove="showTip(event,'${tip}')" onmouseleave="hideTip()">
+      <div class="num" style="font-size:12px;color:${BUCKET_COLORS[k]==='#EBDBFA'?'#7A00E6':BUCKET_COLORS[k]};">${v}</div>
+      <div style="width:100%;max-width:38px;height:${h}px;background:${BUCKET_COLORS[k]};border-radius:6px 6px 3px 3px;"></div>
+      <div style="font-size:10.5px;color:var(--muted);text-align:center;">${escapeHtml(BUCKET_LABELS[k])}</div>
+    </div>`;
+  }).join('');
+  return `<div style="display:flex;align-items:flex-end;gap:10px;height:170px;padding-top:10px;">${bars}</div>`;
+}
+
+/* ---- Bar chart: language split ---- */
+function renderLangChart(byLang){
+  const total = (byLang.en||0) + (byLang.es||0);
+  if(!total) return `<div class="chart-empty">No purchases yet.</div>`;
+  const rows = [['en','English','#7A00E6'],['es','Español','#0891b2']];
+  const bars = rows.map(function(r){
+    const key=r[0], label=r[1], color=r[2];
+    const v = byLang[key]||0;
+    const pct = Math.round((v/total)*100);
+    const tip = escapeHtml(label) + '<br>' + v + ' purchase' + (v===1?'':'s') + ' (' + pct + '%)';
+    return `
+    <div style="margin-bottom:16px;" onmousemove="showTip(event,'${tip}')" onmouseleave="hideTip()">
+      <div style="display:flex;justify-content:space-between;font-size:12.5px;margin-bottom:5px;">
+        <span style="font-weight:700;">${label}</span>
+        <span class="num" style="color:${color};">${v} (${pct}%)</span>
+      </div>
+      <div style="height:14px;border-radius:8px;background:var(--surface);overflow:hidden;">
+        <div style="height:100%;width:${Math.max(pct,v?4:0)}%;background:${color};border-radius:8px;"></div>
+      </div>
+    </div>`;
+  }).join('');
+  return bars;
+}
+
+function afterRenderCharts(){ /* reserved for future chart post-processing */ }
+
+/* ---- Shared tooltip ---- */
+function showTip(evt, html){
+  const tip = document.getElementById('chartTooltip');
+  tip.innerHTML = html;
+  tip.classList.add('show');
+  const x = evt.clientX, y = evt.clientY;
+  const w = tip.offsetWidth || 140;
+  tip.style.left = Math.min(x + 14, window.innerWidth - w - 12) + 'px';
+  tip.style.top = Math.max(y - 40, 8) + 'px';
+}
+function hideTip(){ document.getElementById('chartTooltip').classList.remove('show'); }
+
+/* ===== Students table ===== */
+function renderAlumnos(){
+  if(!ALUMNOS) return `<div class="section-title">Students</div><div class="loading">Loading students…</div>`;
+  if(!ALUMNOS.length) return `<div class="section-title">Students</div><div class="section-sub">No students yet.</div>`;
+  const rows = ALUMNOS.map(function(a){
+    const planClass = a.plan==='semipresencial' ? 'plan-semipresencial' : a.plan==='online' ? 'plan-online' : 'plan-other';
+    const planLabel = a.plan ? (PLAN_LABELS[a.plan]||a.plan) : '—';
+    return `
+    <tr>
+      <td><strong>${escapeHtml(a.nombre||'—')}</strong></td>
+      <td>${escapeHtml(a.email)}</td>
+      <td>${a.verificado ? `<span class="pill pill-ok">Verified</span>` : `<span class="pill pill-pending">Pending</span>`}</td>
+      <td><span class="plan-tag ${planClass}">${escapeHtml(planLabel)}</span></td>
+      <td>${a.lang==='es'?'ES':'EN'}</td>
+      <td><span class="mini-bar"><div style="width:${a.completionPercent}%;"></div></span>${a.completionPercent}%</td>
+      <td>${fmtDate(a.creado)}</td>
+      <td>${fmtDate(a.actualizado)}</td>
+    </tr>`;
+  }).join('');
+  return `
+  <div class="section-title">Students</div>
+  <div class="section-sub">${ALUMNOS.length} student${ALUMNOS.length===1?'':'s'} · sorted by course completion</div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Name</th><th>Email</th><th>Status</th><th>Plan</th><th>Campus</th><th>Completion</th><th>Registered</th><th>Last active</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>
+  </div>`;
+}
+
+/* ===== Soporte / Sugerencias inbox ===== */
+function renderInbox(tipo){
+  const list = tipo==='soporte' ? SOPORTE : SUGERENCIAS;
+  const title = tipo==='soporte' ? 'Support' : 'Suggestions for improvement';
+  const sub = tipo==='soporte' ? 'Direct messages from students on either campus.' : 'Feedback and ideas submitted by students.';
+  if(!list) return `<div class="section-title">${title}</div><div class="loading">Loading…</div>`;
+  if(!list.length) return `<div class="section-title">${title}</div><div class="section-sub">${sub}</div><div class="chart-empty">Nothing here yet.</div>`;
+  const items = list.map(function(m){
+    return `
+    <div class="inbox-item ${m.leido?'':'unread'}">
+      <div class="inbox-head">
+        <div class="inbox-from">${escapeHtml(m.nombre||m.email)} <small>${escapeHtml(m.email)} · ${m.lang==='es'?'ES campus':'EN campus'}</small></div>
+        <div class="inbox-date">${fmtDate(m.creado)}</div>
+      </div>
+      <div class="inbox-msg">${escapeHtml(m.mensaje)}</div>
+      <div class="inbox-actions">
+        <a href="mailto:${encodeURIComponent(m.email)}">Reply by email</a>
+        ${m.leido ? '' : `<button onclick="markRead('${tipo}','${m.id}')">Mark as read</button>`}
+      </div>
+    </div>`;
+  }).join('');
+  return `<div class="section-title">${title}</div><div class="section-sub">${sub}</div>${items}`;
+}
+
+/* ===== Boot ===== */
+(function init(){
+  render();
+  apiCall(ADMIN_API, 'me', 'GET').then(function(data){
+    BOOT_CHECKED = true;
+    if(data && data.ok && data.authenticated){
+      AUTHED = true; ADMIN_EMAIL = data.email;
+      render();
+      loadOverview();
+    }
+  }).catch(function(){ BOOT_CHECKED = true; });
+})();
+</script>
+</body>
+</html>

@@ -65,19 +65,10 @@ function reset_email_html($name, $link, $lang) {
 }
 
 // ---------------------------------------------------------------------
-// 3. Small helpers local to this file (storage/email/rate-limit helpers
-//    now live in dmsl-common.php, shared with stripe-webhook.php)
+// 3. Small helpers local to this file (storage/email/rate-limit helpers,
+//    json_body/respond and session helpers now live in dmsl-common.php,
+//    shared with stripe-webhook.php and dmsl-feedback.php)
 // ---------------------------------------------------------------------
-function json_body() {
-  $raw = file_get_contents('php://input');
-  $data = json_decode($raw, true);
-  return is_array($data) ? $data : [];
-}
-function respond($status, $payload) {
-  http_response_code($status);
-  echo json_encode($payload, JSON_UNESCAPED_UNICODE);
-  exit;
-}
 function generate_otp() { return str_pad((string) random_int(0, 999999), 6, '0', STR_PAD_LEFT); }
 
 function default_progress() {
@@ -85,36 +76,7 @@ function default_progress() {
 }
 
 // ---------------------------------------------------------------------
-// 4. Sessions — 32 random bytes, hex. Cookie HttpOnly; SameSite=Lax; Secure.
-// ---------------------------------------------------------------------
-const SESSION_COOKIE = 'dmsl_session';
-const SESSION_DAYS = 30;
-
-function issue_session(&$db, $email) {
-  $token = random_token();
-  $db['sesiones'][$token] = ['email' => $email, 'expira' => time() + SESSION_DAYS * 86400];
-  setcookie(SESSION_COOKIE, $token, [
-    'expires' => time() + SESSION_DAYS * 86400,
-    'path' => '/',
-    'secure' => true,
-    'httponly' => true,
-    'samesite' => 'Lax',
-  ]);
-  return $token;
-}
-function current_session_email(&$db) {
-  $token = $_COOKIE[SESSION_COOKIE] ?? '';
-  if ($token === '' || !isset($db['sesiones'][$token])) return null;
-  $s = $db['sesiones'][$token];
-  if (($s['expira'] ?? 0) < time()) { unset($db['sesiones'][$token]); return null; }
-  return [$s['email'], $token];
-}
-function clear_session_cookie() {
-  setcookie(SESSION_COOKIE, '', ['expires' => time() - 3600, 'path' => '/', 'secure' => true, 'httponly' => true, 'samesite' => 'Lax']);
-}
-
-// ---------------------------------------------------------------------
-// 5. Router
+// 4. Router
 // ---------------------------------------------------------------------
 $action = $_GET['action'] ?? '';
 $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
@@ -306,6 +268,8 @@ if ($action === 'save-progress' && $method === 'POST') {
   $progress = $body['progress'] ?? null;
   if (!is_array($progress)) respond(400, ['ok' => false, 'error' => 'Invalid progress payload.']);
   $db['usuarios'][$email]['progreso'] = $progress;
+  // Powers the "last active" KPI on the admin Dashboard.
+  $db['usuarios'][$email]['actualizado'] = gmdate('c');
   dmsl_save_db($db);
   respond(200, ['ok' => true]);
 }

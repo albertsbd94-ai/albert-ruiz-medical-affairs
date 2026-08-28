@@ -20,20 +20,32 @@ function dmsl_db_path() {
   return $dentro . '/usuarios.json';
 }
 
+function dmsl_empty_db() {
+  return [
+    'usuarios' => [],
+    'sesiones' => [],
+    'codigos' => [],
+    'codigos_por_sesion' => [],
+    'soporte' => [],
+    'sugerencias' => [],
+    'admin_sesiones' => [],
+  ];
+}
+
 function dmsl_load_db() {
   $path = dmsl_db_path();
-  if (!is_file($path)) return ['usuarios' => [], 'sesiones' => [], 'codigos' => []];
+  if (!is_file($path)) return dmsl_empty_db();
   $fh = @fopen($path, 'r');
-  if (!$fh) return ['usuarios' => [], 'sesiones' => [], 'codigos' => []];
+  if (!$fh) return dmsl_empty_db();
   flock($fh, LOCK_SH);
   $raw = stream_get_contents($fh);
   flock($fh, LOCK_UN);
   fclose($fh);
   $data = json_decode($raw, true);
   if (!is_array($data)) $data = [];
-  if (!isset($data['usuarios'])) $data['usuarios'] = [];
-  if (!isset($data['sesiones'])) $data['sesiones'] = [];
-  if (!isset($data['codigos'])) $data['codigos'] = [];
+  foreach (dmsl_empty_db() as $key => $default) {
+    if (!isset($data[$key])) $data[$key] = $default;
+  }
   return $data;
 }
 
@@ -68,9 +80,18 @@ function brevo_key() {
 const DMSL_SENDER_EMAIL = 'contacto.dmsl@albertruiz.com';
 const DMSL_SENDER_NAME  = 'Digital Medical Science Liaison (DMSL)';
 
-function dmsl_send_email($to_email, $to_name, $subject, $html) {
+function dmsl_send_email($to_email, $to_name, $subject, $html, $replyTo = null) {
   $key = brevo_key();
   if ($key === '') return ['ok' => false, 'error' => 'email_not_configured'];
+  $payload = [
+    'sender' => ['name' => DMSL_SENDER_NAME, 'email' => DMSL_SENDER_EMAIL],
+    'to' => [['email' => $to_email, 'name' => $to_name ?: $to_email]],
+    'subject' => $subject,
+    'htmlContent' => $html,
+  ];
+  if ($replyTo && is_valid_email($replyTo)) {
+    $payload['replyTo'] = ['email' => $replyTo];
+  }
   $ch = curl_init('https://api.brevo.com/v3/smtp/email');
   curl_setopt_array($ch, [
     CURLOPT_RETURNTRANSFER => true,
@@ -81,12 +102,7 @@ function dmsl_send_email($to_email, $to_name, $subject, $html) {
       'content-type: application/json',
       'api-key: ' . $key,
     ],
-    CURLOPT_POSTFIELDS => json_encode([
-      'sender' => ['name' => DMSL_SENDER_NAME, 'email' => DMSL_SENDER_EMAIL],
-      'to' => [['email' => $to_email, 'name' => $to_name ?: $to_email]],
-      'subject' => $subject,
-      'htmlContent' => $html,
-    ]),
+    CURLOPT_POSTFIELDS => json_encode($payload),
   ]);
   $resp = curl_exec($ch);
   $code = (int) curl_getinfo($ch, CURLINFO_HTTP_CODE);
@@ -140,4 +156,80 @@ function normalize_purchase_code($raw) {
   $s = strtoupper(preg_replace('/[^A-Za-z0-9]/', '', (string) $raw));
   if ($s === '') return '';
   return implode('-', str_split($s, 4));
+}
+
+// ---------------------------------------------------------------------
+// 5. JSON request/response helpers — shared by every endpoint file.
+// ---------------------------------------------------------------------
+function json_body() {
+  $raw = file_get_contents('php://input');
+  $data = json_decode($raw, true);
+  return is_array($data) ? $data : [];
+}
+function respond($status, $payload) {
+  http_response_code($status);
+  echo json_encode($payload, JSON_UNESCAPED_UNICODE);
+  exit;
+}
+
+// ---------------------------------------------------------------------
+// 6. Student sessions — 32 random bytes, hex. Cookie HttpOnly; SameSite=Lax;
+//    Secure. Shared by dmsl-auth.php and dmsl-feedback.php (Soporte /
+//    Sugerencias, which need to know which logged-in student is writing).
+// ---------------------------------------------------------------------
+const SESSION_COOKIE = 'dmsl_session';
+const SESSION_DAYS = 30;
+
+function issue_session(&$db, $email) {
+  $token = random_token();
+  $db['sesiones'][$token] = ['email' => $email, 'expira' => time() + SESSION_DAYS * 86400];
+  setcookie(SESSION_COOKIE, $token, [
+    'expires' => time() + SESSION_DAYS * 86400,
+    'path' => '/',
+    'secure' => true,
+    'httponly' => true,
+    'samesite' => 'Lax',
+  ]);
+  return $token;
+}
+function current_session_email(&$db) {
+  $token = $_COOKIE[SESSION_COOKIE] ?? '';
+  if ($token === '' || !isset($db['sesiones'][$token])) return null;
+  $s = $db['sesiones'][$token];
+  if (($s['expira'] ?? 0) < time()) { unset($db['sesiones'][$token]); return null; }
+  return [$s['email'], $token];
+}
+function clear_session_cookie() {
+  setcookie(SESSION_COOKIE, '', ['expires' => time() - 3600, 'path' => '/', 'secure' => true, 'httponly' => true, 'samesite' => 'Lax']);
+}
+
+// ---------------------------------------------------------------------
+// 7. Admin session — completely separate cookie/store from student
+//    sessions, used only by admin-auth.php / admin-data.php (the private
+//    Dashboard). Never overlaps with a student's dmsl_session cookie.
+// ---------------------------------------------------------------------
+const ADMIN_SESSION_COOKIE = 'dmsl_admin_session';
+const ADMIN_SESSION_DAYS = 7;
+
+function issue_admin_session(&$db) {
+  $token = random_token();
+  $db['admin_sesiones'][$token] = ['expira' => time() + ADMIN_SESSION_DAYS * 86400];
+  setcookie(ADMIN_SESSION_COOKIE, $token, [
+    'expires' => time() + ADMIN_SESSION_DAYS * 86400,
+    'path' => '/',
+    'secure' => true,
+    'httponly' => true,
+    'samesite' => 'Lax',
+  ]);
+  return $token;
+}
+function current_admin_session(&$db) {
+  $token = $_COOKIE[ADMIN_SESSION_COOKIE] ?? '';
+  if ($token === '' || !isset($db['admin_sesiones'][$token])) return null;
+  $s = $db['admin_sesiones'][$token];
+  if (($s['expira'] ?? 0) < time()) { unset($db['admin_sesiones'][$token]); return null; }
+  return $token;
+}
+function clear_admin_session_cookie() {
+  setcookie(ADMIN_SESSION_COOKIE, '', ['expires' => time() - 3600, 'path' => '/', 'secure' => true, 'httponly' => true, 'samesite' => 'Lax']);
 }
