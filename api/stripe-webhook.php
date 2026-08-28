@@ -196,5 +196,18 @@ dmsl_save_db($db);
 $subject = $lang === 'es' ? 'Tu código de compra — DMSL Course' : 'Your purchase code — DMSL Course';
 dmsl_send_email($email, $name, $subject, purchase_code_email_html($name, $code, $plan, $lang));
 
+// Hand off to Brevo's CRM side (separate from the transactional email
+// above): tag the buyer as a paying customer so a Brevo automation (e.g.
+// the Instagram/ManyChat nurture sequence) can stop sending them "enrol
+// now" emails, and move them into the 'alumnos' list once Albert creates
+// it and maps its ID in brevo_lists.php. Never blocks the webhook response.
+brevo_upsert_contact($email, [
+  'FIRSTNAME' => $name,
+  'FASE_FUNNEL' => 'comprador',
+  'PLAN_DMSL' => $plan,
+  'IDIOMA_CAMPUS' => $lang,
+  'FECHA_COMPRA' => substr(gmdate('c'), 0, 10),
+], 'alumnos');
+
 http_response_code(200);
 echo json_encode(['ok' => true]);

@@ -89,6 +89,14 @@ if ($action === 'register' && $method === 'POST') {
   $email = normalize_email($body['email'] ?? '');
   $password = (string) ($body['password'] ?? '');
   $purchaseCode = normalize_purchase_code($body['purchase_code'] ?? '');
+  // Best-effort acquisition tracking — whatever the campus page's UTM-capture
+  // snippet found in localStorage, if anything. Never required, just stored
+  // for a future Dashboard breakdown of where students actually come from
+  // (e.g. the Instagram/ManyChat funnel). Trimmed and length-capped since
+  // it's unauthenticated user input landing straight in the JSON store.
+  $utmSource = mb_substr(trim((string) ($body['utm_source'] ?? '')), 0, 60);
+  $utmMedium = mb_substr(trim((string) ($body['utm_medium'] ?? '')), 0, 60);
+  $utmCampaign = mb_substr(trim((string) ($body['utm_campaign'] ?? '')), 0, 60);
   if ($name === '') respond(400, ['ok' => false, 'error' => 'Please enter your full name.']);
   if (!is_valid_email($email)) respond(400, ['ok' => false, 'error' => 'Please enter a valid email address.']);
   if (strlen($password) < 6) respond(400, ['ok' => false, 'error' => 'Password must be at least 6 characters.']);
@@ -126,6 +134,9 @@ if ($action === 'register' && $method === 'POST') {
     'creado' => $existing['creado'] ?? gmdate('c'),
     'progreso' => $existing['progreso'] ?? default_progress(),
     'codigo_compra' => $purchaseCode,
+    'origen_utm' => ($utmSource || $utmMedium || $utmCampaign)
+      ? ['source' => $utmSource, 'medium' => $utmMedium, 'campaign' => $utmCampaign]
+      : ($existing['origen_utm'] ?? null),
   ];
   dmsl_save_db($db);
 

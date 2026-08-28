@@ -39,6 +39,25 @@
 </script>
 </head>
 <body>
+<script>
+// Capture the acquisition source (?utm_source=instagram&utm_medium=manychat...)
+// into localStorage — same-origin, so the campus registration form (Fase 6 of
+// the funnel) can read it later and tell the Dashboard where a student came
+// from. Last-touch wins when UTM params are present; a plain revisit with no
+// params leaves whatever was already captured untouched.
+(function(){
+  try{
+    var p = new URLSearchParams(location.search);
+    var src = p.get('utm_source'), med = p.get('utm_medium'), camp = p.get('utm_campaign');
+    if(src || med || camp){
+      localStorage.setItem('dmsl_utm', JSON.stringify({
+        utm_source: (src||'').slice(0,60), utm_medium: (med||'').slice(0,60), utm_campaign: (camp||'').slice(0,60),
+        captured_at: new Date().toISOString()
+      }));
+    }
+  }catch(e){}
+})();
+</script>
 <a href="#main" class="skip-link">Skip to content</a>
 <header class="nav" data-nav>
   <div class="nav-inner">

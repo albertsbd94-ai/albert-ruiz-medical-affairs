@@ -113,6 +113,55 @@ function dmsl_send_email($to_email, $to_name, $subject, $html, $replyTo = null) 
   return ['ok' => true];
 }
 
+// Optional mapping of friendly list names ('alumnos', 'leads_ig', ...) to
+// real Brevo list IDs, so code never hardcodes a numeric ID. Absent by
+// default — brevo_upsert_contact() still tags/updates the contact's
+// attributes without a list, it just skips list membership until this is
+// configured. File format: <?php return ['alumnos' => 12, ...];
+function brevo_list_id($name) {
+  $candidates = [dirname(__DIR__, 2) . '/brevo_lists.php', __DIR__ . '/../datos/brevo_lists.php'];
+  foreach ($candidates as $path) {
+    if (is_file($path)) {
+      $lists = @include $path;
+      if (is_array($lists) && isset($lists[$name])) return (int) $lists[$name];
+    }
+  }
+  return null;
+}
+
+// Creates or updates a Brevo marketing contact (separate from transactional
+// email — this is the CRM/automation side). Used to hand off funnel leads
+// and, from stripe-webhook.php, to tag a buyer so a Brevo automation can
+// stop sending them "enrol now" nurture emails once they've actually paid.
+// Best-effort: never throws, and a failure here must never block the
+// caller's own critical path (minting a purchase code, sending its email).
+function brevo_upsert_contact($email, $attributes = [], $listName = null) {
+  $key = brevo_key();
+  $email = normalize_email($email);
+  if ($key === '' || !is_valid_email($email)) return ['ok' => false, 'error' => 'not_configured'];
+  $payload = ['email' => $email, 'attributes' => $attributes, 'updateEnabled' => true];
+  if ($listName) {
+    $listId = brevo_list_id($listName);
+    if ($listId) $payload['listIds'] = [$listId];
+  }
+  $ch = curl_init('https://api.brevo.com/v3/contacts');
+  curl_setopt_array($ch, [
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_POST => true,
+    CURLOPT_TIMEOUT => 15,
+    CURLOPT_HTTPHEADER => ['accept: application/json', 'content-type: application/json', 'api-key: ' . $key],
+    CURLOPT_POSTFIELDS => json_encode($payload),
+  ]);
+  $resp = @curl_exec($ch);
+  $code = (int) curl_getinfo($ch, CURLINFO_HTTP_CODE);
+  $err = curl_error($ch);
+  curl_close($ch);
+  if ($resp === false) return ['ok' => false, 'error' => 'network: ' . $err];
+  // Brevo returns 201 (created) or 204 (updated, no body) on success.
+  if ($code < 200 || $code >= 300) return ['ok' => false, 'error' => 'brevo_http_' . $code, 'body' => $resp];
+  return ['ok' => true];
+}
+
 // ---------------------------------------------------------------------
 // 3. Small generic helpers
 // ---------------------------------------------------------------------
