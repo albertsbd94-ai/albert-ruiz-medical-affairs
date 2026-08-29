@@ -221,7 +221,11 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.15; letter-spacing: -0.01em;
 .btn-ghost:hover { background: hsl(var(--muted)); }
 
 .btn-sm { padding: .5rem 1.1rem; font-size: .875rem; }
-.btn-block { width: 100%; }
+/* A full-width button can carry a long, specific label (e.g. a plan name
+   and price) that won't fit on one line at mobile widths — let it wrap
+   there rather than forcing the button (and its grid track) wider than
+   the viewport. Inline buttons keep the base .btn white-space: nowrap. */
+.btn-block { width: 100%; white-space: normal; text-align: center; }
 
 .btn-group { display: flex; flex-wrap: wrap; align-items: center; gap: .85rem; }
 .btn-group.center { justify-content: center; }
@@ -293,16 +297,22 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.15; letter-spacing: -0.01em;
 .tag.tag-accent { background: hsl(var(--accent) / 0.1); color: hsl(var(--accent)); }
 
 /* Grids */
-.grid-2 { display: grid; gap: 1.5rem; grid-template-columns: 1fr; }
-.grid-3 { display: grid; gap: 1.5rem; grid-template-columns: 1fr; }
-.grid-4 { display: grid; gap: 1.5rem; grid-template-columns: 1fr; }
+/* minmax(0, 1fr) rather than a bare 1fr — a bare 1fr track won't shrink
+   below its content's min-content width, so one long unbreakable child
+   (e.g. a nowrap button label) can force the whole grid — and the page —
+   wider than the viewport on mobile. minmax(0, 1fr) lets the track match
+   the available width and pushes any remaining overflow onto the child
+   itself, where .btn-block below is set up to wrap instead of spilling. */
+.grid-2 { display: grid; gap: 1.5rem; grid-template-columns: minmax(0, 1fr); }
+.grid-3 { display: grid; gap: 1.5rem; grid-template-columns: minmax(0, 1fr); }
+.grid-4 { display: grid; gap: 1.5rem; grid-template-columns: minmax(0, 1fr); }
 @media (min-width: 720px) {
-  .grid-2 { grid-template-columns: repeat(2, 1fr); }
-  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (min-width: 960px) {
-  .grid-3 { grid-template-columns: repeat(3, 1fr); }
-  .grid-4 { grid-template-columns: repeat(4, 1fr); }
+  .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 
 /* =============================================================
@@ -373,6 +383,14 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.15; letter-spacing: -0.01em;
 }
 .nav-mobile a:hover, .nav-mobile a[aria-current="page"] { background: hsl(var(--muted)); color: hsl(var(--primary)); }
 .nav-mobile .btn { margin-top: .5rem; }
+/* .nav-mobile a's own color rule above (class+tag) is more specific than
+   a bare .btn-primary/.btn-outline/.btn-secondary (class only), so it was
+   winning and painting every mobile-menu button in the default nav text
+   color instead of its intended button color — worst on .btn-primary,
+   where dark text landed on a solid purple background. Restore each. */
+.nav-mobile a.btn-primary { color: hsl(var(--primary-foreground)); }
+.nav-mobile a.btn-outline { color: hsl(var(--primary)); }
+.nav-mobile a.btn-secondary { color: hsl(var(--secondary-foreground)); }
 @media (min-width: 1024px) { .nav-mobile { display: none !important; } }
 
 /* =============================================================
