@@ -14,7 +14,7 @@
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com/">
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Bricolage+Grotesque:wght@600;700;800&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
   --primary:#7A00E6;
@@ -37,8 +37,8 @@
   --danger:#c23b53;
   --danger-bg:#fdf3f4;
   --danger-border:#f4d4d9;
-  --font-title:'Poppins',system-ui,-apple-system,sans-serif;
-  --font-body:'Poppins',system-ui,-apple-system,sans-serif;
+  --font-title:'Bricolage Grotesque',system-ui,-apple-system,sans-serif;
+  --font-body:'DM Sans',system-ui,-apple-system,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
@@ -915,12 +915,12 @@ function certificateHTML(){
   const date = new Date().toLocaleDateString('en-GB',{day:'2-digit',month:'long',year:'numeric'});
   return `<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Certificate of Completion - ${name}</title>
   <style>
-  body{font-family:'Poppins',system-ui,sans-serif;background:#F0EAF7;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;padding:40px;}
+  body{font-family:'DM Sans',system-ui,sans-serif;background:#F0EAF7;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;padding:40px;}
   .cert{max-width:800px;width:100%;background:#fff;border-radius:22px;padding:60px 50px;text-align:center;position:relative;box-shadow:0 20px 60px rgba(94,18,161,.18);}
   .cert:before{content:"";position:absolute;inset:0;border-radius:22px;padding:3px;background:linear-gradient(135deg,#7A00E6,#AB30E8);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;}
   .eyebrow{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#AB30E8;font-weight:700;}
-  h1{font-family:'Poppins',sans-serif;color:#5E12A1;font-size:26px;margin:14px 0 6px;font-weight:700;}
-  .name{font-family:'Poppins',sans-serif;font-size:34px;color:#1F242E;margin:26px 0;font-weight:700;border-bottom:2px solid #F0EAF7;display:inline-block;padding-bottom:10px;}
+  h1{font-family:'Bricolage Grotesque',sans-serif;color:#5E12A1;font-size:26px;margin:14px 0 6px;font-weight:700;}
+  .name{font-family:'Bricolage Grotesque',sans-serif;font-size:34px;color:#1F242E;margin:26px 0;font-weight:700;border-bottom:2px solid #F0EAF7;display:inline-block;padding-bottom:10px;}
   .course{font-size:15px;color:#374151;max-width:560px;margin:0 auto;line-height:1.6;}
   .course b{color:#5E12A1;}
   .meta{display:flex;justify-content:center;gap:44px;margin-top:34px;flex-wrap:wrap;}
