@@ -1,7 +1,9 @@
 /* =============================================================================
    Albert Ruiz de la Oliva — Medical Affairs × AI × Digital Innovation
    Design System — WHITE + DARK TEXT + PURPLE.
-   Poppins everywhere. No dark mode as primary. No glassmorphism/neomorphism.
+   Bricolage Grotesque (display/headings) + DM Sans (body) + Spline Sans
+   Mono (eyebrows/labels) — font combination adapted from avatarhype.ai.
+   No dark mode as primary. No glassmorphism/neomorphism.
    ============================================================================= */
 
 /* =============================================================
@@ -41,8 +43,13 @@
   --radius-md: 0.75rem;  /* rounded-xl */
   --radius-full: 999px;
 
-  /* Type */
-  --font-sans: "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  /* Type — font combination adapted from avatarhype.ai: Bricolage Grotesque
+     for display/headings (their .disp class, weight 800), DM Sans for body
+     (their body{} rule), Spline Sans Mono for small labels (their most-used
+     accent font, 58 references — used here for eyebrows/kickers). */
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Spline Sans Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
 
   /* Easing */
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
@@ -83,7 +90,7 @@ button { font: inherit; color: inherit; cursor: pointer; border: 0; background: 
 a { color: inherit; text-decoration: none; }
 ul, ol { list-style: none; }
 p { text-wrap: pretty; }
-h1, h2, h3, h4 { text-wrap: balance; line-height: 1.15; letter-spacing: -0.01em; font-weight: 700; }
+h1, h2, h3, h4 { text-wrap: balance; line-height: 1.15; letter-spacing: -0.02em; font-weight: 800; font-family: var(--font-display); }
 
 ::selection { background: hsl(var(--primary) / 0.18); color: hsl(var(--foreground)); }
 
@@ -131,6 +138,7 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.15; letter-spacing: -0.01em;
 
 .eyebrow {
   display: inline-flex; align-items: center; gap: .5rem;
+  font-family: var(--font-mono);
   font-size: .8125rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase;
   color: hsl(var(--primary));
   background: hsl(var(--primary) / 0.08);
