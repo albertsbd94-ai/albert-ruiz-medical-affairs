@@ -1,0 +1,72 @@
+{
+  "moduleNum": 2,
+  "moduleTitle": "The Modern MSL Role",
+  "lessonNum": 1,
+  "lessonTitle": "What a Medical Science Liaison actually does",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Core Definition",
+      "title": "The Field-Facing Scientific Expert",
+      "bullets": [
+        "MSLs are Medical Affairs' field-facing scientific experts",
+        "They build peer-to-peer relationships with physicians and researchers",
+        "They translate clinical evidence into non-promotional dialogue",
+        "Value comes from scientific credibility, not from selling"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Four Pillars",
+      "title": "What Fills an MSL's Day",
+      "bullets": [
+        "Scientific exchange with KOLs and treating physicians",
+        "Insight generation — capturing what experts say",
+        "Support for evidence generation — investigators, registries, RWE gaps",
+        "Internal support — medical questions, advisory boards, material review"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Expertise Behind It",
+      "title": "Deep Science Meets Field Work",
+      "bullets": [
+        "Most MSLs hold a PharmD, PhD, MD or equivalent degree",
+        "The role combines scientific depth with relationship-driven field work",
+        "No volume or revenue target, unlike a sales representative",
+        "Trained to give balanced answers, including unfavourable data"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Where the Work Happens",
+      "title": "The Territory Is the Office",
+      "bullets": [
+        "An MSL's office is hospitals, academic centers, clinics and virtual rooms",
+        "Medical Advisors and Medical Information typically work from a fixed location",
+        "That field presence is what makes peer-to-peer trust possible"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "A Common Mistake",
+      "title": "Not a More Scientific Sales Rep",
+      "bullets": [
+        "New MSLs often frame the role as sales with a science degree",
+        "That framing gets the role backwards",
+        "Being a trustworthy scientific resource comes first",
+        "Commercial benefit is a downstream consequence, never the stated goal"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "The MSL role is built on scientific credibility, not on selling",
+    "bullets": [
+      "The role rests on four pillars: exchange, insight, evidence support, internal support",
+      "Deep scientific training plus field-based relationship work sets MSLs apart",
+      "Any commercial benefit follows credibility, it is never the objective itself"
+    ],
+    "nextLesson": "Difference between MSL, Medical Advisor and Medical Manager"
+  }
+}

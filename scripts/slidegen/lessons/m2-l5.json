@@ -1,0 +1,78 @@
+{
+  "moduleNum": 2,
+  "moduleTitle": "The Modern MSL Role",
+  "lessonNum": 5,
+  "lessonTitle": "Scientific exchange",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "A Protected Category",
+      "title": "Scientific Exchange Is Not Promotion",
+      "bullets": [
+        "A genuine, balanced, non-promotional dialogue about science",
+        "Regulators and codes of practice treat it as a distinct category",
+        "That protection only holds if the conversation meets real conditions"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Condition One",
+      "title": "It Must Be Scientifically Balanced",
+      "bullets": [
+        "Present favourable and unfavourable data alike",
+        "Acknowledge the real limitations of the evidence",
+        "Not just the parts that support the product"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Condition Two",
+      "title": "It Must Be Genuinely Scientific in Purpose",
+      "bullets": [
+        "Responsive to the physician's question or a legitimate scientific reason",
+        "Never driven by a commercial calendar or sales target",
+        "Off-label discussion must follow local legal and company framework"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Condition Three",
+      "title": "It Must Be Documented Accurately",
+      "bullets": [
+        "Accurate documentation matters for compliance",
+        "It also ensures the insight generated isn't lost"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Real Structure",
+      "title": "A Two-Way Exchange, Not a Presentation",
+      "bullets": [
+        "MSL brings trial data, mechanism of action and disease-state expertise",
+        "Physician brings real-world experience and unanticipated questions",
+        "A conversation where only the MSL talks is a presentation, not exchange",
+        "Best MSLs treat every exchange as a chance to ask a useful question"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why the Boundaries Matter",
+      "title": "Balance and Purpose Keep It Credible",
+      "bullets": [
+        "Techniques for running it well are covered in detail in Module 4",
+        "It's structured, principled communication with real boundaries",
+        "Staying inside those boundaries keeps Medical Affairs credible and compliant"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Scientific exchange is a protected, two-way dialogue with real boundaries",
+    "bullets": [
+      "It must be balanced, genuinely scientific in purpose, and documented",
+      "It works only when the physician talks as much as the MSL does",
+      "Those boundaries are what keep the entire role credible and compliant"
+    ],
+    "nextLesson": "Internal cross-functional collaboration"
+  }
+}

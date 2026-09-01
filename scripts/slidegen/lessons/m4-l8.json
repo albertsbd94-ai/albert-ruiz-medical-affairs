@@ -1,0 +1,87 @@
+{
+  "moduleNum": 4,
+  "moduleTitle": "Scientific Exchange & High-Impact Conversations",
+  "lessonNum": 8,
+  "lessonTitle": "Medical Closing and Follow-Up",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Setting the Tone",
+      "title": "Closing Is Not a Sales Close in Disguise",
+      "bullets": [
+        "Every scientific exchange needs a deliberate ending",
+        "How an MSL closes shapes the relationship almost as much as the content did",
+        "No ask for commitment to prescribe, no push toward a decision"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Discipline",
+      "title": "Summarise, Confirm, Set Up What's Next",
+      "bullets": [
+        "A brief, accurate summary of the key points covered",
+        "Gives the physician a final chance to correct or add something",
+        "Explicitly restates open items: a paper to send, a question to escalate, a connection requested"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Common Failure",
+      "title": "Unstated Expectations Quietly Erode Trust",
+      "bullets": [
+        "Leaving open items unstated at the end of a visit is common and damaging",
+        "Even unstated expectations erode trust over successive visits",
+        "Explicitly restating commitments protects the relationship"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Where It's Honoured or Forgotten",
+      "title": "Every Commitment Needs a Concrete Plan",
+      "bullets": [
+        "Send a promised article within a specific number of days",
+        "Escalate an unanswered question through the correct channel and report back",
+        "Loop in a colleague as promised"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Fastest Way to Lose Trust",
+      "title": "Promises That Quietly Never Materialise",
+      "bullets": [
+        "Good conversations followed by broken commitments damage long-term relationships fast",
+        "Even once or twice is often enough for a senior expert to recalibrate",
+        "Future promises from that MSL are then taken less seriously"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Closing the Internal Loop",
+      "title": "Document Promptly, Escalate Fast",
+      "bullets": [
+        "Document the visit accurately and promptly, ideally the same day",
+        "Log any insight in a form colleagues can actually use",
+        "Flag anything needing faster escalation through the appropriate compliant channel"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Setting Up What's Next",
+      "title": "Plant a Thread for the Next Conversation",
+      "bullets": [
+        "A well-closed conversation leaves a genuine, specific reason to continue",
+        "An upcoming publication, a question needing more time, an evolving clinical question",
+        "Makes engagement genuinely longitudinal, not a series of disconnected visits"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "A disciplined close and reliable follow-through are what make a relationship cumulative, not just pleasant",
+    "bullets": [
+      "Summarise the visit and explicitly restate every open commitment",
+      "Honour commitments on a concrete, time-bound plan every time",
+      "Document promptly and leave a genuine thread for the next conversation"
+    ]
+  }
+}

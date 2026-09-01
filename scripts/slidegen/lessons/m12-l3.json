@@ -1,0 +1,79 @@
+{
+  "moduleNum": 12,
+  "moduleTitle": "Medical Affairs Leadership & Career Accelerator",
+  "lessonNum": 3,
+  "lessonTitle": "Influence without authority",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Why It's Essential",
+      "title": "Leading Without a Direct Reporting Line",
+      "bullets": [
+        "One of the most determining and hardest competencies to develop in Medical Affairs",
+        "The function rarely holds hierarchical authority over the teams it must coordinate with",
+        "Commercial, market access and clinical research all require constant cross-functional coordination"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Foundation",
+      "title": "Credibility Comes Before Influence",
+      "bullets": [
+        "Nobody sustainably follows someone they don't see as genuinely competent",
+        "Scientific rigor and reliable information are the base of all influence",
+        "Consistency between what you say and what you do matters just as much"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Build It Before You Need It",
+      "title": "Networks and Evidence-Based Persuasion",
+      "bullets": [
+        "Cultivate trust with key stakeholders before you need their collaboration",
+        "A prior relationship makes the ask-for-support conversation far more receptive",
+        "Connect your goal explicitly to the other party's own interests and priorities",
+        "This earns genuine support, not superficial compliance"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Reading the Room",
+      "title": "Listen First, Then Adapt the Message",
+      "bullets": [
+        "Understand each function's concerns and language before presenting anything",
+        "A market access lead, a medical director and a clinical investigator care about different things",
+        "Adapt how an idea is framed without compromising its scientific content or independence"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Subtle Move",
+      "title": "Persuasion Over Positional Authority",
+      "bullets": [
+        "Minimize any display of authority and lead through reasoned persuasion instead",
+        "Leaders who avoid imposing their position earn more solid, lasting support",
+        "This beats relying on formal hierarchy to get buy-in"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Payoff",
+      "title": "The Voice That Gets Sought Out",
+      "bullets": [
+        "Medical Affairs has no direct commercial decision power but indispensable scientific knowledge",
+        "Mastering influence without authority is what gets that voice heard and integrated",
+        "Over time, it becomes the voice proactively sought in major strategic decisions"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Influence without authority turns scientific credibility into real strategic weight",
+    "bullets": [
+      "Credibility built on rigor and consistency is the non-negotiable starting point",
+      "Networks, evidence-based persuasion and message adaptation build influence deliberately",
+      "Leading through persuasion, not positional authority, earns more lasting support"
+    ],
+    "nextLesson": "Executive communication"
+  }
+}

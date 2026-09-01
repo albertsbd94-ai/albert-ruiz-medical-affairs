@@ -1,0 +1,80 @@
+{
+  "moduleNum": 9,
+  "moduleTitle": "Medical Strategy & Medical Plan",
+  "lessonNum": 6,
+  "lessonTitle": "Publication plan",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "What It Coordinates",
+      "title": "Planning How Evidence Reaches the World",
+      "bullets": [
+        "Organizes in advance how and when evidence is communicated scientifically",
+        "Covers peer-reviewed articles, congress presentations, and other formal formats",
+        "Builds the body of evidence that sustains long-term product credibility"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Building the Plan",
+      "title": "From Evidence Inventory to Journal Choice",
+      "bullets": [
+        "Starts with an inventory of all available and in-development evidence",
+        "Trials, observational studies, RWE analyses, investigator-initiated research",
+        "Prioritizes journals and congresses by clinical relevance, audience, and impact",
+        "The literature favors surgically selected high-impact outlets over sheer volume"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Timing Is Strategic",
+      "title": "A Coordinated Publication Timeline",
+      "bullets": [
+        "Aligns publication timing with launches, congresses, and regulatory milestones",
+        "No publication should be delayed unnecessarily",
+        "None should be rushed in a way that compromises peer-review rigor"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Ethical Backbone",
+      "title": "Good Publication Practice Standards",
+      "bullets": [
+        "Respect genuine academic authorship at every step",
+        "Full transparency on funding and the sponsoring company's role",
+        "Publish results regardless of whether they favor the product",
+        "Directly combats the publication bias covered in an earlier module"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "For the MSL",
+      "title": "A Bridge Before and After Publication",
+      "bullets": [
+        "Rarely an author, but brings field knowledge of what will resonate locally",
+        "Helps published content reach the right HCPs with the right context",
+        "Never distributes content ahead of official publication or embargo policy"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why It Matters",
+      "title": "Turning Evidence into Public Knowledge",
+      "bullets": [
+        "A publication plan is not an end in itself",
+        "It's the mechanism that turns generated evidence into public, citable knowledge",
+        "Available to the whole scientific community, not just those with company access"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "The publication plan turns generated evidence into credible, public scientific knowledge",
+    "bullets": [
+      "Journal and congress choice is prioritized by relevance, not volume",
+      "Good Publication Practice standards protect authorship and transparency",
+      "The MSL bridges field insight into the plan and context back out to HCPs"
+    ],
+    "nextLesson": "Congress plan"
+  }
+}

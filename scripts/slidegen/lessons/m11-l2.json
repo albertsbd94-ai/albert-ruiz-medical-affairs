@@ -1,0 +1,73 @@
+{
+  "moduleNum": 11,
+  "moduleTitle": "AI for Medical Affairs",
+  "lessonNum": 2,
+  "lessonTitle": "ChatGPT for strategic thinking",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Real Value",
+      "title": "A Thinking Partner, Not a Data Source",
+      "bullets": [
+        "ChatGPT's main value for an MSL is structuring strategic thinking, not fact lookup",
+        "Other specialized tools offer more reliable scientific data",
+        "It helps organize ideas, explore angles, and speed up first drafts",
+        "Verification and refinement always stay with the MSL"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "In Practice",
+      "title": "Building a Medical Plan or Account Strategy",
+      "bullets": [
+        "Feed it the situation: competitive landscape, evidence gaps, objectives",
+        "Ask it to organize those pieces into a logical framework",
+        "It can surface questions the MSL hadn't considered",
+        "The MSL still revises with verified primary source data"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Rehearsal Mode",
+      "title": "Simulating Difficult KOL Conversations",
+      "bullets": [
+        "Ask ChatGPT to role play a skeptical or critical KOL",
+        "Useful for rehearsing objection handling from Module 4",
+        "Builds confidence before the real, high stakes conversation",
+        "Never substitutes real product and evidence knowledge"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Everyday Use",
+      "title": "General Productivity Tasks",
+      "bullets": [
+        "Summarizing long documents",
+        "Drafting first structures for presentations",
+        "Adapting the same content for different formats and audiences",
+        "Turning a technical summary into an accessible explanation"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Hard Limits",
+      "title": "What ChatGPT Should Never Be Used For",
+      "bullets": [
+        "Never a primary source for specific clinical data: doses, trial results, statistics",
+        "Always verify such figures against the original publication or label",
+        "Never enter confidential company data, unpublished results, or identifiable patient or HCP information",
+        "These information security rules are covered fully in Lesson 9"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "ChatGPT earns its place as a strategic thinking accelerator, never as a source of clinical facts",
+    "bullets": [
+      "Strongest use cases are Medical Plan structuring, objection rehearsal, and drafting",
+      "Specific clinical data always needs primary source verification",
+      "Confidential or patient identifiable information must never enter a prompt"
+    ],
+    "nextLesson": "Claude for long documents and artifacts"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "moduleNum": 9,
+  "moduleTitle": "Medical Strategy & Medical Plan",
+  "lessonNum": 2,
+  "lessonTitle": "Strategic imperatives",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Core Idea",
+      "title": "Concentrating Effort Where It Matters Most",
+      "bullets": [
+        "A strategic imperative is a priority significant enough to concentrate resources on",
+        "The organization spends disproportionate time and attention on it",
+        "Rather than spreading effort evenly across every possible activity",
+        "It prevents the most common planning error: doing everything a little"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Where They Come From",
+      "title": "Imperatives Emerge from Situation Analysis",
+      "bullets": [
+        "What is the biggest scientific risk or opportunity for this cycle",
+        "Which evidence gap, if closed, would most improve appropriate adoption",
+        "What competitive or regulatory shift demands a priority medical response",
+        "What unmet clinical or patient need represents the greatest opportunity"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "What Makes One Work",
+      "title": "Specific, Measurable, Patient-Connected",
+      "bullets": [
+        "Specific, not generic: name the exact gap, population, and evidence",
+        "Example: closing a renal impairment evidence gap flagged in 80% of nephrologist interactions",
+        "Measurable, with a clear criterion for what progress looks like",
+        "Connected to a real patient or clinical benefit, not just an internal target"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Hard Part",
+      "title": "Prioritizing Means Saying No",
+      "bullets": [
+        "Deliberately giving up interesting activities outside the top priorities",
+        "This is uncomfortable, especially for motivated field teams",
+        "A plan that tries to prioritize everything ends up prioritizing nothing"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Staying Current",
+      "title": "Imperatives Are Reviewed, Not Fixed",
+      "bullets": [
+        "Reassessed at the annual planning cycle and whenever the environment shifts",
+        "Triggers include new competitive data, regulatory change, or a safety finding",
+        "A rigid plan that can't adapt its imperatives quickly loses its strategic value"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "For the MSL",
+      "title": "Imperatives Guide Daily Field Decisions",
+      "bullets": [
+        "Knowing the current imperatives enables autonomous, coherent field decisions",
+        "Which congress to prioritize, which insight to escalate with urgency",
+        "Which relationship to invest in more heavily, without checking every call upward"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Strategic imperatives focus a Medical Plan's limited resources on what matters most",
+    "bullets": [
+      "They emerge from situation analysis, not from intuition or habit",
+      "A strong imperative is specific, measurable, and tied to patient benefit",
+      "They are revisited whenever the competitive or regulatory picture changes"
+    ],
+    "nextLesson": "Evidence gaps"
+  }
+}

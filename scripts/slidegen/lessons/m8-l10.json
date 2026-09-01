@@ -1,0 +1,80 @@
+{
+  "moduleNum": 8,
+  "moduleTitle": "Congress Excellence",
+  "lessonNum": 10,
+  "lessonTitle": "Post-congress follow-up",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Real Payoff",
+      "title": "Value Is Realized After the Congress, Not During It",
+      "bullets": [
+        "Commitments, relationships, and insights become real value in the weeks after",
+        "Follow-up is the least visible but most decisive phase of the whole cycle",
+        "It's also the phase most often neglected under pressure to return to normal work"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Block One",
+      "title": "Deliver on Every Commitment You Made",
+      "bullets": [
+        "Send that article, make that introduction, share that study information",
+        "Do it within a short, reasonable window, ideally the first few days",
+        "Fast, precise follow-through consolidates the trust just built",
+        "Late or generic follow-through can undo much of the relational value"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Block Two",
+      "title": "Update the CRM Systematically",
+      "bullets": [
+        "Log every relevant interaction held during the congress",
+        "Update each KOL or DOL's profile and relationship level",
+        "Schedule the next cultivation steps per the Module 3 engagement plan",
+        "Don't let the contact go cold until the next casual interaction"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Block Three",
+      "title": "Turn Insights Into Action",
+      "bullets": [
+        "Prioritized insights from the debrief can't just sit in a filed document",
+        "Actively communicate them to evidence generation, strategy, and HEOR teams",
+        "Track explicitly whether they were incorporated into any decision or plan",
+        "That closes the loop between capturing an insight and actually using it"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Block Four",
+      "title": "Evaluate the Congress Against Its Own Objectives",
+      "bullets": [
+        "Honestly review whether the planned success indicators were met",
+        "Qualified interactions, insights captured, key session coverage",
+        "Identify what worked and what could improve next time",
+        "Document those lessons so next year's planning starts from a stronger base"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Bottom Line",
+      "title": "Follow-Up Sustains What the Congress Built",
+      "bullets": [
+        "A congress without rigorous follow-up wastes much of its investment",
+        "Disciplined follow-up turns a one-time event into value sustained all year"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Follow-up is what converts a congress from a moment into lasting strategic value",
+    "bullets": [
+      "Fast, precise delivery on commitments protects the trust you built",
+      "CRM updates and insight follow-through close the loop on the event",
+      "Honest evaluation against original objectives improves every future congress"
+    ]
+  }
+}

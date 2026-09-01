@@ -1,0 +1,72 @@
+{
+  "moduleNum": 7,
+  "moduleTitle": "Clinical Research, RWE & Evidence Generation",
+  "lessonNum": 3,
+  "lessonTitle": "Observational Studies",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Two Types",
+      "title": "Where Observational Studies Come From",
+      "bullets": [
+        "Company-sponsored: designed internally, run by clinical study or HEOR teams",
+        "Academic or scientific-society studies, governed more like an IIS",
+        "Both are observational rather than interventional in nature",
+        "MSLs support both, always within non-promotional limits"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Data",
+      "title": "Existing Records or a Real-Practice Cohort",
+      "bullets": [
+        "Often draw on EHRs, insurer or hospital databases, disease registries",
+        "Or prospectively track a cohort already on standard treatment",
+        "The study never modifies the patient's actual care",
+        "That non-intervention is what separates it from a clinical trial legally"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "MSL Contribution",
+      "title": "Value at Every Stage",
+      "bullets": [
+        "Design: share field clinical questions with internal evidence teams",
+        "Recruitment: inform investigators of studies open to their site",
+        "Always through formal channels, never as a commercial approach",
+        "Dissemination: help findings reach the right audience with context"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "A Common Challenge",
+      "title": "Robust Evidence Takes Years",
+      "bullets": [
+        "Unlike a trial's fixed timeline, cohorts need years to mature",
+        "Sufficient size and exposure time are needed for robust results",
+        "Managing HCP expectations about that timeline is part of the MSL role"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Bigger Picture",
+      "title": "The Bridge to Real Patients",
+      "bullets": [
+        "Observational studies answer how a treatment works in real patients",
+        "They bridge controlled trial evidence and everyday clinical reality",
+        "Understanding methodology lets an MSL explain what a study can answer",
+        "And just as honestly, what it cannot answer yet"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Observational studies bridge trial evidence and real practice, and the MSL supports them at every stage without crossing into promotion",
+    "bullets": [
+      "Non-intervention is what defines and protects this study type legally",
+      "MSL value spans design input, recruitment, and honest dissemination",
+      "Robust results take years, and setting that expectation is part of the job"
+    ],
+    "nextLesson": "Patient Registries"
+  }
+}

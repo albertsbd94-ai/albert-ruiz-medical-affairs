@@ -1,0 +1,80 @@
+{
+  "moduleNum": 8,
+  "moduleTitle": "Congress Excellence",
+  "lessonNum": 4,
+  "lessonTitle": "Session tracking",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Constraint",
+      "title": "Dozens of Sessions, One Person",
+      "bullets": [
+        "A large congress can run dozens or even hundreds of simultaneous sessions",
+        "No single MSL can attend everything",
+        "Session tracking turns that limit into strategic coverage instead of random attendance"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Step One",
+      "title": "Prioritize Before the Congress Starts",
+      "bullets": [
+        "Must-attend: anything on your product, its comparator, or a priority KOL talk",
+        "High-value but optional: sessions on emerging therapeutic-area trends",
+        "Coverable without attending: via a teammate's summary or the published abstract"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Step Two",
+      "title": "Coordinate Coverage as a Team",
+      "bullets": [
+        "Relevant session volume often exceeds what one MSL can cover",
+        "Split key sessions among the MSLs present on site",
+        "Assign someone to take structured notes on each one",
+        "Consolidate everything into a shared repository to avoid gaps and overlap"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Step Three",
+      "title": "What Structured Notes Actually Capture",
+      "bullets": [
+        "The core scientific message of the talk",
+        "Concrete data: effect size, population studied, comparator",
+        "Methodological limitations raised by the speaker or the Q&A",
+        "Audience reaction, and any direct implication for your own product"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Tools",
+      "title": "Real-Time Capture Beats Memory",
+      "bullets": [
+        "Congress intelligence apps or simple shared templates enable live capture",
+        "Notes are timestamped, attributed, and instantly available to the team",
+        "The alternative is relying on memory or notes consolidated days later, once nuance is gone"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Result",
+      "title": "From Anecdotal Attendance to Collective Intelligence",
+      "bullets": [
+        "Well-executed session tracking is systematic, not anecdotal",
+        "It converts individual attendance into actionable scientific intelligence",
+        "That intelligence serves the whole medical organization, not just the attendee"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Session tracking turns limited attendance into deliberate, team-wide coverage",
+    "bullets": [
+      "Prioritize sessions before the congress, not while standing outside the room",
+      "Split coverage across the team and consolidate notes in one place",
+      "Structured, real-time notes beat memory every time"
+    ],
+    "nextLesson": "Poster walks"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "moduleNum": 8,
+  "moduleTitle": "Congress Excellence",
+  "lessonNum": 6,
+  "lessonTitle": "Ethical competitor intelligence",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Setting",
+      "title": "Competition Plays Out in the Open",
+      "bullets": [
+        "Every active company in the therapeutic area is present and visible",
+        "Presentations, stands, satellite symposia generate competitive information",
+        "An MSL inevitably absorbs some of it during normal activity",
+        "The real question is not whether, but how to do it ethically"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Principle",
+      "title": "Legitimate Intelligence Comes Only From Public Sources",
+      "bullets": [
+        "Oral presentations, posters, and symposia open to the public",
+        "Materials freely distributed at stands",
+        "Official congress publications and abstracts",
+        "Taking notes on a public talk or openly stated booth messaging is fair game"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Where the Line Sits",
+      "title": "What Is Never Acceptable",
+      "bullets": [
+        "Obtaining information through deception or hiding your affiliation",
+        "Accessing restricted materials or sessions without authorization",
+        "Posing as an HCP or unaffiliated attendee to enter a restricted symposium",
+        "Pressuring competitor stand staff, often junior, to reveal unpublished strategy"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Right Channel",
+      "title": "Route Intelligence Through Formal Processes",
+      "bullets": [
+        "Ethically gathered intelligence goes through a dedicated CI function",
+        "Not used informally or directly in HCP conversations",
+        "Informal comparative use risks unauthorized comparative communication",
+        "Many markets impose specific regulatory and compliance restrictions here"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Proving It's Clean",
+      "title": "Documentation Is a Compliance Safeguard",
+      "bullets": [
+        "Governance frameworks require traceable capture",
+        "Record who captured the information, when, and from what public source",
+        "This improves the quality of aggregate competitive analysis",
+        "It also protects the organization in any later audit"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why It's Worth It",
+      "title": "Discipline Protects the Value, Not Just the Rules",
+      "bullets": [
+        "This discipline is not a limit on the value an MSL can add",
+        "It is what makes competitive intelligence sustainable and defensible",
+        "It stays coherent with Medical Affairs' reputation for integrity"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Competitive intelligence is only valuable if it is gathered ethically and used correctly",
+    "bullets": [
+      "Public, open sources are the only legitimate origin for this information",
+      "Deception, restricted access, and pressure tactics are always off-limits",
+      "Formal CI channels and traceable documentation keep it defensible"
+    ],
+    "nextLesson": "Insight capture"
+  }
+}

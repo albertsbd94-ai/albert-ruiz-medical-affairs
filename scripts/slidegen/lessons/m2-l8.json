@@ -1,0 +1,79 @@
+{
+  "moduleNum": 2,
+  "moduleTitle": "The Modern MSL Role",
+  "lessonNum": 8,
+  "lessonTitle": "The MSL as strategic medical partner",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Bringing It Together",
+      "title": "From Field Scientist to Strategic Partner",
+      "bullets": [
+        "The modern MSL shapes evidence-generation strategy, not just executes it",
+        "This shift mirrors Medical Affairs' broader evolution covered in Module 1",
+        "From reactive support function to strategic pillar"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "In Practice",
+      "title": "Identify Gaps, Don't Wait to Be Told",
+      "bullets": [
+        "A strategic MSL doesn't wait for a Medical Advisor to define the questions",
+        "They actively identify where the organisation's evidence base has gaps",
+        "They design scientific-exchange priorities around closing those gaps",
+        "Coordinated with the broader Medical Plan"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Every Insight Counts",
+      "title": "Treat Insight as a Strategic Input",
+      "bullets": [
+        "Every significant field insight is a potential input to strategy",
+        "Not just a data point to log",
+        "A strategic MSL can clearly explain why an insight matters",
+        "And what decision it should inform"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Thinking Wider",
+      "title": "Beyond Your Own Territory",
+      "bullets": [
+        "Recognise patterns relevant across a region or therapeutic area",
+        "Contribute to internal communities of practice",
+        "Understand how local intelligence fits the company's global strategy"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Not a Replacement",
+      "title": "Fundamentals Are the Entry Price",
+      "bullets": [
+        "Not every MSL needs to become a strategist overnight",
+        "Accurate exchange, territory discipline and documentation still matter",
+        "They are the entry price, not the ceiling"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Real Differentiator",
+      "title": "Always Ask the \"So What\"",
+      "bullets": [
+        "Not just what a KOL said, but what it means for the evidence agenda",
+        "Not just how many visits happened, but what changed as a result",
+        "This is what distinguishes the MSLs who progress fastest"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "The modern MSL earns a seat in strategy by acting like a partner, not an executor",
+    "bullets": [
+      "Strategic MSLs proactively close evidence gaps instead of waiting to be asked",
+      "They connect local territory intelligence to the company's broader strategy",
+      "Field fundamentals remain the foundation everything else is built on"
+    ]
+  }
+}

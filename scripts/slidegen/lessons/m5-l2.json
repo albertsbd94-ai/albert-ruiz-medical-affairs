@@ -1,0 +1,88 @@
+{
+  "moduleNum": 5,
+  "moduleTitle": "Medical Insights Excellence",
+  "lessonNum": 2,
+  "lessonTitle": "What is NOT an insight",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Common Failure",
+      "title": "Field Reports Full of Almost-Insights",
+      "bullets": [
+        "Most failures are not silence but noise that looks like insight",
+        "These get logged and clutter systems without informing any decision",
+        "Recognising what is not an insight is as valuable as knowing what is"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Not Yet Developed",
+      "title": "A Raw Observation Is Not an Insight",
+      "bullets": [
+        "A noted observation is real and worth keeping, but incomplete",
+        "It does not yet explain why or point to an implication",
+        "Ask whether it is a genuine trend or an artifact of one referral pattern"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Nothing New",
+      "title": "A Restated Fact Adds No Understanding",
+      "bullets": [
+        "Confirming a known label or literature fact is not insight",
+        "Genuine insight requires new understanding, not confirmation",
+        "If the organisation already knew it, logging it changes nothing"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Missing the Why",
+      "title": "An Ungrounded Opinion Isn't Actionable",
+      "bullets": [
+        "A subjective impression alone gives the organisation nothing to act on",
+        "What matters is why the physician feels that way",
+        "Without the reason behind it, an opinion cannot inform a decision"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Noise vs Signal",
+      "title": "One Anecdote Is Not Yet a Trend",
+      "bullets": [
+        "A single unusual case is worth noting and watching for corroboration",
+        "Treating it as representative risks steering strategy on noise",
+        "This is the same bias risk covered later in bias avoidance"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Not the Same Thing",
+      "title": "A Wish or Request Isn't an Insight",
+      "bullets": [
+        "Requests for samples or programs are legitimate field feedback",
+        "They should be routed to the right owner, not logged as insight",
+        "They don't explain a why behind clinical behaviour"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Practical Test",
+      "title": "One Question Before Logging Anything",
+      "bullets": [
+        "Can I state in one sentence what decision this could inform, and why",
+        "If the answer is no, it is raw material, not a finished insight",
+        "Raw material is still worth keeping for later"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Most field notes are almost-insights until they explain a why and an action",
+    "bullets": [
+      "Observations, restated facts, opinions, anecdotes and requests aren't insights alone",
+      "Each needs development before it can inform a decision",
+      "Apply the one-sentence test before logging anything as insight"
+    ],
+    "nextLesson": "Difference between data, observation, insight and implication"
+  }
+}

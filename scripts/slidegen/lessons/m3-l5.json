@@ -1,0 +1,71 @@
+{
+  "moduleNum": 3,
+  "moduleTitle": "KOL Mapping, Segmentation & Engagement",
+  "lessonNum": 5,
+  "lessonTitle": "Advanced KOL mapping",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Beyond the List",
+      "title": "Mapping the Network, Not Just the Names",
+      "bullets": [
+        "Basic mapping identifies who the influential experts are",
+        "Advanced mapping visualises how experts relate to and influence one another",
+        "Strategy then accounts for the network, not isolated individuals"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Definition",
+      "title": "Relationships Are the Real Content",
+      "bullets": [
+        "Identifies, profiles and visualises experts and influence networks",
+        "Captures who trains under whom and who co-authors with whom",
+        "Tracks shared committees and who amplifies whose digital content",
+        "Notes which regional experts defer scientifically to national ones"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why It Matters",
+      "title": "Three Practical Payoffs of Network Mapping",
+      "bullets": [
+        "Reveals indirect influence through a central network position",
+        "Clarifies where real consensus exists versus real disagreement",
+        "Shows likely cascade effects when a Tier 1 opinion shifts"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Data Sources",
+      "title": "What Advanced Mapping Draws On",
+      "bullets": [
+        "Bibliometric and citation data",
+        "Congress and society participation records",
+        "Clinical trial investigator databases",
+        "Digital engagement data covering the DOL dimension"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The MSL's Edge",
+      "title": "Field Intelligence No Database Provides",
+      "bullets": [
+        "Knowing who a KOL actually trusts and listens to",
+        "Spotting rising credibility before it shows up in publication metrics",
+        "Recognising when a senior name has limited real prescribing influence",
+        "Mapping works best as structured data plus genuine field knowledge"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Advanced mapping visualises how KOLs influence each other, not just who they are",
+    "bullets": [
+      "Network position can matter as much as individual recognition",
+      "Multiple data sources combine with real field intelligence",
+      "Mapping reveals cascade effects when a top-tier opinion shifts"
+    ],
+    "nextLesson": "KOL engagement plan"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "moduleNum": 6,
+  "moduleTitle": "Evidence-Based Medicine for MSLs",
+  "lessonNum": 6,
+  "lessonTitle": "p-value and 95% CI",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Two Tools, Often Misread",
+      "title": "The Numbers Behind Every HCP Question",
+      "bullets": [
+        "The p-value and 95% confidence interval are the most cited statistics in scientific communication",
+        "They are also among the most frequently misinterpreted",
+        "MSLs face technical questions about them more than almost any other topic"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "What the P-Value Asks",
+      "title": "The Probability of a Fluke Result",
+      "bullets": [
+        "The p-value answers one narrow question: how likely is a result this extreme if there were truly no difference",
+        "By convention, a p-value below 0.05 is called statistically significant",
+        "It says nothing about the size or clinical relevance of the effect"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "A Common Misreading",
+      "title": "A Smaller P-Value Is Not a Bigger Effect",
+      "bullets": [
+        "With very large samples, tiny and clinically irrelevant differences can reach statistical significance",
+        "With small samples, clinically important effects can fail to reach significance",
+        "A p-value of 0.001 only means less likely due to chance than 0.04, not a larger effect"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "What the CI Adds",
+      "title": "One Number That Does Three Jobs",
+      "bullets": [
+        "The 95% confidence interval is the range expected to contain the true effect across repeated trials",
+        "It shows effect size, precision and significance together in one view",
+        "A narrower interval means a more precise estimate",
+        "If the interval doesn't cross the no-effect line, the result is statistically significant"
+      ]
+    },
+    {
+      "type": "stats",
+      "eyebrow": "By the Numbers",
+      "title": "The Thresholds Behind Every Trial Result",
+      "stats": [
+        { "value": "<0.05", "label": "conventional p-value threshold for statistical significance" },
+        { "value": "95%", "label": "confidence level used to bound the true treatment effect", "emphasize": true }
+      ],
+      "caption": "Methodological guidance increasingly favors the confidence interval over the p-value alone."
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "In Practice",
+      "title": "Pair Every P-Value With Context",
+      "bullets": [
+        "Always present the p-value alongside the 95% CI and the absolute effect size",
+        "Avoid the word demonstrated when the interval is wide or borders non-significance",
+        "Be ready to explain why statistical significance isn't automatically clinical relevance for one patient"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Statistical significance is not the same as clinical relevance",
+    "bullets": [
+      "A p-value only tells you how unlikely a result is by chance, not how big it is",
+      "The 95% CI reveals effect size, precision and significance together",
+      "Always pair both with the absolute effect size before calling a result meaningful"
+    ],
+    "nextLesson": "Relative risk, odds ratio and hazard ratio"
+  }
+}

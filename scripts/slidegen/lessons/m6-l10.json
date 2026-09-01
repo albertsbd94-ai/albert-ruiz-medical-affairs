@@ -1,0 +1,79 @@
+{
+  "moduleNum": 6,
+  "moduleTitle": "Evidence-Based Medicine for MSLs",
+  "lessonNum": 10,
+  "lessonTitle": "Limitations and biases",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Honest Starting Point",
+      "title": "No Study Is Perfect",
+      "bullets": [
+        "Systematically identifying a study's limitations and biases is a valuable, rarely-taught MSL skill",
+        "Communicating evidence as if it were absolute truth is a mistake",
+        "This methodological honesty separates non-promotional scientific communication from a sales pitch"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Bias to Watch For",
+      "title": "Selection and Confounding Bias",
+      "bullets": [
+        "Selection bias happens when recruitment or inclusion criteria produce an unrepresentative sample",
+        "This is the classic efficacy-to-effectiveness gap",
+        "Confounding bias, especially relevant in observational studies, creates an apparent association that isn't causal",
+        "Statistical adjustment and propensity score matching reduce but never fully remove this risk"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Bias to Watch For",
+      "title": "Publication and Measurement Bias",
+      "bullets": [
+        "Publication bias is the well-documented tendency for positive results to get published more often",
+        "This skews the available literature toward a rosier picture than reality",
+        "Measurement or misclassification bias happens when exposure or outcome is measured inconsistently"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Beyond Statistics",
+      "title": "Subtle Flaws That Still Matter",
+      "bullets": [
+        "Statistical significance and clinical relevance are not the same thing",
+        "A differential dropout rate, too-short follow-up, or a per-protocol analysis can soften a conclusion",
+        "None of these necessarily invalidate a study, but all deserve mention"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Standard",
+      "title": "Read the Limitations Section First",
+      "bullets": [
+        "CONSORT for trials and STROBE for observational studies require an explicit limitations section",
+        "A rigorous MSL always reads that section, not just the results summary",
+        "That's where the authors themselves acknowledge what their study can and cannot claim"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why It Works",
+      "title": "Transparency Builds Credibility, It Doesn't Cost It",
+      "bullets": [
+        "Naming a study's limitations strengthens the scientific message rather than weakening it",
+        "Experienced HCPs quickly notice when only favorable data gets presented",
+        "That omission, even unintentional, damages credibility over time",
+        "Transparency is the foundation of long-term trust between Medical Affairs and the medical community"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Naming a study's limitations is what makes Medical Affairs communication trustworthy",
+    "bullets": [
+      "Selection, confounding, publication and measurement bias each distort evidence differently",
+      "Statistical significance and clinical relevance are separate questions worth checking every time",
+      "Reading and disclosing the limitations section separates scientific communication from a sales pitch"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "moduleNum": 4,
+  "moduleTitle": "Scientific Exchange & High-Impact Conversations",
+  "lessonNum": 7,
+  "lessonTitle": "Handling Scientific Objections",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Defining the Moment",
+      "title": "An Objection Is a Position, Not an Obstacle",
+      "bullets": [
+        "Any moment of genuine skepticism, disagreement or alternative interpretation of the evidence",
+        "A competing trial, a generalisability concern, a different clinical read on the same data",
+        "How it's handled is one of the clearest tests of whether exchange is genuine"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Wrong Model",
+      "title": "Sales Objection-Handling Doesn't Belong Here",
+      "bullets": [
+        "Most objection-handling literature comes from a sales context built to move toward a purchase",
+        "Structurally inappropriate for non-promotional, balanced scientific exchange",
+        "Importing it risks exactly the drift from exploring into persuading"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Step One",
+      "title": "Reflect Before Responding",
+      "bullets": [
+        "Listen fully and reflect the objection back accurately before responding",
+        "Confirms real understanding of what was actually said",
+        "Avoids the common failure of answering an easier, different version of the concern"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Step Two",
+      "title": "Engage With the Substance Honestly",
+      "bullets": [
+        "Acknowledge a concern directly when it is grounded in real data",
+        "\"That's a fair point, and here's what the evidence does and doesn't tell us\"",
+        "Scientific credibility depends on not defending every data point reflexively"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Step Three",
+      "title": "Add Context Without Overclaiming Resolution",
+      "bullets": [
+        "Provide study design or population differences where they genuinely help",
+        "Be clear about what is and is not yet known",
+        "Don't imply an objection has been overcome if real uncertainty remains"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "A Valuable Outcome",
+      "title": "Unresolved Is Sometimes the Right Ending",
+      "bullets": [
+        "An objection can end in a captured insight rather than a resolution",
+        "A genuine, unresolved scientific disagreement is valuable field intelligence",
+        "Flagging the gap internally often beats an improvised answer on the spot"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Objections are handled by listening and engaging honestly, never by overcoming them like a sales pitch",
+    "bullets": [
+      "Reflect the objection accurately before responding to it",
+      "Acknowledge real limitations instead of defending every data point",
+      "An honest, unresolved disagreement can be more valuable than a improvised answer"
+    ],
+    "nextLesson": "Medical closing and follow-up"
+  }
+}

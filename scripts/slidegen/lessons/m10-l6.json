@@ -1,0 +1,72 @@
+{
+  "moduleNum": 10,
+  "moduleTitle": "Omnichannel Medical & Digital Opinion Leaders",
+  "lessonNum": 6,
+  "lessonTitle": "LinkedIn for Medical Affairs",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Why LinkedIn",
+      "title": "The Professional Home of Medical Affairs Online",
+      "bullets": [
+        "Gathers HCPs, researchers, scientific societies and patient organizations",
+        "Professional tone sets it apart from generalist social networks",
+        "For an MSL, a natural extension of field activity, not a substitute"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Use One: Listening",
+      "title": "Follow to Understand the Conversation",
+      "bullets": [
+        "Follow priority KOLs and DOLs in your territory",
+        "Watch what content they share and what gets attention",
+        "A rich source for emerging clinical thinking and insights",
+        "Feeds the same insight capture framework used elsewhere"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Use Two: Credibility",
+      "title": "A Profile That Builds Trust Before You Speak",
+      "bullets": [
+        "Clear institutional affiliation and a distinct MSL role",
+        "Never confusable with a commercial position",
+        "Occasional scientific commentary, never product promotion",
+        "Builds credibility organically over time"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Use Three: Interaction",
+      "title": "Engaging With Others' Content Is the Delicate Part",
+      "bullets": [
+        "Substantive, evidence-based comments on relevant publications",
+        "Congratulating a colleague or starting a scientific conversation",
+        "Same rules apply: clear affiliation, professional tone, evidence-based",
+        "No appearance of promotion outside approved channels"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Guardrail",
+      "title": "Know Your Organization's Digital Policy",
+      "bullets": [
+        "Applies to LinkedIn as it does to any digital channel",
+        "Defines what can be shared without prior review",
+        "Defines what requires MLR approval",
+        "Protects both the MSL and the organization"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "LinkedIn extends the MSL's scientific presence when used for listening, credibility and careful interaction",
+    "bullets": [
+      "Listening to KOLs and DOLs surfaces real insights and trends",
+      "A clear, non-commercial profile is the foundation of digital trust",
+      "Every interaction follows the same evidence and compliance rules as the field"
+    ],
+    "nextLesson": "Medical listening"
+  }
+}

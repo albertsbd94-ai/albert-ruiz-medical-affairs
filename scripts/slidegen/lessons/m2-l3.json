@@ -1,0 +1,78 @@
+{
+  "moduleNum": 2,
+  "moduleTitle": "The Modern MSL Role",
+  "lessonNum": 3,
+  "lessonTitle": "Field medical excellence",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Real Measure",
+      "title": "Quality Over Activity Volume",
+      "bullets": [
+        "Field medical excellence separates a busy MSL from an effective one",
+        "MSLs get only a handful of substantive meetings per year with top KOLs",
+        "Every one of those meetings has to count"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Discipline One",
+      "title": "Prepare With a Specific Objective",
+      "bullets": [
+        "Every interaction needs a clear, specific objective",
+        "Not \"check in with Dr. X\" but a precise question to resolve",
+        "Undirected visits waste both the MSL's and the expert's time"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Discipline Two",
+      "title": "Make It Genuinely Two-Way",
+      "bullets": [
+        "Treat every interaction as a chance to learn, not just to present",
+        "An MSL who only presents data is a walking slide deck, not a peer",
+        "This is the insight-generation dimension covered in Module 5"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Discipline Three",
+      "title": "Follow Through, Every Time",
+      "bullets": [
+        "Log the interaction accurately and promptly",
+        "Follow up on commitments — papers, introductions, escalations",
+        "Make sure the insight actually reaches people who can act on it",
+        "Excellence that stops at the meeting has only half done the job"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "A Common Failure Mode",
+      "title": "Don't Over-Index on Famous KOLs",
+      "bullets": [
+        "A well-known expert can absorb huge time for little real dialogue",
+        "Competency frameworks define what \"good\" looks like at each stage",
+        "The real question is how much scientific value moved both ways"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "For New MSLs",
+      "title": "Build the Reputation Early",
+      "bullets": [
+        "Clear objectives, real dialogue and follow-through build trust fast",
+        "Faster than simply maximising the number of visits logged each month"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Field medical excellence is defined by quality of exchange, not visit count",
+    "bullets": [
+      "Preparation, two-way dialogue and follow-through are the three disciplines",
+      "Competency frameworks keep quality consistent across a team",
+      "The measure is how much genuine scientific value moved in both directions"
+    ],
+    "nextLesson": "Territory ownership"
+  }
+}

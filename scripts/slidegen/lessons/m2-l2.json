@@ -1,0 +1,71 @@
+{
+  "moduleNum": 2,
+  "moduleTitle": "The Modern MSL Role",
+  "lessonNum": 2,
+  "lessonTitle": "Difference between MSL, Medical Advisor and Medical Manager",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Why It Matters",
+      "title": "Three Roles, Frequently Confused",
+      "bullets": [
+        "MSL, Medical Advisor and Medical Manager get mixed up even inside pharma",
+        "Boundaries vary by company but the core distinction is consistent",
+        "The distinction shapes both daily work and career planning"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The MSL",
+      "title": "Externally Oriented and Field-Based",
+      "bullets": [
+        "Primary relationships are with KOLs, investigators and treating physicians",
+        "Built around direct dialogue across a defined geographic territory",
+        "Success depends on relationship skill and disciplined territory management",
+        "Operates with significant autonomy and limited direct oversight"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Medical Advisor",
+      "title": "Internally Oriented and Strategy-Focused",
+      "bullets": [
+        "Works strategically inside the organisation, not the field",
+        "Reviews promotional and medical materials for scientific accuracy",
+        "Supports Commercial, Market Access and Regulatory with medical expertise",
+        "Coordinates the scientific agenda that MSLs then execute in the field"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Medical Manager",
+      "title": "People Leadership Over a Field Team",
+      "bullets": [
+        "Manages a team of MSLs and sets regional therapeutic-area strategy",
+        "Ensures consistent territory planning and quality standards",
+        "Links field intelligence to the broader Medical Affairs leadership team",
+        "A common next step for a senior, experienced MSL"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Career Planning",
+      "title": "Different Skills, Not a Strict Hierarchy",
+      "bullets": [
+        "An experienced MSL and a Medical Advisor can sit at a comparable level",
+        "Each role rewards a genuinely different skill emphasis",
+        "Knowing the differences helps you plan a deliberate career path"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "MSL, Medical Advisor and Medical Manager reward different skills, not different ranks",
+    "bullets": [
+      "MSL means field relationships and territory autonomy",
+      "Medical Advisor means internal strategic and cross-functional influence",
+      "Medical Manager means people leadership and team-level strategy"
+    ],
+    "nextLesson": "Field medical excellence"
+  }
+}

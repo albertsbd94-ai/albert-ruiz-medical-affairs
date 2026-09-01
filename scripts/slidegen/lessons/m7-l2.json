@@ -1,0 +1,74 @@
+{
+  "moduleNum": 7,
+  "moduleTitle": "Clinical Research, RWE & Evidence Generation",
+  "lessonNum": 2,
+  "lessonTitle": "Investigator-Initiated Studies (IIS)",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Definition",
+      "title": "What an IIS Actually Is",
+      "bullets": [
+        "Investigator or institution designs, leads, and sponsors the study",
+        "Company may fund it or supply study medication, or both",
+        "Full scientific and editorial control stays with the investigator",
+        "One of the most valuable evidence sources for Medical Affairs"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The MSL's Function",
+      "title": "Interface, Guide, and Relationship Manager",
+      "bullets": [
+        "MSL bridges field science and the company's internal evidence agenda",
+        "Identifies a genuine investigator interest in a research question",
+        "Recognizes whether it fills a real, uncovered evidence need",
+        "Helps the investigator navigate the formal IIS submission process",
+        "Carries field learning back to internal evidence and strategy teams"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Non-Negotiable",
+      "title": "The Ethical Lines an MSL Cannot Cross",
+      "bullets": [
+        "Can explain process, eligibility, and submission timelines",
+        "Cannot influence the study's scientific design",
+        "Cannot make support conditional on favorable results",
+        "Cannot factor in commercial decisions about prescriber-investigators"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "How It Works",
+      "title": "From Request to Decision",
+      "bullets": [
+        "Investigator submits a formal IIS request",
+        "An internal committee, separate from commercial, reviews it",
+        "Reviewers assess scientific relevance and methodological feasibility",
+        "Alignment with company evidence priorities is also weighed",
+        "Approval or denial follows documented, auditable criteria"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why It Matters",
+      "title": "Real Contribution, Preserved Independence",
+      "bullets": [
+        "Supporting IIS well is one of an MSL's most tangible contributions",
+        "Connects genuine clinical questions to company funding and product",
+        "Investigator independence is what gives the study its credibility"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "IIS studies convert genuine investigator questions into credible evidence, with the MSL as facilitator, not scientific director",
+    "bullets": [
+      "MSL guides process without touching scientific design or outcomes",
+      "Ethical separation from commercial protects the study's credibility",
+      "Independent review committees decide approval, not the MSL relationship"
+    ],
+    "nextLesson": "Observational Studies"
+  }
+}

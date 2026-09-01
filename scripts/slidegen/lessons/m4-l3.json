@@ -1,0 +1,69 @@
+{
+  "moduleNum": 4,
+  "moduleTitle": "Scientific Exchange & High-Impact Conversations",
+  "lessonNum": 3,
+  "lessonTitle": "Exploratory Questions",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Core Tool",
+      "title": "Questions That Actually Explore",
+      "bullets": [
+        "Open-ended questions designed to uncover real clinical experience and reasoning",
+        "Not designed to confirm something the MSL already believes",
+        "Not answerable with a simple yes or no",
+        "The single most important tool for turning a visit into a genuine conversation"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Structural Marker",
+      "title": "Start With What, How or Why",
+      "bullets": [
+        "\"Do you\" and \"is it\" invite a closed, low-information answer",
+        "\"What,\" \"how\" and \"why\" require the other person to explain their thinking",
+        "Example: a broad open question invites a substantive response instead of one word"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Getting the Scope Right",
+      "title": "Specific, Not Narrow or Leading",
+      "bullets": [
+        "Too broad — \"how do you approach this disease\" — fails to generate focused insight",
+        "Too narrow and leading — implying an answer — is a disguised statement, not a question",
+        "A well-scoped question is useful without presupposing the answer"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "In Practice",
+      "title": "Sequence From Broad to Specific",
+      "bullets": [
+        "Start broad to set the surrounding clinical context",
+        "Narrow toward the specific scientific question the MSL needs answered",
+        "Jumping straight to a narrow question often produces a thinner answer"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Discipline",
+      "title": "Stay Open to Uncomfortable Answers",
+      "bullets": [
+        "Exploratory questions must stay open to answers unfavourable to the product",
+        "Only asking when a favourable answer is expected is not really exploring",
+        "Pivoting to informing whenever a conversation gets uncomfortable undermines credibility"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Exploratory questions turn a scientific visit from information delivery into real insight generation",
+    "bullets": [
+      "What, how and why questions open genuine dialogue; do you and is it close it down",
+      "Good questions are specific without presupposing the answer",
+      "Genuine exploring means staying open even to unfavourable answers"
+    ],
+    "nextLesson": "Reflective questions"
+  }
+}

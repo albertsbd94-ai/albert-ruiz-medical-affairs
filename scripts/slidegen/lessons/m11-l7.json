@@ -1,0 +1,72 @@
+{
+  "moduleNum": 11,
+  "moduleTitle": "AI for Medical Affairs",
+  "lessonNum": 7,
+  "lessonTitle": "Canva AI for medical infographics",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Need",
+      "title": "Clear Visuals for Complex Evidence",
+      "bullets": [
+        "Visual communication of evidence is a constant Medical Affairs need",
+        "Ranges from a pivotal study infographic to a congress data presentation",
+        "AI design tools have lowered the technical barrier to producing them",
+        "Reduces dependence on a dedicated graphic design team"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "How It Works",
+      "title": "From Description to Draft Visual",
+      "bullets": [
+        "Generate infographic drafts, mechanism-of-action visuals, or slide templates",
+        "Works from a natural language description or a reference document",
+        "Drafts are then refined and verified by the MSL or scientific comms team",
+        "Frees time for refinement and verification instead of creation from scratch"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Personal Field Use",
+      "title": "Support Material for Your Own Use",
+      "bullets": [
+        "Visual schemes to explain a complex mechanism of action in conversation",
+        "Visual summaries of key study data to carry into a visit",
+        "Support material for an internal congress debrief presentation",
+        "Only within what internal policy allows without formal MLR review"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Hard Line",
+      "title": "External or Formal Material Needs MLR Review",
+      "bullets": [
+        "Anything distributed externally to an HCP requires full MLR review",
+        "Same standard applies as any other scientific material in Module 10",
+        "Ease of AI generation does not exempt it from compliance control",
+        "Skipping review exposes the MSL and the organization to real risk"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Accuracy Is Human",
+      "title": "AI Generates the Form, Not the Facts",
+      "bullets": [
+        "Any data or scientific claim in a visual still needs full verification",
+        "Visual generation tools do not check the accuracy of the content",
+        "Responsibility for data accuracy remains entirely human and professional"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Canva AI speeds up visual drafts, but MLR review and data accuracy stay non-negotiable",
+    "bullets": [
+      "Best for personal field-use visuals within internal policy limits",
+      "Any externally distributed or formal material still needs full MLR review",
+      "The MSL, not the tool, is responsible for every number and claim shown"
+    ],
+    "nextLesson": "AI agents for medical workflows"
+  }
+}

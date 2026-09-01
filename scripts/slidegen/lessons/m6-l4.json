@@ -1,0 +1,72 @@
+{
+  "moduleNum": 6,
+  "moduleTitle": "Evidence-Based Medicine for MSLs",
+  "lessonNum": 4,
+  "lessonTitle": "RWE",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Defining Terms",
+      "title": "Real-World Data Feeds Real-World Evidence",
+      "bullets": [
+        "The FDA defines real-world data as routinely collected patient health information",
+        "Sources include electronic health records, disease registries, insurance claims, wearables and patient-reported data",
+        "Real-world evidence is the clinical evidence on a product's use, benefits or risks derived from that data"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Not a Study Type",
+      "title": "A Data Source, Not a Design",
+      "bullets": [
+        "RWE isn't a single study design, it's a data source that can feed several designs",
+        "It can feed cohort studies, administrative database analyses, patient registries or pragmatic trials",
+        "Traditional RCTs run in selected populations, over limited time, under controlled conditions",
+        "RWE shows how a treatment behaves across real patient diversity and over longer follow-up"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Regulatory Recognition",
+      "title": "Agencies Have Built RWE Into Decision-Making",
+      "bullets": [
+        "The FDA has had a formal framework for using RWE in regulatory decisions since 2018",
+        "It has long supported postmarketing safety surveillance",
+        "It increasingly informs effectiveness decisions, indication expansions and comparative study design",
+        "The EMA follows a similar path through DARWIN EU, its European real-world data network"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "In the Field",
+      "title": "The Questions Only RWE Can Answer",
+      "bullets": [
+        "How does this treatment perform in patients over 75 with renal impairment",
+        "What real-world persistence does it show outside the trial",
+        "How does it compare to the alternative in daily hospital practice",
+        "RWE also surfaces evidence gaps that can become new studies or research collaborations"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Handle With Rigor",
+      "title": "RWE Still Needs Critical Appraisal",
+      "bullets": [
+        "Question the source and quality of the underlying data",
+        "Check the statistical adjustment used to control confounding",
+        "Assess how representative the population is",
+        "Look for transparent methodology, following frameworks like ISPOR or STROBE"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Real-world evidence shows how treatments perform outside the controlled trial setting",
+    "bullets": [
+      "RWE is a data source, not a study design, and can feed many different analyses",
+      "Regulators now use it for safety surveillance and, increasingly, effectiveness decisions",
+      "It still demands the same critical questions about data quality, adjustment and representativeness"
+    ],
+    "nextLesson": "Primary and secondary endpoints"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "moduleNum": 8,
+  "moduleTitle": "Congress Excellence",
+  "lessonNum": 9,
+  "lessonTitle": "Executive report",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "A Different Document",
+      "title": "Executive Reports Serve a Different Purpose Than Debriefs",
+      "bullets": [
+        "A strategically important congress often needs a report for leadership",
+        "Aimed at Medical Affairs leadership, sometimes other leadership functions",
+        "It doesn't document everything: it synthesizes what leaders need to decide"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Start There",
+      "title": "Lead With the Conclusion, Not the Timeline",
+      "bullets": [
+        "Open with a one-page summary, not a day-by-day narrative",
+        "What changed in the scientific or competitive landscape?",
+        "What does it mean for the product's medical strategy?",
+        "What decisions or investments need attention soon?",
+        "What new risks or opportunities appeared?"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Body",
+      "title": "What Follows the Summary",
+      "bullets": [
+        "Key scientific data presented, own and competitor, with strategic implications",
+        "The competitive landscape summarized by key messages, not detailed transcripts",
+        "The most significant insights, grouped by theme and prioritized by impact",
+        "The relationship or collaboration opportunities with the highest strategic relevance"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Avoid These",
+      "title": "Two Mistakes That Undermine a Report",
+      "bullets": [
+        "Detail overload: dozens of data points and anecdotes with no hierarchy",
+        "That dilutes the main message and wastes limited leadership attention",
+        "Missing implication: listing what happened without a recommendation",
+        "A good report always connects findings to a decision or a question"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Presentation Matters",
+      "title": "Format Carries Part of the Message",
+      "bullets": [
+        "Clear structure with headlines that state the conclusion first",
+        "Simple visual aids where they help synthesize complex information",
+        "A contained length that respects a leader's limited reading time",
+        "Executive communication skills are developed further later in the course"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "An executive report earns leadership's attention by leading with what matters most",
+    "bullets": [
+      "It synthesizes decisions, not a full record of what happened",
+      "Leading with the conclusion beats narrating the congress chronologically",
+      "Overload and missing implications are the two mistakes that undermine it"
+    ],
+    "nextLesson": "Post-congress follow-up"
+  }
+}

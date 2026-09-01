@@ -1,0 +1,72 @@
+{
+  "moduleNum": 3,
+  "moduleTitle": "KOL Mapping, Segmentation & Engagement",
+  "lessonNum": 7,
+  "lessonTitle": "Share of scientific voice",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Concept",
+      "title": "Scientific Presence, Measured Like Market Share",
+      "bullets": [
+        "Measures how present and credible a company's scientific voice is",
+        "Compared relative to competitors within a therapy area",
+        "The medical-affairs equivalent of commercial market share",
+        "Built on scientific credibility and presence, not sales volume"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Real Risk",
+      "title": "Good Data Can Still Lose the Conversation",
+      "bullets": [
+        "A company can have excellent clinical data and still lose ground",
+        "This happens if competitors are more present where opinion forms",
+        "Advisory boards, congress symposia, guideline committees, publications",
+        "Increasingly, digital scientific content and communities too"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "How It's Measured",
+      "title": "Signals That Combine Into Share of Voice",
+      "bullets": [
+        "Presence and visibility at key scientific congresses",
+        "Publication output and citation performance versus competitors",
+        "Participation in guideline development and advisory processes",
+        "Digital engagement and reach across scientific communities"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Not Abstract",
+      "title": "Every MSL Shapes This Metric Directly",
+      "bullets": [
+        "Trust-building scientific exchange contributes incrementally",
+        "So does every insight that sharpens the evidence-generation agenda",
+        "Advisory board facilitation also contributes",
+        "Thin or inconsistent engagement lets a competitor's voice dominate"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Reframing a Quiet Quarter",
+      "title": "Why Consistent Presence Still Matters",
+      "bullets": [
+        "A quiet quarter is not just fewer visits",
+        "It can mean scientific presence in that network is losing ground",
+        "This framing justifies sustained field presence beyond any single visit"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Share of scientific voice measures a company's scientific credibility against competitors",
+    "bullets": [
+      "It is built from congress presence, publications, advisory input and digital reach",
+      "Individual MSL activity directly shapes this metric in the field",
+      "Consistent presence matters even without one dramatic outcome per visit"
+    ],
+    "nextLesson": "Longitudinal, value-based relationships"
+  }
+}

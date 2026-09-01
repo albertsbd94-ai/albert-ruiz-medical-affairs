@@ -1,0 +1,72 @@
+{
+  "moduleNum": 10,
+  "moduleTitle": "Omnichannel Medical & Digital Opinion Leaders",
+  "lessonNum": 1,
+  "lessonTitle": "What omnichannel medical is",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Core Idea",
+      "title": "One Continuous Scientific Conversation",
+      "bullets": [
+        "The HCP sits at the center of the communication strategy",
+        "Field visits, email, digital content, webinars and congresses coordinate",
+        "Each touchpoint builds on the last instead of repeating it",
+        "The HCP experiences one conversation, not scattered messages"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why Now",
+      "title": "HCPs Already Behave Omnichannel",
+      "bullets": [
+        "Scientific information consumption is increasingly fragmented",
+        "A quick mobile read between consults, a webinar at night",
+        "Deep conversations reserved for trusted, complex questions",
+        "Behavior changed first, strategy is catching up"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "What Sets It Apart",
+      "title": "Coordination, Not Just More Channels",
+      "bullets": [
+        "Data on interests and prior interactions is shared across channels",
+        "Content, sequence and format adapt to what is already known",
+        "The alternative is the same generic message on every channel"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "What It Requires",
+      "title": "Four Building Blocks Behind Real Omnichannel",
+      "bullets": [
+        "A unified HCP view, usually through a shared CRM",
+        "Scientific interactions logged, not just commercial contacts",
+        "Channel planning integrated into one medical plan",
+        "Strict separation between non-promotional and commercial communication"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The MSL's Role",
+      "title": "Omnichannel Enriches the Personal Relationship",
+      "bullets": [
+        "Know what content an HCP already consumed before a visit",
+        "Anticipate the questions they may want resolved in person",
+        "Recommend digital content that extends the visit afterward",
+        "The personal relationship stays the core, not replaced"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Omnichannel medical coordinates every channel around one continuous HCP conversation",
+    "bullets": [
+      "Success means messages build on each other, not repeat",
+      "A shared CRM and one medical plan make coordination possible",
+      "Scientific and commercial data must stay clearly separated"
+    ],
+    "nextLesson": "Difference between multichannel and omnichannel"
+  }
+}

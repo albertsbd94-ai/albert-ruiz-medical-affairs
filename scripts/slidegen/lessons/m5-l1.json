@@ -1,0 +1,72 @@
+{
+  "moduleNum": 5,
+  "moduleTitle": "Medical Insights Excellence",
+  "lessonNum": 1,
+  "lessonTitle": "What a medical insight is",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Definition",
+      "title": "What Counts as a Genuine Insight",
+      "bullets": [
+        "Surfaces through direct scientific exchange with a clinician or researcher",
+        "Explains the why behind a pattern, not just the pattern itself",
+        "Points toward a specific action the organisation could take",
+        "A peer-reviewed framework was built to restore this precision"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Information vs Understanding",
+      "title": "Data Describes, Insight Explains",
+      "bullets": [
+        "Information describes what is happening — a data point, a metric",
+        "Insight explains why it is happening, at a decision-ready level",
+        "Charting how often a question comes up is a metric, not an insight",
+        "Understanding why physicians keep asking it is the insight"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Three Components",
+      "title": "What Every Real Insight Contains",
+      "bullets": [
+        "Grounded in something real — an observation, conversation or pattern",
+        "Interpretation — a reasoned why, not an assumption",
+        "Pattern recognition across multiple interactions, not just one",
+        "Relevance — a plausible link to a decision the organisation can make"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "A Distinct Skill",
+      "title": "Insight Generation Is Not Automatic",
+      "bullets": [
+        "Not a byproduct that just happens during good scientific exchange",
+        "This module builds it as a deliberate, systematic skill",
+        "Covers spotting false insights, the data-to-implication ladder, capture and writing",
+        "Also covers bias, sharing internally, and connecting insight to strategy"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why It Matters",
+      "title": "The Differentiator Between Average and Strategic",
+      "bullets": [
+        "Industry analysis is consistent on this point",
+        "Generating and acting on genuine insight separates strategic Medical Affairs",
+        "It is a core professional capability, not a nice-to-have"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "A genuine insight explains a why and points to an action, not just information",
+    "bullets": [
+      "Information describes what happened; insight explains why",
+      "Real insight needs grounding, interpretation and relevance together",
+      "Insight generation is a skill this module builds step by step"
+    ],
+    "nextLesson": "What is NOT an insight"
+  }
+}

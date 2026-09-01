@@ -1,0 +1,78 @@
+{
+  "moduleNum": 6,
+  "moduleTitle": "Evidence-Based Medicine for MSLs",
+  "lessonNum": 8,
+  "lessonTitle": "NNT, NNH and clinical relevance",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Translating Trial Data",
+      "title": "How Many Patients to Treat for One Benefit",
+      "bullets": [
+        "Number needed to treat, NNT, is how many patients must be treated for one to avoid the event, versus control",
+        "Number needed to harm, NNH, is how many must be treated for one additional adverse effect",
+        "Both translate trial results into a practical, bedside decision"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Formula",
+      "title": "NNT Is the Inverse of Absolute Risk Reduction",
+      "bullets": [
+        "NNT equals 1 divided by the absolute risk reduction between control and treated event rates",
+        "This makes NNT highly sensitive to the population's baseline risk",
+        "The same relative risk can produce very different NNTs depending on baseline event frequency"
+      ]
+    },
+    {
+      "type": "stats",
+      "eyebrow": "Reading the Number",
+      "title": "Low NNT Means an Efficient Treatment",
+      "stats": [
+        { "value": "NNT 5", "label": "treatment is highly efficient" },
+        { "value": "NNT 200", "label": "real benefit, but diluted across many patients", "emphasize": true }
+      ],
+      "caption": "The same statistically significant benefit can look very different in practice."
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why Clinicians Like It",
+      "title": "Absolute Effect in Plain Language",
+      "bullets": [
+        "NNT communicates absolute effect size in language any clinician can interpret directly",
+        "Relative measures like RR or HR can make a small absolute benefit sound bigger than it is",
+        "Current guidance recommends reporting NNT and NNH alongside relative measures, especially for non-specialists"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Limits",
+      "title": "NNT Doesn't Travel Well",
+      "bullets": [
+        "It's only valid for the follow-up period of the original study",
+        "It's specific to the population studied, so a very different baseline risk can mislead",
+        "As a population average, it says nothing about one individual patient's probability of benefit"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "In the Consult",
+      "title": "Balance Benefit Against Harm",
+      "bullets": [
+        "Present the NNT of the main benefit alongside the NNH of the most relevant adverse effect",
+        "This lets the HCP see both sides of the risk-benefit balance in the same numeric language",
+        "That balanced framing makes a genuinely informed conversation with the patient possible"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "NNT and NNH turn statistics into a bedside risk-benefit conversation",
+    "bullets": [
+      "NNT is the inverse of absolute risk reduction, and depends heavily on baseline risk",
+      "A low NNT means an efficient treatment, a high NNT means a diluted benefit",
+      "Pairing NNT with NNH gives an HCP both sides of the risk-benefit balance"
+    ],
+    "nextLesson": "Forest plots"
+  }
+}

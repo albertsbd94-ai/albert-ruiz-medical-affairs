@@ -1,0 +1,73 @@
+{
+  "moduleNum": 3,
+  "moduleTitle": "KOL Mapping, Segmentation & Engagement",
+  "lessonNum": 1,
+  "lessonTitle": "What a KOL is",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Real Criterion",
+      "title": "Influence, Not Just Seniority",
+      "bullets": [
+        "\"KOL\" is often loosely used in pharma to mean simply an important doctor",
+        "The real criterion is measurable influence, not seniority or title alone",
+        "A prestigious hospital title does not by itself make someone a KOL",
+        "Limited scientific output and peer recognition disqualify a title alone"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Standard Markers",
+      "title": "How the Industry Identifies a KOL",
+      "bullets": [
+        "Strong publication record in peer-reviewed journals",
+        "Leadership as principal or coordinating investigator on trials",
+        "Authorship or committee membership on practice guidelines",
+        "Invited speaking roles at major congresses",
+        "Leadership positions in professional or scientific societies"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "A Key Distinction",
+      "title": "Influence vs. Mere Prominence",
+      "bullets": [
+        "A mid-career researcher can be a true KOL in a narrow sub-specialty",
+        "What matters is whether other clinicians actually cite and follow the work",
+        "When a KOL shifts opinion, that shift plausibly moves broader practice",
+        "Balanced scientific exchange is a legitimate way evidence reaches that opinion"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Not One Category",
+      "title": "KOLs Differ in Type of Influence",
+      "bullets": [
+        "Influence can center on clinical practice, trial design, or guidelines",
+        "It can also center on public visibility or peer education",
+        "Effective KOL work means knowing which kind of influence someone has",
+        "This module builds that nuance through DOLs, rising stars, and mapping"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why It Matters",
+      "title": "Getting This Right Is Foundational",
+      "bullets": [
+        "Correct identification underpins every other skill in this module",
+        "Time spent with the wrong expert is time not spent shaping practice",
+        "Reputation and hearsay are not reliable substitutes for real criteria"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "A true KOL is defined by measurable influence, not title or seniority",
+    "bullets": [
+      "Publications, trials, guidelines and congress roles are the real markers",
+      "Influence type varies across clinical, trial, guideline, or peer education",
+      "Correct identification is the foundation for segmentation and engagement"
+    ],
+    "nextLesson": "What a DOL is"
+  }
+}

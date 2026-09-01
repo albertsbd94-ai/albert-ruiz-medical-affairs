@@ -1,0 +1,70 @@
+{
+  "moduleNum": 6,
+  "moduleTitle": "Evidence-Based Medicine for MSLs",
+  "lessonNum": 3,
+  "lessonTitle": "Observational studies",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Beyond the Trial",
+      "title": "Watching Practice As It Happens",
+      "bullets": [
+        "Observational studies don't assign the intervention, they observe natural clinical practice",
+        "They answer questions RCTs can't or shouldn't answer",
+        "MSLs encounter this evidence constantly at congresses and in publications"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Three Designs",
+      "title": "Cohort, Case-Control and Cross-Sectional",
+      "bullets": [
+        "Cohort studies follow exposed and unexposed groups over time, comparing incidence",
+        "Cohort studies can be prospective, recruited before the outcome occurs, or retrospective",
+        "Case-control studies start from the outcome and compare cases to controls, suiting rare outcomes",
+        "Cross-sectional studies measure exposure and outcome at one point in time, a prevalence snapshot"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Advantage",
+      "title": "Closer to Real Clinical Practice",
+      "bullets": [
+        "Observational data includes comorbidities, polypharmacy and diverse patients trials tend to exclude",
+        "Valuable for understanding effectiveness rather than controlled efficacy",
+        "Detects long-term safety signals a short trial could miss",
+        "Covers rare populations or outcomes a randomized trial could never afford to study"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Limitation",
+      "title": "Confounding Is the Core Weakness",
+      "bullets": [
+        "Without randomization, compared groups can differ systematically in ways that also affect the outcome",
+        "Those differences can be mistaken for a treatment effect",
+        "Multivariate adjustment and propensity score matching reduce but never fully eliminate this risk"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The MSL Skill",
+      "title": "Naming the Design, Choosing the Words",
+      "bullets": [
+        "Quickly identify whether a study is cohort, case-control or cross-sectional",
+        "Know what question that design can reasonably answer",
+        "Communicate results as association and higher likelihood, never causality or demonstrated effect"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Observational studies show what happens in real practice, not proof of cause and effect",
+    "bullets": [
+      "Cohort, case-control and cross-sectional designs each answer a different kind of question",
+      "Confounding is the central limitation, and statistical adjustment only reduces it",
+      "The right language is association and likelihood, never causality or demonstrated effect"
+    ],
+    "nextLesson": "RWE"
+  }
+}

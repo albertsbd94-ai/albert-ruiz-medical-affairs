@@ -1,0 +1,71 @@
+{
+  "moduleNum": 9,
+  "moduleTitle": "Medical Strategy & Medical Plan",
+  "lessonNum": 1,
+  "lessonTitle": "What a Medical Plan is",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Core Definition",
+      "title": "The Medical Plan Defined",
+      "bullets": [
+        "The central strategic document for a product or therapeutic area",
+        "The medical equivalent of a business plan for Commercial",
+        "States what to achieve, with whom, through what activities, with what indicators",
+        "Spans an annual cycle within a multi-year, product-lifecycle vision"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The MAPS Framework",
+      "title": "Three Phases of Medical Planning",
+      "bullets": [
+        "Situation analysis: disease landscape, competitive position, stakeholder insights",
+        "Medical strategy: a clear vision, strategic objectives, and key drivers",
+        "Tactical plan: prioritized initiatives with owners, timelines, success criteria"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Not Built in Isolation",
+      "title": "A Plan Fed by the Whole System",
+      "bullets": [
+        "Draws on evidence gap analysis, KOL mapping, field insights, congress intelligence",
+        "Those inputs come from earlier modules of this course",
+        "It feeds and coordinates the evidence, publication, education, and congress plans",
+        "Those component plans are covered later in this same module"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "A Critical Distinction",
+      "title": "Medical Plan vs Commercial Plan",
+      "bullets": [
+        "Commercial is organized around sales volume and market share",
+        "The Medical Plan is organized around scientific objectives and medical value",
+        "Closing evidence gaps, building quality relationships, rigorous evidence generation",
+        "This distinction justifies Medical Affairs' independence and non-promotional nature"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "For the MSL",
+      "title": "Connecting Daily Work to Global Strategy",
+      "bullets": [
+        "Understand the full architecture, not just the tactical part you execute",
+        "Connects your daily activity to the product's global strategy",
+        "Lets you explain the purpose behind every visit, insight, and collaboration"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "The Medical Plan turns medical strategy into an executable, measurable plan",
+    "bullets": [
+      "It mirrors a business plan but is built around medical value, not sales",
+      "Situation analysis, strategy definition, and tactical planning are its three phases",
+      "It connects to every other component plan covered in this module"
+    ],
+    "nextLesson": "Strategic imperatives"
+  }
+}

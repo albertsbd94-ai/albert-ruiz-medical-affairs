@@ -1,0 +1,71 @@
+{
+  "moduleNum": 10,
+  "moduleTitle": "Omnichannel Medical & Digital Opinion Leaders",
+  "lessonNum": 3,
+  "lessonTitle": "DOLs",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Defining the Figure",
+      "title": "What a Digital Opinion Leader Is",
+      "bullets": [
+        "An HCP, researcher, or patient advocate with real scientific influence online",
+        "Active on LinkedIn, ResearchGate, blogs, podcasts, digital communities",
+        "Perceived by their audience as a credible scientific source",
+        "Complements and often overlaps with the traditional KOL"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "KOL vs DOL",
+      "title": "The Channel Changes, Not Necessarily the Expertise",
+      "bullets": [
+        "Many leading KOLs are also active DOLs",
+        "A KOL influences through publications, congresses, personal ties",
+        "A DOL extends that influence into digital communities",
+        "Digital reach often means broader, younger, more dispersed audiences"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Finding Them",
+      "title": "Mapping DOLs Takes a Different Process",
+      "bullets": [
+        "Social listening to see who drives real engagement",
+        "Co-authorship and citation analysis to verify scientific solidity",
+        "MSL field insight on who the local community follows online",
+        "Congress visibility often signals associated digital activity"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "A Common Mistake",
+      "title": "Followers Are Not the Same as Influence",
+      "bullets": [
+        "Anchoring bias: visibility gets confused with scientific influence",
+        "Follower count and posting frequency are not credibility",
+        "Reach and rigor don't always move together",
+        "Apply the same critical thinking used to evaluate any evidence"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why It Matters",
+      "title": "The Starting Point for This Module",
+      "bullets": [
+        "Understanding DOLs comes before designing digital content or channels",
+        "Sets up how content and metrics get tailored to this audience"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "A DOL earns scientific influence online, and reach alone doesn't prove it",
+    "bullets": [
+      "DOLs and KOLs can overlap, but their channels and audiences differ",
+      "Mapping a DOL means checking social listening against real scientific rigor",
+      "Visibility without credibility is a bias trap to avoid"
+    ],
+    "nextLesson": "Digital medical education"
+  }
+}

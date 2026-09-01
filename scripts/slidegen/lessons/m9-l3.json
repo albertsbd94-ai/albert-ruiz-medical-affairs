@@ -1,0 +1,71 @@
+{
+  "moduleNum": 9,
+  "moduleTitle": "Medical Strategy & Medical Plan",
+  "lessonNum": 3,
+  "lessonTitle": "Evidence gaps",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Beyond the List",
+      "title": "Evidence Gaps as a Planning Pillar",
+      "bullets": [
+        "An earlier module covered what an evidence gap is and how to identify one",
+        "This lesson covers how gaps formally integrate into the Medical Plan",
+        "They become a core decision pillar, not a loose list of field observations"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Diagnostic Picture",
+      "title": "A Living Inventory, Not an Annual Snapshot",
+      "bullets": [
+        "The gap inventory is the honest picture of what current evidence doesn't answer",
+        "Built from systematic literature review, guideline analysis, and MSL insights",
+        "It must stay live and updated across the whole plan cycle",
+        "Not compiled once a year and archived"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Choosing What to Solve",
+      "title": "Prioritization Criteria for Evidence Gaps",
+      "bullets": [
+        "Clinical impact: how many patients are affected, and how severely",
+        "Feasibility of generating resolving evidence within a reasonable timeframe",
+        "Alignment with the strategic imperatives defined for this cycle",
+        "Competitive or reputational risk of leaving the gap unaddressed"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "From Gap to Action",
+      "title": "Every Prioritized Gap Becomes a Concrete Initiative",
+      "bullets": [
+        "A subpopulation gap can become an observational or RWE study proposal",
+        "A head-to-head comparison gap can prioritize a pragmatic study",
+        "A mechanism-of-action understanding gap can become a medical education priority",
+        "This explicit link gives the whole Medical Plan its internal coherence"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "For the MSL",
+      "title": "From Anecdotal Insight to Strategic Contribution",
+      "bullets": [
+        "Participate in the full process, not just in submitting individual insights",
+        "Understand how gaps are aggregated, prioritized, and turned into decisions",
+        "This lets you explain to a KOL exactly where an unanswered question stands"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Evidence gaps become a Medical Plan pillar only once prioritized and actioned",
+    "bullets": [
+      "A gap inventory must be kept alive and current, not built once a year",
+      "Clear criteria decide which gaps get resources this cycle",
+      "Each prioritized gap maps to a specific initiative elsewhere in the plan"
+    ],
+    "nextLesson": "Stakeholder strategy"
+  }
+}

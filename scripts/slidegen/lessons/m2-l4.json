@@ -1,0 +1,71 @@
+{
+  "moduleNum": 2,
+  "moduleTitle": "The Modern MSL Role",
+  "lessonNum": 4,
+  "lessonTitle": "Territory ownership",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Core Idea",
+      "title": "Run Your Territory Like a Business",
+      "bullets": [
+        "Decide deliberately who deserves sustained attention and who doesn't",
+        "Decide which interactions genuinely need to happen in person",
+        "The opposite of a reactive calendar that just fills up"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Step One",
+      "title": "Map the Full Landscape First",
+      "bullets": [
+        "Understand every institution, investigator and emerging expert",
+        "Not just the names already familiar from handover notes",
+        "Connects directly to KOL segmentation and mapping in Module 3"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Step Two",
+      "title": "Build a Prioritised Engagement Plan",
+      "bullets": [
+        "Decide which relationships need quarterly in-person contact",
+        "Which can run on lighter-touch virtual engagement",
+        "Which are emerging opportunities worth early investment",
+        "Identify where evidence-generation priorities meet the map"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Practical Side",
+      "title": "Logistics That Make Field Work Sustainable",
+      "bullets": [
+        "Travel planning and congress calendars",
+        "Balancing time so no region gets neglected for months",
+        "Protecting unscheduled time to properly process insights",
+        "Deployment decisions are strategic, not just logistical"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Keeping It Alive",
+      "title": "Review the Plan on a Fixed Cadence",
+      "bullets": [
+        "Review quarterly against what actually happened",
+        "Ask whether engagement matched the plan",
+        "Ask whether new insights should reshape next quarter",
+        "Territory ownership is continuous, not a one-time onboarding task"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Owning a territory means running it as a deliberate, evolving strategy",
+    "bullets": [
+      "A good map of who matters and why comes before any engagement plan",
+      "The plan balances in-person, virtual and emerging relationships",
+      "It gets reviewed and updated on a fixed cadence, not left to go stale"
+    ],
+    "nextLesson": "Scientific exchange"
+  }
+}

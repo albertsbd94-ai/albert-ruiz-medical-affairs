@@ -1,0 +1,82 @@
+{
+  "moduleNum": 1,
+  "moduleTitle": "Medical Affairs Foundations & Strategic Role",
+  "lessonNum": 1,
+  "lessonTitle": "What Medical Affairs Is — and Why It Exists",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Core Problem",
+      "title": "The Gap Approval Doesn't Close",
+      "bullets": [
+        "Regulatory approval is not the same as correct real-world use",
+        "A drug label tells a physician what a medicine is for",
+        "It rarely answers the exact question in front of a specific patient",
+        "Medical Affairs exists to close that gap"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Evolution",
+      "title": "From Reactive Support to Strategic Pillar",
+      "bullets": [
+        "Once: answered unsolicited medical questions, supported dossiers",
+        "Today: McKinsey calls it the industry's \"third pillar\"",
+        "Standing alongside R&D and Commercial — not between them"
+      ]
+    },
+    {
+      "type": "stats",
+      "eyebrow": "A Measurable Shift",
+      "title": "Medical Affairs Leaders Reporting Directly to the CEO",
+      "stats": [
+        { "value": "~30%", "label": "2019" },
+        { "value": "~60%", "label": "2023", "emphasize": true }
+      ],
+      "caption": "Nearly doubled in four years — McKinsey / MAPS industry analysis"
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Non-Negotiable",
+      "title": "Independence From Commercial",
+      "bullets": [
+        "No sales targets — ever",
+        "Every interaction must stand on its own as balanced and evidence-based",
+        "Protected by codes: IFPMA, EFPIA, PhRMA",
+        "A legal and ethical requirement, not a cultural preference"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "In Practice",
+      "title": "Five Core Activities",
+      "bullets": [
+        "Scientific engagement with HCPs and KOLs",
+        "Medical insight generation that informs strategy",
+        "Evidence generation — RWE, investigator studies, registries",
+        "Medical education and publications",
+        "Medical information services"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "For You, as an MSL",
+      "title": "Why This Foundation Matters",
+      "bullets": [
+        "Your value proposition is scientific credibility — not sales influence",
+        "Every technique in this course builds on that credibility",
+        "Lose it, and Medical Affairs loses its reason to exist"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Medical Affairs closes the gap between approval and appropriate use",
+    "bullets": [
+      "Independence from Commercial is what makes it trustworthy",
+      "Its five core activities all defend that scientific credibility",
+      "This foundation underpins everything else in the course"
+    ],
+    "nextLesson": "Differences between Medical, Commercial, Market Access and R&D"
+  }
+}

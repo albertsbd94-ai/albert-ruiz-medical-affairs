@@ -1,0 +1,72 @@
+{
+  "moduleNum": 10,
+  "moduleTitle": "Omnichannel Medical & Digital Opinion Leaders",
+  "lessonNum": 8,
+  "lessonTitle": "Digital metrics",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Conceptual Leap",
+      "title": "Vanity Metrics Say Little About Real Value",
+      "bullets": [
+        "Followers, views and clicks are easy to obtain",
+        "They say little about actual scientific value generated",
+        "Real measurement connects activity to understanding, relationship, decisions",
+        "The same leap already required for medical KPIs elsewhere"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Level One",
+      "title": "Activity Metrics Confirm Reach, Not Impact",
+      "bullets": [
+        "Open rates, clicks, view time and completion are useful process signals",
+        "They confirm content arrives and gets some interaction",
+        "Relying on them alone gives an incomplete picture",
+        "Risks optimizing for what's easy to measure, not what matters"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Level Two",
+      "title": "Does the Journey Actually Deepen?",
+      "bullets": [
+        "Does an HCP move from introductory to deeper content",
+        "Does digital content show up as more informed questions in visits",
+        "Does combining channels build more relationship and trust over time",
+        "Compares real journey quality, not isolated channel activity"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Level Three",
+      "title": "The Hardest Link: Content to Practice",
+      "bullets": [
+        "Tries to connect digital exposure to real changes in clinical practice",
+        "Still the least established level in current industry practice",
+        "Requires careful evaluation design",
+        "Shares the same causal attribution limits as any impact narrative"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "For the MSL",
+      "title": "Judge Tools by Impact, Not Reach",
+      "bullets": [
+        "Understand these levels beyond surface reach numbers",
+        "Assess the real effectiveness of digital tools you recommend",
+        "Bring field perspective so teams prioritize impact over volume"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Real digital measurement moves past vanity metrics toward journey quality and practice impact",
+    "bullets": [
+      "Open rates and clicks confirm reach but not scientific value",
+      "Journey-level metrics show whether interest is genuinely deepening",
+      "Linking digital exposure to practice change is the hardest, rarest level"
+    ],
+    "nextLesson": "Digital compliance"
+  }
+}

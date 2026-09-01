@@ -1,0 +1,83 @@
+{
+  "moduleNum": 7,
+  "moduleTitle": "Clinical Research, RWE & Evidence Generation",
+  "lessonNum": 7,
+  "lessonTitle": "The Evidence Generation Plan",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Definition",
+      "title": "The Roadmap for Deliberate Evidence",
+      "bullets": [
+        "Translates priority research questions into a coordinated set of studies",
+        "Often built directly from identified evidence gaps",
+        "Sets objectives, timelines, and owners for each activity",
+        "Ensures evidence generation follows strategy, not isolated initiatives"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "What It Combines",
+      "title": "Four Activity Types, One Plan",
+      "bullets": [
+        "Phase IIIb and IV studies covering new populations and comparators",
+        "Investigator-initiated studies answering external scientific questions",
+        "Real-world data collection and disease registry collaborations",
+        "HEOR studies supporting access and reimbursement decisions"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Real Metric",
+      "title": "Coherence Over Quantity",
+      "bullets": [
+        "A good plan isn't judged by how many studies it contains",
+        "Every activity must answer a concrete strategic question",
+        "The set must balance science, market access, and clinical practice needs"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Building the Plan",
+      "title": "Four Construction Stages",
+      "bullets": [
+        "Identify and prioritize evidence gaps, with direct MSL field input",
+        "Define specific, measurable evidence objectives with a clear timeline",
+        "Design the right study type for each objective",
+        "Allocate resources, timeline, and scientific review governance"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Two Moments",
+      "title": "Where the MSL Plugs In",
+      "bullets": [
+        "Gap identification: brings the systematized voice of the field",
+        "Execution and dissemination: supports investigator relationships",
+        "Helps published results reach the right scientific audience",
+        "Always through non-promotional scientific communication"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why It Compounds",
+      "title": "A Cycle That Outlives Launch",
+      "bullets": [
+        "Each study answering a real gap generates new evidence",
+        "New evidence often reveals new questions",
+        "That continuous cycle keeps the product scientifically relevant",
+        "Credibility extends well beyond the initial approval moment"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "The evidence generation plan turns prioritized gaps into a coherent, resourced roadmap of studies across a product's life",
+    "bullets": [
+      "MSL field insight shapes both gap prioritization and execution support",
+      "Coherence across study types matters more than sheer study count",
+      "Each study answered fuels the next question in a continuous cycle"
+    ],
+    "nextLesson": "The MSL's Role in Research"
+  }
+}

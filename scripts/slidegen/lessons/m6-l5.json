@@ -1,0 +1,69 @@
+{
+  "moduleNum": 6,
+  "moduleTitle": "Evidence-Based Medicine for MSLs",
+  "lessonNum": 5,
+  "lessonTitle": "Primary and secondary endpoints",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Defining the Endpoint",
+      "title": "What the Trial Was Actually Built to Measure",
+      "bullets": [
+        "An endpoint is what a trial measures to determine whether treatment works",
+        "The primary versus secondary distinction defines what can be claimed with statistical confidence",
+        "Misreading it risks overinterpreting or miscommunicating a study's results"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Primary Variable",
+      "title": "The Question the Trial Was Powered For",
+      "bullets": [
+        "The primary endpoint is the outcome the trial is specifically designed and powered to evaluate",
+        "It's registered in the protocol, often on ClinicalTrials.gov, before recruitment begins",
+        "Meeting the primary endpoint means a statistically significant, and ideally clinically relevant, difference was observed"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Secondary Variables",
+      "title": "Useful, But Not Confirmatory",
+      "bullets": [
+        "Secondary endpoints are additional outcomes the study also measures, often without dedicated power",
+        "They can reveal valuable signals on quality of life, biomarkers, subgroups or longer-term outcomes",
+        "Findings on secondary endpoints should be read as hypothesis-generating, not confirmed evidence"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Composite Endpoints",
+      "title": "One Number, Several Events Inside It",
+      "bullets": [
+        "A composite endpoint bundles several events into one outcome, common in cardiovascular and survival studies",
+        "Combining events raises event frequency and statistical power",
+        "A positive result can be driven by the most frequent or least severe component, not the most important one",
+        "Always unpack the components before communicating the headline result"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Communication Risk",
+      "title": "Say Which Variable You're Discussing",
+      "bullets": [
+        "Presenting a secondary finding with the same weight as the primary result is a form of communication bias",
+        "This outcome switching can undermine trust with an HCP who checks the original protocol",
+        "Good practice is to always name the variable, its status, and whether the study was powered for it"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Primary endpoints confirm, secondary endpoints only suggest",
+    "bullets": [
+      "The primary endpoint is the only outcome the trial was powered to prove",
+      "Secondary and composite endpoints deserve more cautious, hypothesis-generating language",
+      "Naming which endpoint you're discussing protects your credibility with HCPs"
+    ],
+    "nextLesson": "p-value and 95% CI"
+  }
+}

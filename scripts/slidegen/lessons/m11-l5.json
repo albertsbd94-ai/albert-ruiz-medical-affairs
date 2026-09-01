@@ -1,0 +1,70 @@
+{
+  "moduleNum": 11,
+  "moduleTitle": "AI for Medical Affairs",
+  "lessonNum": 5,
+  "lessonTitle": "NotebookLM for document analysis",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Problem It Solves",
+      "title": "Answers Anchored Only in Your Own Sources",
+      "bullets": [
+        "Built by Google on its Gemini models",
+        "Works with a defined set of documents the MSL uploads",
+        "Answers come only from those sources, not general model knowledge",
+        "Citations point to the exact passage behind each answer"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "How It Works",
+      "title": "Upload Sources, Get Grounded Responses",
+      "bullets": [
+        "User loads documents as the notebook's sources",
+        "Every answer after that draws exclusively from that content",
+        "Especially reliable when sources must stay central to the response",
+        "Ideal when every claim needs to trace to an exact passage"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Before a Meeting",
+      "title": "Preparing for a Key KOL Interaction",
+      "bullets": [
+        "Load the key publication, related study protocol, and prior notes on that KOL",
+        "Prepare answers to likely questions with exact passage traceability",
+        "After a congress, load team notes to find patterns or contradictions"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Extra Feature",
+      "title": "Summaries in Multiple Formats",
+      "bullets": [
+        "Generates output in different formats from the same sources",
+        "Ranges from structured outlines to conversational formats",
+        "Useful for absorbing dense content during travel or downtime"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why It's Lower Risk",
+      "title": "Grounding Reduces, Not Eliminates, Error",
+      "bullets": [
+        "Anchoring only to provided sources cuts the risk of ungrounded content",
+        "Lower risk than general purpose tools, but not zero risk",
+        "MSL still confirms the synthesis accurately reflects the original nuance"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "NotebookLM trades general flexibility for tightly sourced, traceable answers",
+    "bullets": [
+      "Best for meeting prep and congress note synthesis from your own documents",
+      "Every answer is traceable to an exact passage, reducing fabrication risk",
+      "Human confirmation of nuance and accuracy is still required"
+    ],
+    "nextLesson": "Consensus, Elicit and Scite for evidence"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "moduleNum": 10,
+  "moduleTitle": "Omnichannel Medical & Digital Opinion Leaders",
+  "lessonNum": 7,
+  "lessonTitle": "Medical listening",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Definition",
+      "title": "Systematically Monitoring the Public Scientific Conversation",
+      "bullets": [
+        "Tracks conversations across professional networks, forums, publication comments, congress hashtags",
+        "Aims to spot trends, concerns, knowledge gaps and opinion patterns",
+        "Adapted from social listening to health's ethical and rigor standards"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Not the Same As",
+      "title": "Broader and More Continuous Than Competitive Intelligence",
+      "bullets": [
+        "Competitive intelligence focuses narrowly on one congress",
+        "Medical listening runs continuously, all year round",
+        "Its scope covers the whole conversation on a disease or area",
+        "Interested in the topic, not only in what competitors say"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "How It Works",
+      "title": "Three Sources of Signal",
+      "bullets": [
+        "What content drives the most discussion among HCPs online",
+        "Hashtags and mentions tracked around relevant congresses",
+        "Forums and communities where professionals speak more informally",
+        "Informal spaces often surface more honest doubts and frustrations"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Where Insights Go",
+      "title": "Feeding Real Gaps Back Into the Plan",
+      "bullets": [
+        "Feeds the evidence gap inventory in the Medical Plan",
+        "Informs content journeys built on real, not assumed, questions",
+        "Helps surface emerging DOLs before traditional mapping catches them"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Ethical Line",
+      "title": "Public, Contextual, and Formally Channeled",
+      "bullets": [
+        "Limit sources to public and open conversations only",
+        "Respect the privacy and context of what you observe",
+        "Never identify a professional from an informal conversation without consent",
+        "Route findings through formal insight processes, not casual mentions"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "For the MSL",
+      "title": "A Wider View Than Your Own Conversations Alone",
+      "bullets": [
+        "Amplifies insight-gathering beyond direct personal interactions",
+        "Offers a panoramic read of what the community cares about right now"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Medical listening turns the public scientific conversation into structured, ethical insight",
+    "bullets": [
+      "It runs year-round and covers the full conversation, not just competitors",
+      "LinkedIn, congress hashtags and clinical forums each add a different signal",
+      "Findings must stay public-source, contextual and formally documented"
+    ],
+    "nextLesson": "Digital metrics"
+  }
+}

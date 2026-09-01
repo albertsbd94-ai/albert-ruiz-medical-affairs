@@ -1,0 +1,68 @@
+{
+  "moduleNum": 9,
+  "moduleTitle": "Medical Strategy & Medical Plan",
+  "lessonNum": 8,
+  "lessonTitle": "Omnichannel medical plan",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "A New Planning Layer",
+      "title": "Integrating Channels Around the HCP",
+      "bullets": [
+        "Defines how in-person, virtual, digital, and network channels integrate",
+        "Centered on the HCP's experience, not managed as isolated channel efforts",
+        "Introduced here at the strategy level; developed fully in a later module"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why It's Now Essential",
+      "title": "HCPs Already Move Fluidly Across Channels",
+      "bullets": [
+        "HCPs combine an MSL conversation, a recommended publication, and a webinar",
+        "They also follow content on professional networks, often in the same week",
+        "They expect a consistent experience, with no contradictions across channels"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Not a Replacement",
+      "title": "Channels Complement, Digital Doesn't Replace the MSL",
+      "bullets": [
+        "Digital content can spark initial interest deepened later in a personal visit",
+        "A personal visit can surface a need later resolved with personalized content",
+        "Digital channels sustain contact with HCPs who get fewer in-person visits"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "What Coordination Requires",
+      "title": "One Calendar, One Message, One View of Each Stakeholder",
+      "bullets": [
+        "Field activity, digital communication, and education platforms share a plan",
+        "They share the same calendar and the same evidence-based scientific message",
+        "This avoids fragmented, uncoordinated contact toward the same KOL"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "For the MSL",
+      "title": "Fitting Field Work into a Bigger Journey",
+      "bullets": [
+        "Doesn't require taking on digital channel management responsibilities",
+        "Requires understanding how your field activity fits the HCP's wider journey",
+        "Includes recommending relevant digital content when it's the better fit"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "The omnichannel medical plan makes every HCP channel work as one coherent experience",
+    "bullets": [
+      "It exists because HCPs already move fluidly between channels themselves",
+      "Digital content and personal visits are designed to complement, not replace",
+      "Coordination across channels prevents fragmented, uncoordinated stakeholder contact"
+    ],
+    "nextLesson": "Medical KPIs"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "moduleNum": 12,
+  "moduleTitle": "Medical Affairs Leadership & Career Accelerator",
+  "lessonNum": 1,
+  "lessonTitle": "Competencies of the medical leader",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Real Requirement",
+      "title": "Leadership Doesn't Require a Title",
+      "bullets": [
+        "Leadership in Medical Affairs rests on competencies, not job title",
+        "These competencies can be built and shown from day one as an MSL",
+        "They are exactly what determines who advances",
+        "This final module exists to accelerate that trajectory"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Competency One",
+      "title": "Working With Diverse Stakeholders",
+      "bullets": [
+        "Build trust-based relationships across internal and external stakeholders",
+        "Navigate conflicting priorities across commercial, market access, regulatory and science",
+        "Becomes leadership when used to align others around a shared medical goal"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Competency Two",
+      "title": "Strategic Thinking and Business Acumen",
+      "bullets": [
+        "Understand both the medical and commercial sides of the product lifecycle",
+        "Growing business knowledge supports better-informed medical decisions",
+        "The goal is not to become commercial, but to integrate the medical perspective effectively"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Competency Three",
+      "title": "Influence Without Formal Authority",
+      "bullets": [
+        "The most distinctive skill for medical leadership in a matrix structure",
+        "Rarely any direct hierarchical authority over the teams you coordinate with",
+        "Covered in depth in the next lesson"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Competency Four",
+      "title": "Developing Others, Not Just Yourself",
+      "bullets": [
+        "Effective leaders act as facilitators of their team's success",
+        "Less about personal authority, more about servant leadership",
+        "Recognized in the literature as a real competitive advantage for medical organizations"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Starting Today",
+      "title": "Leadership Practiced Before It's Titled",
+      "bullets": [
+        "No need to wait for a formal promotion",
+        "Every stakeholder interaction is a chance to practice leadership",
+        "Every decision that links daily work to strategy counts",
+        "Helping a colleague grow is leadership in action"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Medical leadership is a set of practiced competencies, not a job title",
+    "bullets": [
+      "Four competencies define it: stakeholder collaboration, strategic thinking, influence without authority, and developing others",
+      "Credibility and trust remain the foundation of every one of them",
+      "These competencies can be built and demonstrated starting on day one"
+    ],
+    "nextLesson": "Strategic thinking"
+  }
+}

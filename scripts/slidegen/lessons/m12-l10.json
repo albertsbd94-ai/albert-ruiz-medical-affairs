@@ -1,0 +1,78 @@
+{
+  "moduleNum": 12,
+  "moduleTitle": "Medical Affairs Leadership & Career Accelerator",
+  "lessonNum": 10,
+  "lessonTitle": "From MSL to Medical Lead",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Not Automatic",
+      "title": "Progression Is Built, Not Accumulated",
+      "bullets": [
+        "Moving from MSL toward greater responsibility isn't automatic with years of experience",
+        "It's a deliberately built progression, applying leadership competencies visibly",
+        "This happens while still executing the current role with excellence"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Pattern One",
+      "title": "Expand Your Scope of Impact Gradually",
+      "bullets": [
+        "Start by excelling in your own territory and relationships",
+        "Then proactively seek ways to contribute beyond that individual scope",
+        "Examples include leading a process improvement or coordinating team-wide congress prep",
+        "These opportunities often have to be actively sought and proposed"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Pattern Two",
+      "title": "Make Your Work Visible to Decision-Makers",
+      "bullets": [
+        "Excellent work that stays invisible to leadership doesn't translate into progression",
+        "Communicate your own results and contributions effectively",
+        "Apply the executive communication and impact narrative principles from this course"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Pattern Three",
+      "title": "Seek Mentorship From Those Already There",
+      "bullets": [
+        "Identify professionals already in the type of role you aspire to",
+        "Proactively ask what competencies and experiences mattered most in their own progression",
+        "This practical knowledge is something no theoretical course fully replicates"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Pattern Four",
+      "title": "Stay Anchored to the Function's Purpose",
+      "bullets": [
+        "Progression is more sustainable when it's not about titles or formal authority",
+        "Think of it instead as an expanding capacity to contribute to better clinical decisions",
+        "The same purpose that opened this course should guide every step of the trajectory"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Course Complete",
+      "title": "Apply It With Consistency and Ambition",
+      "bullets": [
+        "This course covered the technical, relational, strategic and digital knowledge behind this trajectory",
+        "Applying it with consistency, honesty and genuine ambition is now your responsibility",
+        "The path runs from the first field visit to leading an entire medical organization"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Progression from MSL to Medical Lead is a deliberately built trajectory, not a reward for tenure",
+    "bullets": [
+      "Expanding your scope of impact and making it visible both require proactive effort",
+      "Mentors who've already made this progression offer knowledge no course can replicate",
+      "Staying anchored to the purpose of better patient outcomes keeps the trajectory sustainable"
+    ]
+  }
+}

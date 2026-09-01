@@ -1,0 +1,88 @@
+{
+  "moduleNum": 5,
+  "moduleTitle": "Medical Insights Excellence",
+  "lessonNum": 6,
+  "lessonTitle": "How to avoid bias",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Hidden Risk",
+      "title": "Bias Distorts Insight Without Any Dishonesty",
+      "bullets": [
+        "Field-generated insight is vulnerable to well-documented cognitive biases",
+        "An unaware MSL will quietly distort the picture over time",
+        "This happens through normal information processing, not bad intent"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Biggest One",
+      "title": "Confirmation Bias Weights What You Already Believe",
+      "bullets": [
+        "Tendency to notice and remember what confirms existing beliefs",
+        "Contradicting information gets discounted or simply not registered",
+        "An MSL may recall supportive conversations more readily than complicating ones"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Countering Confirmation",
+      "title": "Seek Out What Might Prove You Wrong",
+      "bullets": [
+        "Deliberately seek disconfirming perspectives, not just corroborating ones",
+        "Practise active reflexivity — ask what assumption is shaping this reading",
+        "Drawn from qualitative research methodology literature"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Who You Talk To",
+      "title": "Selection Bias Skews Who Gets Heard",
+      "bullets": [
+        "Engagement naturally concentrates on the most accessible, enthusiastic experts",
+        "That skews the resulting picture of what physicians think",
+        "Can miss the harder-to-reach perspectives with the most important insight"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Fix",
+      "title": "Deliberately Widen Who You Engage",
+      "bullets": [
+        "Include a broader, more representative range of physicians",
+        "Not only the easiest or most favourably disposed ones",
+        "Connects to the territory and segmentation discipline from Module 3"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Recent Isn't Representative",
+      "title": "One Vivid Conversation Can Outweigh a Real Pattern",
+      "bullets": [
+        "A recent, memorable conversation can feel more significant than it is",
+        "It can get reported with more weight than a quieter, broader pattern",
+        "Reviewing insight logs over a longer window corrects for this"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Everyday Countermeasures",
+      "title": "Build Bias-Checking Into Routine Practice",
+      "bullets": [
+        "State the evidentiary basis explicitly in every written insight",
+        "Periodically review your own log for one-sided reporting",
+        "Seek a colleague's perspective on ambiguous or high-stakes insights"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Confirmation, selection and recency bias quietly distort field insight if unchecked",
+    "bullets": [
+      "Seek disconfirming views and a wider range of physicians, not just easy ones",
+      "Review your insight log over time, not just the latest visit",
+      "State your evidence honestly and triangulate high-stakes insights with colleagues"
+    ],
+    "nextLesson": "How to share insights internally"
+  }
+}

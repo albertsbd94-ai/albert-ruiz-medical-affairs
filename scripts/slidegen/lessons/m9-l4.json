@@ -1,0 +1,70 @@
+{
+  "moduleNum": 9,
+  "moduleTitle": "Medical Strategy & Medical Plan",
+  "lessonNum": 4,
+  "lessonTitle": "Stakeholder strategy",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Deliberate, Not Improvised",
+      "title": "Defining Who Medical Affairs Engages",
+      "bullets": [
+        "Defines deliberately who the organization needs to engage, and how",
+        "Structures relationships according to each actor's role and influence",
+        "Translates the KOL mapping and segmentation work into strategic planning"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Beyond Clinical KOLs",
+      "title": "A Broader Stakeholder Ecosystem",
+      "bullets": [
+        "Digital opinion leaders, whose influence runs through online channels",
+        "Scientific and professional societies that shape guidelines and consensus",
+        "Patient associations, who surface unmet needs and quality-of-life gaps",
+        "Emerging investigators and, in many markets, payers and HTA assessors"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Building the Strategy",
+      "title": "From Mapping to Differentiated Relationships",
+      "bullets": [
+        "Start from situational analysis of who is influential and how positioned",
+        "Combine it with influence-level segmentation from earlier KOL mapping work",
+        "Top-tier KOLs get a longitudinal, high-contact, bidirectional relationship",
+        "Broader specialist segments get reach through education and digital channels"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "A Coordination Challenge",
+      "title": "One Ecosystem, Many Functions",
+      "bullets": [
+        "MSLs, market access, scientific communication, and RWE teams share the ecosystem",
+        "Without coordination, one KOL can be over-contacted from multiple fronts",
+        "Or, just as damaging, no team owns the relationship with a relevant actor"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "For the MSL",
+      "title": "A Guide for Limited Relational Time",
+      "bullets": [
+        "Not every possible contact merits the same level of investment",
+        "The stakeholder strategy shows where to invest limited relational time",
+        "Understanding the logic behind it means executing with judgment, not just a list"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Stakeholder strategy turns KOL mapping into a deliberate plan for who gets what relationship",
+    "bullets": [
+      "The relevant ecosystem is wider than clinical KOLs alone",
+      "Relationship intensity should match each segment's role and influence",
+      "Cross-functional coordination prevents both overload and ownership gaps"
+    ],
+    "nextLesson": "Medical education plan"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "moduleNum": 11,
+  "moduleTitle": "AI for Medical Affairs",
+  "lessonNum": 1,
+  "lessonTitle": "What AI can bring to Medical Affairs",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Shift",
+      "title": "AI Is Now a Daily Working Tool",
+      "bullets": [
+        "Generative AI has moved from future promise to daily MSL tool",
+        "Understanding its real value is now a competitive advantage",
+        "The key skill is knowing which tasks it helps with, and which it doesn't",
+        "Using it without criteria erases that advantage"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Where It Helps",
+      "title": "Four High-Value Use Cases",
+      "bullets": [
+        "Synthesizing and organizing information: literature, field notes, insights",
+        "Early exploration of an unfamiliar topic or research question",
+        "First drafts of support materials: slides, FAQ outlines, education content",
+        "Analyzing an MSL's own long documents: protocols, reports, congress notes"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Core Limitation",
+      "title": "Hallucination Is the Central Risk",
+      "bullets": [
+        "Models can generate confident, scientific-sounding content that is wrong",
+        "Fabricated facts or nonexistent citations are the classic failure mode",
+        "Risk rises with very specific or very recent information",
+        "No model replaces clinical judgment or primary source verification"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Right Mental Model",
+      "title": "An Assistant, Not an Oracle",
+      "bullets": [
+        "Think of AI as a productivity accelerator for low-risk, repetitive work",
+        "Not an authority that hands down verified scientific answers",
+        "It frees time for the work only a human MSL can do",
+        "Scientific judgment, KOL relationships, and final verification stay human"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "What's Ahead",
+      "title": "This Module's Roadmap",
+      "bullets": [
+        "Each following lesson covers one tool: strengths, failure points, workflow fit",
+        "The module closes with compliance and privacy risks",
+        "One principle runs through all of it: accelerate, never replace, verify"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "AI adds real value to Medical Affairs only when used for the right tasks, with human verification never skipped",
+    "bullets": [
+      "AI excels at synthesis, exploration, drafting, and long-document review",
+      "Hallucination and unverified claims are the risk to always guard against",
+      "Treat AI as an accelerator, never a substitute for clinical judgment"
+    ],
+    "nextLesson": "ChatGPT for strategic thinking"
+  }
+}

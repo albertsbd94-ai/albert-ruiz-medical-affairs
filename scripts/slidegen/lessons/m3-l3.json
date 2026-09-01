@@ -1,0 +1,83 @@
+{
+  "moduleNum": 3,
+  "moduleTitle": "KOL Mapping, Segmentation & Engagement",
+  "lessonNum": 3,
+  "lessonTitle": "Differences between KOL, rising star, clinical champion and scientific influencer",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "A Common Mistake",
+      "title": "Four Roles, Four Different Engagements",
+      "bullets": [
+        "These four terms are often used interchangeably in mapping work",
+        "Each type actually warrants a different kind of engagement",
+        "Mixing up the categories wastes time or misses real opportunity"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Established Expert",
+      "title": "The Classic KOL",
+      "bullets": [
+        "Broad, proven influence: publications, guidelines, trial leadership",
+        "Wide peer recognition across the therapy area",
+        "Engagement centers on mature scientific partnership",
+        "Advisory boards and sustained dialogue built over years"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Early Investment",
+      "title": "The Rising Star",
+      "bullets": [
+        "Early or mid-career, trajectory clearly ascending",
+        "Publishing increasingly influential work within a sub-specialty",
+        "Not yet broadly recognised as an established KOL",
+        "Engaging early builds credible relationships before competitors notice"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Local Credibility",
+      "title": "The Clinical Champion",
+      "bullets": [
+        "Advocates enthusiastically for a therapy within their own institution",
+        "Active in journal clubs, tumor boards, local guideline committees",
+        "Narrower geographic scope than a KOL, but high local impact",
+        "Credibility comes from being a trusted, present colleague"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Content as Influence",
+      "title": "The Scientific Influencer",
+      "bullets": [
+        "Overlaps heavily with the Digital Opinion Leader concept",
+        "Influence comes from content, not institutional position or trial leadership",
+        "Widely cited papers and framing of how a debate is discussed",
+        "Digital content that reaches and engages a wide clinical audience"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "In Practice",
+      "title": "Build a Deliberate, Mixed Portfolio",
+      "bullets": [
+        "Sustained investment in established KOLs",
+        "Early relationship-building with credible rising stars",
+        "Local engagement with clinical champions to support adoption",
+        "Awareness of scientific and digital influencers shaping the conversation"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "KOL, rising star, clinical champion and scientific influencer each need a distinct approach",
+    "bullets": [
+      "Confusing the categories leads to misallocated engagement effort",
+      "Rising stars and clinical champions matter as much as established KOLs",
+      "A deliberate mixed portfolio beats chasing only the most recognisable names"
+    ],
+    "nextLesson": "Segmentation criteria"
+  }
+}

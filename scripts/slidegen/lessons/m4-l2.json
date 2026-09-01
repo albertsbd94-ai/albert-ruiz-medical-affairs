@@ -1,0 +1,77 @@
+{
+  "moduleNum": 4,
+  "moduleTitle": "Scientific Exchange & High-Impact Conversations",
+  "lessonNum": 2,
+  "lessonTitle": "Difference Between Informing, Persuading, Exploring and Co-Creating",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Why It Matters",
+      "title": "Every Conversation Falls Into One Mode",
+      "bullets": [
+        "All four modes exist whether an MSL chooses deliberately or by default",
+        "Telling them apart precisely is a core compliance and effectiveness skill",
+        "Only two of the four belong in routine scientific exchange"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Mode One",
+      "title": "Informing Is Necessary but One-Directional",
+      "bullets": [
+        "Accurately and completely communicating study results, mechanism, safety data and guidelines",
+        "Must include limitations and unfavourable findings, not just favourable ones",
+        "Legitimate on its own, but used exclusively it is a presentation, not a dialogue"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Mode Two",
+      "title": "Persuading Crosses the Firewall",
+      "bullets": [
+        "Goal is changing behaviour toward a commercial outcome",
+        "Belongs to Commercial and promotional communication, not Medical Affairs",
+        "Even subtle, selectively emphasised persuasion breaks the Medical-Commercial firewall"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Mode Three",
+      "title": "Exploring Is Where Insight Lives",
+      "bullets": [
+        "Genuine questions about clinical experience, concerns and unmet needs",
+        "Real openness to what the answer might be, not a lead-in to a predetermined response",
+        "The mode most under-used by MSLs more comfortable presenting data"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Mode Four",
+      "title": "Co-Creating Has a Narrow Home",
+      "bullets": [
+        "Jointly developing a research question or hypothesis with the expert",
+        "Appropriate for advisory boards, investigator studies and publication planning",
+        "Not a default for routine field visits — trust and governance requirements are not met"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Discipline",
+      "title": "Name the Mode You Are Actually In",
+      "bullets": [
+        "Before and during any interaction, an MSL should be able to name which mode is active",
+        "Correct course immediately if the conversation drifts toward persuading"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Naming which of the four modes a conversation is in is what keeps scientific exchange genuine",
+    "bullets": [
+      "Informing and exploring are the two legitimate modes of routine exchange",
+      "Persuading and unstructured co-creating are compliance risks, not conversational style",
+      "Self-awareness in the moment is what prevents drift"
+    ],
+    "nextLesson": "Exploratory questions"
+  }
+}

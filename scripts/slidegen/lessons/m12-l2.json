@@ -1,0 +1,78 @@
+{
+  "moduleNum": 12,
+  "moduleTitle": "Medical Affairs Leadership & Career Accelerator",
+  "lessonNum": 2,
+  "lessonTitle": "Strategic thinking",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Core Skill",
+      "title": "Connecting Daily Work to the Bigger Picture",
+      "bullets": [
+        "Strategic thinking links daily, operational work to the broader business and product picture",
+        "It separates those who just execute tasks from those who anticipate and prioritize",
+        "The focus stays on what matters over the medium and long term"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Business Fluency",
+      "title": "Understand the Business Behind the Science",
+      "bullets": [
+        "Know how drug development gets financed and how patent timing drives decisions",
+        "Understand access and reimbursement dynamics in relevant markets",
+        "Know the role each function plays across commercial, market access, regulatory and pharmacovigilance",
+        "This cross-functional fluency makes the medical voice more persuasive in strategy discussions"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Every Activity, Tested",
+      "title": "Tie Every Activity to the Medical Plan",
+      "bullets": [
+        "Before investing time, ask how the activity serves the cycle's top medical priorities",
+        "Applies to KOL relationships, congress coverage and insight work alike",
+        "The alternative is operating purely reactively to whatever comes up"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Reading the Signals",
+      "title": "Anticipate Before Signals Become Facts",
+      "bullets": [
+        "Watch for early signals: competitive shifts, emerging trends, regulatory changes under discussion",
+        "Think through the implications ahead of time rather than reacting once they're settled",
+        "This builds directly on the medical listening and intelligence practices from earlier modules"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Advanced Skill",
+      "title": "Deciding With Incomplete Information",
+      "bullets": [
+        "Prioritize among reasonable alternatives when there is no obviously correct answer",
+        "This is developed through deliberate practice on real decisions, not theory alone"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Not an Innate Trait",
+      "title": "A Discipline, Refined Daily",
+      "bullets": [
+        "Strategic thinking is not reserved for people already in director roles",
+        "It is practiced and refined in every everyday decision",
+        "Professionals who build it early consistently reach strategic responsibility faster"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Strategic thinking turns daily execution into a deliberate contribution to the bigger picture",
+    "bullets": [
+      "Business fluency lets the medical voice land more persuasively in strategy conversations",
+      "Tie every activity back to the Medical Plan's top priorities instead of reacting",
+      "Anticipating signals and deciding with incomplete information are trainable, practiced skills"
+    ],
+    "nextLesson": "Influence without authority"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "moduleNum": 6,
+  "moduleTitle": "Evidence-Based Medicine for MSLs",
+  "lessonNum": 7,
+  "lessonTitle": "Relative risk, odds ratio and hazard ratio",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Three Measures, One Habit",
+      "title": "RR, OR and HR Are Not Interchangeable",
+      "bullets": [
+        "Relative risk, odds ratio and hazard ratio all compare event occurrence between two groups",
+        "Each measure fits a different study design",
+        "Confusing them is one of the most common interpretation errors, even among experienced clinicians"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Relative Risk",
+      "title": "The Ratio of Two Probabilities",
+      "bullets": [
+        "Relative risk compares the probability of an event in the treated group versus the control group",
+        "Used in trials and cohort studies, where incidence can be calculated directly",
+        "An RR of 0.70 means a 30% lower relative risk of the event in the treated group"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Odds Ratio",
+      "title": "The Measure for Case-Control Studies",
+      "bullets": [
+        "Odds ratio compares the odds of the event between groups, not a directly calculated incidence",
+        "It's the standard measure in case-control studies, where true incidence can't be computed",
+        "When the event is rare, below roughly 10%, the OR closely approximates the RR",
+        "When the event is common, the OR tends to exaggerate the effect size"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Hazard Ratio",
+      "title": "The Measure for Time-to-Event Data",
+      "bullets": [
+        "Hazard ratio is used in survival analysis, when the timing of the event matters, not just whether it happens",
+        "It reflects relative instantaneous risk over follow-up, assuming proportional hazards",
+        "It's the standard measure in oncology and cardiovascular trials"
+      ]
+    },
+    {
+      "type": "stats",
+      "eyebrow": "The Shared Blind Spot",
+      "title": "A Favorable Ratio Can Hide a Small Absolute Benefit",
+      "stats": [
+        { "value": "HR 0.50", "label": "sounds highly favorable on its own" },
+        { "value": "2% to 1%", "label": "the same result when the event is rare", "emphasize": true }
+      ],
+      "caption": "None of these three measures show the real absolute benefit for an individual patient."
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "In Practice",
+      "title": "Never Report a Relative Measure Alone",
+      "bullets": [
+        "None of these measures communicate absolute risk or the real magnitude of benefit",
+        "Pair every relative measure with the absolute risk in each group",
+        "Add the number needed to treat to translate the effect into practice-ready language"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "RR, OR and HR each fit a different design, and none show absolute benefit alone",
+    "bullets": [
+      "Relative risk fits trials and cohorts, odds ratio fits case-control studies, hazard ratio fits time-to-event data",
+      "A favorable relative number can still hide a small absolute benefit",
+      "Always pair a relative measure with absolute risk before discussing it with an HCP"
+    ],
+    "nextLesson": "NNT, NNH and clinical relevance"
+  }
+}

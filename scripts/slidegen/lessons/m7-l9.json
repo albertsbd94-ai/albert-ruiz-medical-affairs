@@ -1,0 +1,81 @@
+{
+  "moduleNum": 7,
+  "moduleTitle": "Clinical Research, RWE & Evidence Generation",
+  "lessonNum": 9,
+  "lessonTitle": "Collaborating with Investigators",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Why It Matters",
+      "title": "Collaboration Quality Drives Outcomes",
+      "bullets": [
+        "Determines both study success and how the company is seen locally",
+        "Not a one-off event but a relationship sustained over time",
+        "Needs clear rules protecting independence and ethical integrity"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Know the Investigator",
+      "title": "Understand the Research Agenda First",
+      "bullets": [
+        "What questions genuinely interest them, and at what career stage",
+        "What resources they have: time, team, funding, patient access",
+        "What kind of support could actually move their research forward",
+        "Built through longitudinal, genuine scientific exchange, not one talk"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Setting Expectations",
+      "title": "The MSL as Process Facilitator",
+      "bullets": [
+        "Explains the formal steps to submit a proposal, typically via IIS",
+        "Shares the review committee's criteria and realistic timelines",
+        "Clarifies what support the company can and cannot offer",
+        "States upfront that approval rests on independent scientific review"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "During the Study",
+      "title": "Support Without Interference",
+      "bullets": [
+        "Can facilitate access to relevant literature and product context data",
+        "Can connect investigators working on similar questions",
+        "Always through approved channels only",
+        "Never touches data analysis or results interpretation"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "After Publication",
+      "title": "The Collaboration Doesn't End There",
+      "bullets": [
+        "MSL can help results reach the right scientific audience",
+        "Congress presentations, non-promotional discussion, publication plans",
+        "Always respecting the investigator's authorship and intended message"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Payoff",
+      "title": "A Valued Partner, Not a Processor",
+      "bullets": [
+        "Genuine scientific interest plus process transparency builds trust",
+        "Strict respect for ethical limits is non-negotiable",
+        "Together they make the MSL a long-term valued research partner"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Strong investigator collaboration is built on genuine interest, transparent process, and strict respect for scientific independence",
+    "bullets": [
+      "Understanding the investigator's real agenda comes before any ask",
+      "MSL facilitates process and support but never the science itself",
+      "The relationship continues through publication, not just approval"
+    ],
+    "nextLesson": "Good Scientific and Ethical Practice"
+  }
+}

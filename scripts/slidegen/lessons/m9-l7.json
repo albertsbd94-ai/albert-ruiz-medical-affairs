@@ -1,0 +1,69 @@
+{
+  "moduleNum": 9,
+  "moduleTitle": "Medical Strategy & Medical Plan",
+  "lessonNum": 7,
+  "lessonTitle": "Congress plan",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Strategic Planning, Not Just Logistics",
+      "title": "Deciding Which Congresses Matter",
+      "bullets": [
+        "Decides in advance which congresses to attend, with what objectives",
+        "Sets resources per congress and its connection to the plan's other levers",
+        "An earlier module covered excellent execution of a single congress",
+        "This lesson places that execution inside the annual strategic plan"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Building the Calendar",
+      "title": "Mapping and Evaluating Every Event",
+      "bullets": [
+        "Map the full calendar: international, regional, and niche specialist events",
+        "Evaluate each by expected presence of priority KOLs and DOLs",
+        "Also weigh the likelihood of relevant own or competitor data, and cost versus value"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Not All Congresses Are Equal",
+      "title": "Three Tiers of Congress Investment",
+      "bullets": [
+        "Strategic presence: posters, own presentations, satellite symposia, broad team",
+        "Coverage: lighter presence focused on intelligence and selective KOL contact",
+        "Remote monitoring: no physical presence, but publications are still tracked"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Staying Coordinated",
+      "title": "Congress Plan Meets Publications and Stakeholders",
+      "bullets": [
+        "Aligns with the publication plan so own data appears at the right congress",
+        "Aligns with stakeholder strategy so priority KOLs get coherent attention",
+        "Assigns clear responsibilities for preparation, execution, and follow-up"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Payoff",
+      "title": "From Isolated Events to a Coherent Sequence",
+      "bullets": [
+        "Congress activity stops being a series of disconnected annual events",
+        "Each congress gets a clear purpose tied to the plan's strategic imperatives",
+        "Medical return becomes something you can evaluate and improve every cycle"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "The congress plan turns a year of events into a coordinated strategic sequence",
+    "bullets": [
+      "Not every congress deserves the same level of investment",
+      "Investment tier depends on KOL presence, data likelihood, and cost versus value",
+      "It must stay coordinated with the publication plan and stakeholder strategy"
+    ],
+    "nextLesson": "Omnichannel medical plan"
+  }
+}

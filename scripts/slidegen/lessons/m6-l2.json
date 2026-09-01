@@ -1,0 +1,71 @@
+{
+  "moduleNum": 6,
+  "moduleTitle": "Evidence-Based Medicine for MSLs",
+  "lessonNum": 2,
+  "lessonTitle": "Clinical trials",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Anatomy of a Trial",
+      "title": "What a Clinical Trial Actually Is",
+      "bullets": [
+        "A prospective study that assigns an intervention to evaluate its effect on health outcomes",
+        "Follows a predefined protocol from start to finish",
+        "Understanding phases, design and limitations underlies every credible science conversation"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Four Phases",
+      "title": "Phase I Through IV, In Order",
+      "bullets": [
+        "Phase I tests safety, tolerability and pharmacokinetics in a small group, establishing a safe dose range",
+        "Phase II expands to patients to explore preliminary efficacy and refine dosing",
+        "Phase III is the pivotal trial, powered to confirm efficacy and safety against a standard comparator",
+        "Phase IV happens post-launch, in larger and more diverse real-use populations, catching rare or long-term effects"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Design Elements",
+      "title": "Four Pillars of a Credible Trial",
+      "bullets": [
+        "Randomization spreads baseline differences evenly across treatment arms",
+        "Blinding, single, double or triple, reduces expectation bias in patients, investigators and assessors",
+        "The control group, placebo or active comparator, is the reference the effect is measured against",
+        "Sample size is calculated upfront to detect a clinically relevant difference"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Reading Critically",
+      "title": "Who Was Actually Studied",
+      "bullets": [
+        "Inclusion and exclusion criteria define which population the results can be extrapolated to",
+        "Strict criteria, young patients, no comorbidities, no polypharmacy, can show efficacy under ideal conditions",
+        "That same effect may not reproduce in the real, heterogeneous patients a clinician sees",
+        "This is the efficacy-versus-effectiveness gap that connects directly to real-world evidence"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "In the Field",
+      "title": "Knowing the Pivotal Trial Cold",
+      "bullets": [
+        "Sample size, comparator, inclusion criteria, endpoints and follow-up are not academic trivia",
+        "They let an MSL answer who does this population resemble",
+        "They let an MSL answer why this comparator and how robust is this result"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Trial phases and design choices determine what a result can and cannot claim",
+    "bullets": [
+      "Each phase answers a different question, from first-in-human safety to real-world use",
+      "Randomization, blinding, a control group and a pre-calculated sample size make a result trustworthy",
+      "Strict trial populations create an efficacy-to-effectiveness gap that real-world data helps close"
+    ],
+    "nextLesson": "Observational studies"
+  }
+}

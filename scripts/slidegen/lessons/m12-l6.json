@@ -1,0 +1,78 @@
+{
+  "moduleNum": 12,
+  "moduleTitle": "Medical Affairs Leadership & Career Accelerator",
+  "lessonNum": 6,
+  "lessonTitle": "Personal brand in Medical Affairs",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "What It Really Is",
+      "title": "Personal Brand Is a Reputation, Built Deliberately",
+      "bullets": [
+        "Personal brand is the reputation built through every interaction, publication and public presence",
+        "In a trust-based field, cultivating it consciously is a real career investment",
+        "It must never slide into empty self-promotion or a commercial tone"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Non-Negotiable Base",
+      "title": "Substance Comes Before Visibility",
+      "bullets": [
+        "The same rigor that grounds the whole function's credibility grounds personal brand",
+        "No communication strategy compensates for a lack of real scientific substance",
+        "Personal brand amplifies an already-earned reputation, it doesn't replace it"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Visible Specialization",
+      "title": "Be Known for Something Specific",
+      "bullets": [
+        "Deep recognized knowledge in a therapeutic area or a specific competency beats being a generalist",
+        "Examples include insight generation excellence or a particular methodological expertise",
+        "This makes others think of you naturally when a related need comes up"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Consistency and Contribution",
+      "title": "Show Up Consistently and Add Real Value",
+      "bullets": [
+        "Keep an updated, accurate LinkedIn profile without exaggerating your trajectory",
+        "Participate in professional forums and substantive scientific discussions",
+        "Contribute to internal training or best-practice initiatives",
+        "These build reputation organically, not through self-promotion"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Trap to Avoid",
+      "title": "Personal Brand Is Not Self-Promotion",
+      "bullets": [
+        "Sharing achievements disproportionately backfires in a credibility-based field",
+        "Generic personal-marketing tone and technique undercut trust",
+        "The most effective personal brand is built indirectly, through sustained work quality"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Start Early",
+      "title": "Build It Before You Need It",
+      "bullets": [
+        "Develop personal brand consciously from early in your career, not only when chasing a promotion",
+        "When a real opportunity arrives, an already-built reputation speaks for itself"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Personal brand in Medical Affairs is earned reputation, amplified, not manufactured",
+    "bullets": [
+      "Scientific substance and consistent rigor are the non-negotiable foundation",
+      "Visible specialization and genuine contribution build reputation organically",
+      "Avoid a self-promotion tone; let sustained work quality speak for itself"
+    ],
+    "nextLesson": "LinkedIn thought leadership"
+  }
+}

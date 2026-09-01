@@ -1,0 +1,78 @@
+{
+  "moduleNum": 3,
+  "moduleTitle": "KOL Mapping, Segmentation & Engagement",
+  "lessonNum": 6,
+  "lessonTitle": "KOL engagement plan",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "From Analysis to Action",
+      "title": "The Plan Turns Mapping Into a Schedule",
+      "bullets": [
+        "A concrete translation of segmentation and mapping into activity",
+        "Specifies which expert, at what cadence, through what interaction",
+        "Without a plan, segmentation is just an analysis exercise"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Tier 1",
+      "title": "Sustained Scientific Partnership",
+      "bullets": [
+        "Multi-year cadence, not a fixed number of annual visits",
+        "Advisory boards and trial-design or evidence-generation discussions",
+        "Strategic scientific dialogue that goes beyond a single product"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Tier 2 and Tier 3",
+      "title": "Translation Support and Relationship-Building",
+      "bullets": [
+        "Tier 2 centers on helping contextualise global evidence locally",
+        "Tier 2 interactions can be more frequent but less strategically deep",
+        "Tier 3 prioritises relationship-building and disease education",
+        "Tier 3 nurtures rising stars and clinical champions long-term"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "More Than Frequency",
+      "title": "What a Good Plan Actually Specifies",
+      "bullets": [
+        "The objective of each interaction: education, insight, evidence, advisory",
+        "The appropriate channel: visit, congress, call, advisory board, digital",
+        "What success looks like for the expert, not only for the company"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Staying Current",
+      "title": "Plans Need Built-In Flexibility",
+      "bullets": [
+        "A rising star or shifting institution can move tiers quickly",
+        "Good plans are revisited, commonly quarterly",
+        "Not fixed for a full year on a twelve-month-old assessment"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Operational Bridge",
+      "title": "From Strategy to Daily Discipline",
+      "bullets": [
+        "Connects segmentation and mapping to territory ownership",
+        "Turns knowing who matters into a concrete daily action plan"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "The engagement plan turns segmentation and mapping into a concrete schedule of action",
+    "bullets": [
+      "Each tier needs a distinct cadence, channel and objective",
+      "A good plan defines success for the expert, not just the company",
+      "Plans require quarterly flexibility as expert influence shifts"
+    ],
+    "nextLesson": "Share of scientific voice"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "moduleNum": 11,
+  "moduleTitle": "AI for Medical Affairs",
+  "lessonNum": 8,
+  "lessonTitle": "AI agents for medical workflows",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Beyond Chat",
+      "title": "Agents Chain Steps Without Manual Handoffs",
+      "bullets": [
+        "Agents execute task sequences semi-autonomously, unlike a simple chatbot",
+        "Combine search, analysis, and content generation in one continuous flow",
+        "No human intervention needed at each intermediate step",
+        "Requires even more human oversight discipline than a one-off chat tool"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Example Flow",
+      "title": "A Weekly Literature Summary, End to End",
+      "bullets": [
+        "Automatically review new publications in a therapeutic area each week",
+        "Filter for relevance against predefined criteria",
+        "Extract key data from each relevant publication",
+        "Generate a first draft weekly summary for the field team"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Emerging Applications",
+      "title": "Where Agents Are Showing Up in Medical Affairs",
+      "bullets": [
+        "Continuous literature and medical listening surveillance from Module 10",
+        "Automatic alerts on publications tied to priority evidence gaps",
+        "Semi-automatic first drafts of congress debrief reports from Module 8",
+        "Automatic grouping and prioritization of MSL-captured insights"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Governing Principle",
+      "title": "Human-in-the-Loop Is Non-Negotiable",
+      "bullets": [
+        "Agents can run mechanical, low-risk steps on their own",
+        "Any output going external, making a scientific claim, or feeding a decision needs human approval",
+        "Same rigor as any other AI-generated content in this module"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "State of the Field",
+      "title": "Still an Active Work in Progress",
+      "bullets": [
+        "Not yet a fully mature, standardized practice in the sector",
+        "Teams that succeed start with low-risk, high-volume repetitive tasks",
+        "They keep rigorous human review on every relevant output",
+        "They document what the agent did and what review was applied"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "AI agents extend automation further, but human-in-the-loop review scales with them",
+    "bullets": [
+      "Agents chain multiple steps into one flow without per-step human input",
+      "Every externally facing or decision-relevant output still needs human sign-off",
+      "Start with low-risk, high-volume tasks and document the review trail"
+    ],
+    "nextLesson": "Risks, compliance and privacy"
+  }
+}

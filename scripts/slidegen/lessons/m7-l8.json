@@ -1,0 +1,93 @@
+{
+  "moduleNum": 7,
+  "moduleTitle": "Clinical Research, RWE & Evidence Generation",
+  "lessonNum": 8,
+  "lessonTitle": "The MSL's Role in Research",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Why Consolidate",
+      "title": "A Role Often Misunderstood",
+      "bullets": [
+        "Prior lessons covered IIS, observational studies, registries, evidence plans",
+        "This lesson consolidates the MSL's global research function",
+        "It's one of the most frequently misread parts of the role",
+        "Misread both inside and outside the organization"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Not the MSL's Job",
+      "title": "Three Things the MSL Doesn't Do",
+      "bullets": [
+        "Does not design studies",
+        "Does not statistically analyze data",
+        "Does not decide what research gets funded",
+        "Those belong to clinical research, biostatistics, and medical strategy"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Irreplaceable Part",
+      "title": "The Connection Node",
+      "bullets": [
+        "MSL links field scientific reality to the org's evidence machinery",
+        "Four concrete capabilities define this, per MSL Society frameworks",
+        "None of them involve designing or deciding the science itself"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Capabilities One and Two",
+      "title": "Listening, Then Guiding Process",
+      "bullets": [
+        "Active scientific listening captures hypotheses and unresolved problems",
+        "Systematic capture is the first layer of MSL research value",
+        "Process orientation helps investigators formalize a study idea correctly",
+        "Without ever influencing the proposal's scientific content"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Capabilities Three and Four",
+      "title": "Facilitating and Feeding Strategy",
+      "bullets": [
+        "Facilitates the link between investigators and internal teams",
+        "Clinical research, HEOR, and regulatory affairs, with proper documentation",
+        "Feeds evidence planning with aggregated field intelligence",
+        "Arguably the most strategic of the four capabilities"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "A Useful Comparison",
+      "title": "MSL and CRA, Complementary Roles",
+      "bullets": [
+        "CRA ensures operational execution and regulatory compliance",
+        "MSL brings scientific context and a trusted investigator relationship",
+        "MSL connects that research to broader medical priorities",
+        "The two roles are complementary, never interchangeable"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why the Limits Matter",
+      "title": "Precision Protects Credibility",
+      "bullets": [
+        "Knowing these limits lets an MSL contribute without overstepping",
+        "Avoids drifting into commercial influence or scientific design",
+        "Precision here preserves the integrity of the whole function"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "The MSL's research role is connection, not design: listening, guiding process, facilitating relationships, and feeding strategy",
+    "bullets": [
+      "Study design, data analysis, and funding decisions sit elsewhere",
+      "Four capabilities define the role, none of them scientific control",
+      "The MSL-CRA comparison shows complementary, not overlapping, value"
+    ],
+    "nextLesson": "Collaborating with Investigators"
+  }
+}

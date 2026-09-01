@@ -1,0 +1,78 @@
+{
+  "moduleNum": 2,
+  "moduleTitle": "The Modern MSL Role",
+  "lessonNum": 7,
+  "lessonTitle": "Time management and prioritization",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Both an Asset and a Risk",
+      "title": "Autonomy Cuts Both Ways",
+      "bullets": [
+        "MSLs manage their own calendar with limited daily oversight",
+        "One of the most attractive features of the role",
+        "Also one of the biggest risks without deliberate prioritisation"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Starting Point",
+      "title": "Protect the Territory Plan, Don't Reinvent It",
+      "bullets": [
+        "Good time management starts with the territory plan from Lesson 4",
+        "Prioritisation becomes protecting that plan, not inventing it weekly",
+        "Without it, the calendar fills with whoever asks first or feels urgent"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "A Core Skill",
+      "title": "Urgent Is Not the Same as Important",
+      "bullets": [
+        "An unsolicited medical information request is genuinely urgent",
+        "Quarterly reviews and thorough insight write-ups are important, not urgent",
+        "Important tasks get pushed aside under pressure unless protected deliberately"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Field-Specific Skill",
+      "title": "Manage Travel and Geography Deliberately",
+      "bullets": [
+        "Cluster visits by region instead of crossing the territory back and forth",
+        "Be honest about the real time cost of high-effort activities",
+        "Include recovery time for things like international congresses"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Overlooked Habit",
+      "title": "Protect Time to Reflect and Synthesise",
+      "bullets": [
+        "Time to read the papers relevant to upcoming conversations",
+        "Time to properly write up insights, not just log raw notes",
+        "Time to check whether current activity still matches territory priorities"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why It Matters for Your Career",
+      "title": "A Predictor of Advancement",
+      "bullets": [
+        "Time management and self-discipline predict who moves into leadership",
+        "Higher-level roles demand even greater self-directed prioritisation",
+        "With larger scale and less structure imposed from above"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Autonomy only pays off when it is spent deliberately, not reactively",
+    "bullets": [
+      "The territory plan, not the inbox, should set the week's priorities",
+      "Important work needs protected time or it loses out to urgent work",
+      "Self-discipline with time is a clear predictor of career advancement"
+    ],
+    "nextLesson": "The MSL as strategic medical partner"
+  }
+}

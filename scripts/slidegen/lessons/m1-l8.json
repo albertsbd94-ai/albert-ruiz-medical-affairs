@@ -1,0 +1,67 @@
+{
+  "moduleNum": 1,
+  "moduleTitle": "Medical Affairs Foundations & Strategic Role",
+  "lessonNum": 8,
+  "lessonTitle": "How the impact of Medical Affairs is measured",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Core Problem",
+      "title": "Medical Affairs Has No Clean Success Proxy",
+      "bullets": [
+        "Commercial has sales volume and market share as a direct proxy",
+        "Medical Affairs should not create an equivalent metric",
+        "A sales-like number would compromise its independence"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Old Approach",
+      "title": "Activity Counts Don't Prove Impact",
+      "bullets": [
+        "Relied on KOL interaction counts, requests answered, publications supported",
+        "Counting interactions says nothing about whether they changed anything",
+        "Activity volume and impact are simply not the same thing"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The New Direction",
+      "title": "Outcome-Based KPIs Tied to Patient Care",
+      "bullets": [
+        "Tracks insights that were actually acted upon, not just logged",
+        "Measures clinical practice or guideline changes field engagement contributed to",
+        "Tracks downstream use of evidence: citations, guideline inclusion, HTA submissions"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Other Half",
+      "title": "Qualitative Assessment Answers the Harder Question",
+      "bullets": [
+        "Structured KOL feedback and internal stakeholder satisfaction",
+        "Documented case studies of insight-to-action pathways",
+        "Quantitative shows how much was done; qualitative shows whether it mattered"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "For Your Own Case",
+      "title": "Build Impact on Traceable Outcomes, Not Visit Counts",
+      "bullets": [
+        "Don't lean primarily on how many visits you completed",
+        "Build a small number of well-documented insight-to-outcome examples",
+        "This is the evidence a modern Medical Affairs organisation looks for"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Impact in Medical Affairs is proven through traceable outcomes and qualitative value, not activity counts",
+    "bullets": [
+      "Activity metrics like visit counts don't prove anything actually changed",
+      "Outcome-based KPIs track insights acted upon and evidence used downstream",
+      "Build your own case for impact on a few well-documented outcomes"
+    ]
+  }
+}

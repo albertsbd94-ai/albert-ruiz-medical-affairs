@@ -1,0 +1,78 @@
+{
+  "moduleNum": 12,
+  "moduleTitle": "Medical Affairs Leadership & Career Accelerator",
+  "lessonNum": 9,
+  "lessonTitle": "Professional development plan",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Own Your Growth",
+      "title": "Direct Your Career Deliberately, Not by Chance",
+      "bullets": [
+        "A development plan is a deliberate map for actively directing your own growth",
+        "The alternative is leaving progression to chance opportunities or others' decisions",
+        "Building your own plan turns this course into a personal, actionable roadmap"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Step One",
+      "title": "Start With an Honest Self-Assessment",
+      "bullets": [
+        "Assess yourself honestly against every competency built across this course",
+        "Scientific exchange, insight capture, critical thinking, evidence generation, congress execution",
+        "Strategic planning, digital fluency, AI use, and leadership",
+        "Identify where you're already solid and where a real gap exists"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Step Two",
+      "title": "Set Specific, Time-Bound Goals",
+      "bullets": [
+        "Replace generic goals like improve my leadership skills with specific, measurable ones",
+        "Apply the same rigor used for strategic imperatives earlier in the course",
+        "Example: lead the next two post-congress debriefs and request explicit feedback on executive synthesis"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Step Three",
+      "title": "Identify Concrete Development Pathways",
+      "bullets": [
+        "Structured training and mentoring from a more senior professional",
+        "Active participation in cross-functional projects to practice influence without authority",
+        "Deliberately seeking higher-visibility opportunities like an executive presentation or committee role"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Step Four",
+      "title": "Review the Plan Periodically",
+      "bullets": [
+        "Reassess progress against your goals every few months",
+        "Adjust the plan based on what you've learned",
+        "Incorporate new priorities as your trajectory and the organization's needs evolve"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Keep It Alive",
+      "title": "A Living Tool, Not an Archived Document",
+      "bullets": [
+        "A development plan only works if actively maintained, not filed away",
+        "This is what turns course knowledge into a sustained trajectory of growth and impact"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "A development plan turns this course's content into your own actionable career roadmap",
+    "bullets": [
+      "Honest self-assessment against real competencies is the starting point",
+      "Specific, time-bound goals beat generic aspirations",
+      "Periodic review keeps the plan a living tool, not an archived document"
+    ],
+    "nextLesson": "From MSL to Medical Lead"
+  }
+}

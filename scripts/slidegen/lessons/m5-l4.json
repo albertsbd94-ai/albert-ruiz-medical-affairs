@@ -1,0 +1,78 @@
+{
+  "moduleNum": 5,
+  "moduleTitle": "Medical Insights Excellence",
+  "lessonNum": 4,
+  "lessonTitle": "How to capture insights during a visit",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Timing Matters",
+      "title": "Capture Starts During the Conversation",
+      "bullets": [
+        "Memory degrades fast, and specific phrasing is lost first",
+        "Reconstructing a conversation afterward loses the details that carry meaning",
+        "Real capture begins in the room, not back at a desk"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Foundational Skill",
+      "title": "Lightweight Notes That Don't Break Rapport",
+      "bullets": [
+        "Writing everything verbatim pulls focus and makes physicians guarded",
+        "Capture key phrases, specific numbers, examples and anything unexpected",
+        "Keep it quick enough not to break eye contact for long"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "A Second Discipline",
+      "title": "Separate What Was Said From What You Think",
+      "bullets": [
+        "Mark direct quotes and paraphrases distinctly from personal analysis",
+        "Interpretation added later, once memory blurs, is far less reliable",
+        "Make the split explicit in the moment, not afterward"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "A Third Discipline",
+      "title": "Specificity Beats Generalisation",
+      "bullets": [
+        "A vague concern is far less useful days later than a specific one",
+        "Capture the exact finding, the numbers, the direct question asked",
+        "Specificity determines whether it becomes a grounded insight or stays vague"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Same-Day Follow-Through",
+      "title": "Develop Rough Notes While Memory Is Fresh",
+      "bullets": [
+        "Structure the notes the same day, ideally right after the visit",
+        "Fill in context and start applying the data-to-implication framework",
+        "Delaying even a few days measurably degrades accuracy and completeness"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Tools vs Discipline",
+      "title": "Technology Speeds Writeup, Not Listening",
+      "bullets": [
+        "CRM platforms and AI transcription tools reduce the writeup burden",
+        "They do not replace listening carefully and noting specifics in the moment",
+        "Good tools only work faster once good raw material already exists"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Good insight capture happens live, separates fact from interpretation, and stays specific",
+    "bullets": [
+      "Capture key phrases and specifics during the conversation, not after",
+      "Keep quotes and interpretation visibly distinct in the moment",
+      "Structure notes the same day while the conversation is still fresh"
+    ],
+    "nextLesson": "How to write actionable insights"
+  }
+}

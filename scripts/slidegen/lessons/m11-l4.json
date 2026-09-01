@@ -1,0 +1,61 @@
+{
+  "moduleNum": 11,
+  "moduleTitle": "AI for Medical Affairs",
+  "lessonNum": 4,
+  "lessonTitle": "Perplexity for landscape research",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "What Sets It Apart",
+      "title": "Real-Time Search With Native Citations",
+      "bullets": [
+        "Combines language generation with an active internet search at query time",
+        "Systematically presents the specific sources behind each claim",
+        "Native, reliable citation instead of references to verify separately",
+        "Rated among the strongest research tools for academic and medical work"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Primary Use Case",
+      "title": "Mapping an Unfamiliar Landscape Fast",
+      "bullets": [
+        "Explore what is known today about an emerging therapeutic area",
+        "Identify which companies have active development programs on a target",
+        "Spot treatment trends gaining traction in the clinical community",
+        "Arrive prepared for a first deep dive, with sources to verify later"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Staying Current",
+      "title": "Tracking Scientific and Competitive Updates",
+      "bullets": [
+        "Ask what has been published in the last few weeks on a comparator",
+        "Draws on active search instead of a static training cutoff",
+        "Keeps landscape awareness current between deep-dive research sessions"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Catch",
+      "title": "Source Quality Still Varies",
+      "bullets": [
+        "Citing sources systematically does not guarantee source quality",
+        "Mix can include peer-reviewed papers and lower-rigor public content",
+        "Apply the Module 6 evidence hierarchy criteria to every citation",
+        "Never share a clinical fact with an HCP without checking the original source"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Perplexity is the fastest way to map a topic, but every cited source still needs evaluation",
+    "bullets": [
+      "Best for early, sourced exploration of a new or fast-moving topic",
+      "Native citations save time but do not certify source quality",
+      "Original source verification remains mandatory before HCP communication"
+    ],
+    "nextLesson": "NotebookLM for document analysis"
+  }
+}

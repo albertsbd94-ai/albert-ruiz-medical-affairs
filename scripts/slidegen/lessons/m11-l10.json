@@ -1,0 +1,79 @@
+{
+  "moduleNum": 11,
+  "moduleTitle": "AI for Medical Affairs",
+  "lessonNum": 10,
+  "lessonTitle": "How to build an AI Medical Affairs Operating System",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Bringing It Together",
+      "title": "From Individual Tools to One Coherent System",
+      "bullets": [
+        "This lesson integrates the module's tools into a personal AI operating system",
+        "A coherent set of tools, habits, and safeguards used consistently",
+        "Goal: amplify productivity without ever compromising rigor or security"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Component One",
+      "title": "Match Each Tool to Its Best Task",
+      "bullets": [
+        "Avoid the common error of using one generic tool for everything",
+        "Perplexity for initial, current landscape exploration",
+        "NotebookLM for deep work on a defined set of your own documents",
+        "Consensus, Elicit, and Scite for structured evidence search",
+        "Claude for long-document analysis, ChatGPT for strategic thinking"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Component Two",
+      "title": "Verification as a Habit, Not a Step",
+      "bullets": [
+        "Every AI-assisted clinical claim is checked against the primary source",
+        "Applied before communicating anything to an HCP, without exception",
+        "Uses the evidence hierarchy and critical thinking criteria from Module 6"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Component Three",
+      "title": "Information Governance by Default",
+      "bullets": [
+        "Know what data each tool's privacy settings allow you to enter",
+        "Follow internal organizational policy for every tool used",
+        "Apply precaution by default whenever data sensitivity is unclear"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Component Four",
+      "title": "Keep Your Own Knowledge Current",
+      "bullets": [
+        "The generative AI landscape evolves at considerable speed",
+        "New capabilities, tools, and risks emerge constantly",
+        "Periodic time invested in updating tool knowledge protects your edge"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Bigger Picture",
+      "title": "A Continuous Habit, Not a One-Time Project",
+      "bullets": [
+        "Building this system is ongoing professional practice, never finished",
+        "Frees time for what no AI tool can replace",
+        "Expert scientific judgment, trusted human relationships, ethical responsibility"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "A disciplined personal AI operating system amplifies an MSL without ever replacing human judgment",
+    "bullets": [
+      "Match each tool to its strongest task instead of relying on one generic tool",
+      "Make source verification and information governance automatic habits",
+      "Keep updating your own knowledge as the AI landscape keeps changing"
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "moduleNum": 9,
+  "moduleTitle": "Medical Strategy & Medical Plan",
+  "lessonNum": 9,
+  "lessonTitle": "Medical KPIs",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "A Persistent Challenge",
+      "title": "Why Measuring Medical Affairs Is Different",
+      "bullets": [
+        "Commercial results show up directly in sales figures",
+        "Medical Affairs value shows up in harder-to-quantify dimensions",
+        "Relationship quality, clinical understanding, and contribution to practice",
+        "This requires a deliberately different measurement approach"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Guiding Principle",
+      "title": "KPIs Must Align with Strategy, Not Just Count Activity",
+      "bullets": [
+        "Current frameworks insist KPIs must align with medical strategy",
+        "Counting MSL visits measures activity, not strategic contribution",
+        "The literature flags this as one of the most common measurement traps"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Process Indicators",
+      "title": "Activity and Interaction Metrics",
+      "bullets": [
+        "Qualified interactions and coverage of priority stakeholders",
+        "Still relevant, but only as indicators of process",
+        "Never the final goal of the measurement system on their own"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Beyond Counting",
+      "title": "Quality, Insight, and Scientific Impact",
+      "bullets": [
+        "Insight quality is measured by whether insights drove real decisions",
+        "Not by how many insights were logged",
+        "Publication quality is measured by journal impact factor and citations",
+        "Not simply by the number of publications produced"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Advanced Frontier",
+      "title": "Outcome-Based KPIs",
+      "bullets": [
+        "Observable changes in clinical practice or appropriate treatment adoption",
+        "Patient health outcomes attributable, even indirectly, to medical activity",
+        "The most advanced and most demanding level of medical measurement"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "An Unresolved Challenge",
+      "title": "Isolating Medical Affairs' Real Contribution",
+      "bullets": [
+        "Many factors influence clinical practice and health outcomes at once",
+        "Isolating the specific contribution of Medical Affairs is methodologically complex",
+        "Requires combining quantitative metrics with well-documented qualitative evidence"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "For the MSL",
+      "title": "Understanding the System Behind the Numbers",
+      "bullets": [
+        "Goes beyond the routine activity figures you report day to day",
+        "Lets you argue the real value of your work with both data and narrative",
+        "Sets up the module's next lesson on the medical impact narrative"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "A mature KPI system moves from counting activity to demonstrating real impact",
+    "bullets": [
+      "Activity metrics are process indicators, not the end goal",
+      "Insight and publication quality matter more than raw counts",
+      "Outcome-based KPIs are the hardest to prove but the most valuable"
+    ],
+    "nextLesson": "Medical impact narrative"
+  }
+}

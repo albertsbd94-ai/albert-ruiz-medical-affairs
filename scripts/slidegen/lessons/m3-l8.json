@@ -1,0 +1,70 @@
+{
+  "moduleNum": 3,
+  "moduleTitle": "KOL Mapping, Segmentation & Engagement",
+  "lessonNum": 8,
+  "lessonTitle": "Longitudinal, value-based relationships",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Big Shift",
+      "title": "From Transactional Contact to Real Relationships",
+      "bullets": [
+        "The industry is moving away from product-cycle-driven engagement",
+        "Toward relationships sustained over years with genuine mutual value",
+        "Not activity that spikes around a launch and fades afterward"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "A Familiar Pattern",
+      "title": "How Transactional Engagement Damages Trust",
+      "bullets": [
+        "Intense activity before and after launch, then a sharp drop-off",
+        "Revived years later when a new indication creates fresh urgency",
+        "Experienced KOLs notice when engagement tracks the commercial calendar",
+        "It wastes the compounding value a real long-term relationship builds"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Built Differently",
+      "title": "What a Longitudinal Relationship Looks Like",
+      "bullets": [
+        "Starts from what the expert actually needs over their whole career",
+        "Sustained regardless of where a product sits in its lifecycle",
+        "Continued meaningful dialogue even in a year with no new data",
+        "Supporting a rising star's research before it touches any product"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Other Half",
+      "title": "Value-Based Means Genuine Reciprocity",
+      "bullets": [
+        "Frequency of contact alone is persistence, not real strength",
+        "Value can mean access to unpublished data through proper channels",
+        "Or connections to other researchers and investigators",
+        "Or simply consistently excellent, well-prepared scientific dialogue"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Bringing It Together",
+      "title": "The Connective Thread of This Module",
+      "bullets": [
+        "Extends accurate identification, segmentation and a deliberate plan",
+        "Requires discipline to keep investing during quiet periods",
+        "Builds the trust that makes every future scientific exchange more valuable"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Longitudinal, value-based relationships replace transactional, launch-driven engagement",
+    "bullets": [
+      "Sustained scientific dialogue must continue outside the launch cycle",
+      "Real value must be reciprocal, not just frequent contact",
+      "This discipline is the connective thread across every skill in this module"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "moduleNum": 2,
+  "moduleTitle": "The Modern MSL Role",
+  "lessonNum": 6,
+  "lessonTitle": "Internal cross-functional collaboration",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Hidden Half",
+      "title": "Value Depends on Internal Collaboration Too",
+      "bullets": [
+        "Most visible time is in the field, but value depends on internal reach",
+        "Partners include Medical Advisors, Market Access, Commercial, Clinical Development, Regulatory",
+        "Insight that never reaches the right audience hasn't really been generated"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Core Relationship",
+      "title": "Medical Advisors and the Strategy Team",
+      "bullets": [
+        "Field insight is meant to flow into the Medical Plan and publication strategy",
+        "Works best as a genuinely two-way relationship",
+        "MSLs bring field intelligence up, Advisors bring strategic context down"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Market Access",
+      "title": "Strengthen the Dossier, the Right Way",
+      "bullets": [
+        "Real-world evidence and clinical insight can strengthen a payer dossier",
+        "Must be shared through the correct, compliant channel",
+        "Never used as a workaround to influence pricing or access directly"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Commercial",
+      "title": "The Most Sensitive Relationship",
+      "bullets": [
+        "Requires explicit understanding of the firewall rules from Module 1",
+        "Redirect questions that have drifted into commercial territory",
+        "Never share prescriber-level data or insight that could inform targeting"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Clinical and Regulatory",
+      "title": "When Insight Points to a Gap or a Risk",
+      "bullets": [
+        "Relevant when field insight could inform future trial design",
+        "Safety observations go through pharmacovigilance channels",
+        "Always follow the formal adverse-event process without delay or filtering"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "What Makes It Work",
+      "title": "Three Habits of Effective Collaborators",
+      "bullets": [
+        "Know which stakeholder actually owns which decision",
+        "Communicate insight in the format that stakeholder can act on",
+        "Build the working relationship before you urgently need it"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "An MSL's field insight only counts once it reaches the right internal audience",
+    "bullets": [
+      "Each internal partner needs insight shared through a different, appropriate channel",
+      "Commercial collaboration always respects firewall rules without exception",
+      "Relationship-building applies internally just as much as it does with KOLs"
+    ],
+    "nextLesson": "Time management and prioritization"
+  }
+}

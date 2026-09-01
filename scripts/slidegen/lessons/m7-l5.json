@@ -1,0 +1,71 @@
+{
+  "moduleNum": 7,
+  "moduleTitle": "Clinical Research, RWE & Evidence Generation",
+  "lessonNum": 5,
+  "lessonTitle": "Real-World Evidence in Medical Strategy",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "A New Angle",
+      "title": "From Evidence Category to Strategy Component",
+      "bullets": [
+        "This lesson looks at how RWE integrates into product medical strategy",
+        "RWE is now a core part of Integrated Evidence Generation Plans (IEGP)",
+        "IEGPs coordinate all research activity around a product"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "One Coordinated Plan",
+      "title": "What an IEGP Brings Together",
+      "bullets": [
+        "Phase IIIb and IV studies, IIS collaborations, registry capabilities",
+        "Real-world data collection frameworks and HEOR studies",
+        "Goal: deliberate evidence, not scattered and reactive generation",
+        "Built to support access decisions, HCP questions, and long-term relevance"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The MSL's Function",
+      "title": "Primary Source of Field Intelligence",
+      "bullets": [
+        "Field insights feed directly into evidence-plan prioritization",
+        "Unanswered questions, uncertain subgroups, comparators of interest",
+        "Insights refine future protocol design and RWE and HEOR strategy",
+        "Keeps the plan aligned with real access and reimbursement needs"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Two-Way Traffic",
+      "title": "The MSL as a Translator",
+      "bullets": [
+        "MSL doesn't just communicate evidence outward to the field",
+        "Channels field evidence needs back into internal strategic planning",
+        "This translation function is a key differentiator of the MSL role",
+        "Recent Medical Affairs frameworks name it among the role's top values"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "What It Requires",
+      "title": "Structure, Not Anecdote",
+      "bullets": [
+        "Needs structured processes for capturing and sharing insights",
+        "Needs trust with internal evidence, HEOR, and market access teams",
+        "So information flows in both directions systematically"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "RWE now sits at the core of integrated evidence plans, and the MSL is the bidirectional link that keeps those plans grounded in the field",
+    "bullets": [
+      "IEGPs coordinate Phase IIIb/IV, IIS, registries, RWE and HEOR together",
+      "Field insights directly shape evidence priorities and protocol design",
+      "Systematic insight capture, not anecdote, makes this translation work"
+    ],
+    "nextLesson": "Evidence Gaps"
+  }
+}

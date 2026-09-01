@@ -1,0 +1,79 @@
+{
+  "moduleNum": 12,
+  "moduleTitle": "Medical Affairs Leadership & Career Accelerator",
+  "lessonNum": 5,
+  "lessonTitle": "Managing internal stakeholders",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Same Rigor, Internal Focus",
+      "title": "Internal Relationships Deserve the Same Strategy",
+      "bullets": [
+        "Internal stakeholders shape how much impact your work has, even excellent work",
+        "Commercial, market access, regulatory, clinical research, other MSLs and Medical Affairs leadership all matter",
+        "Treat internal relationships with the same intention as KOL and DOL engagement"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Know Their Pressures",
+      "title": "Understand Each Function's Priorities",
+      "bullets": [
+        "Commercial is measured on short and medium term business results",
+        "Market access needs economic and clinical value evidence for reimbursement",
+        "Clinical research prioritizes methodological rigor and study timelines",
+        "Understand these priorities without adopting them as your own"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Beyond Reactive Contact",
+      "title": "Build Regular, Not Just Reactive, Channels",
+      "bullets": [
+        "Hold periodic alignment meetings with teams you collaborate with most often",
+        "Don't wait until a specific need arises to reach out",
+        "This builds the trust that makes collaboration easier under pressure"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Delicate Balance",
+      "title": "Collaborate Without Losing Independence",
+      "bullets": [
+        "Share insights and scientific context without compromising the role's non-promotional nature",
+        "Be clear internally about what can be shared, for what purpose, and through which channels",
+        "This stays consistent with the ethical principles covered earlier in the course"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "When Views Diverge",
+      "title": "Handle Disagreement With Evidence, Not Avoidance",
+      "bullets": [
+        "Medical and commercial or market access perspectives will not always align",
+        "Address disagreement with evidence and the long-term interest of the product and patients",
+        "Seek constructive resolution instead of avoiding the conversation or imposing a position"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why It Matters",
+      "title": "The Difference Between Influence and an Archive",
+      "bullets": [
+        "Managing internal relationships well is not politics separate from medical work",
+        "It determines whether scientific knowledge translates into real organizational decisions",
+        "Done poorly, that knowledge stays archived without real influence"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Internal stakeholder management determines whether good science actually shapes decisions",
+    "bullets": [
+      "Understanding each function's pressures makes your communication land better",
+      "Regular, proactive contact builds the trust that reactive contact never can",
+      "Handle disagreement with evidence while protecting Medical Affairs' independence"
+    ],
+    "nextLesson": "Personal brand in Medical Affairs"
+  }
+}

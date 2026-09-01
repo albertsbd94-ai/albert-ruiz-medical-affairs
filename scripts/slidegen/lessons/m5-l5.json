@@ -1,0 +1,79 @@
+{
+  "moduleNum": 5,
+  "moduleTitle": "Medical Insights Excellence",
+  "lessonNum": 5,
+  "lessonTitle": "How to write actionable insights",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "A Separate Skill",
+      "title": "Writing Well Is Not the Same as Generating Insight",
+      "bullets": [
+        "A well-captured insight can still fail if written up poorly",
+        "Vague, buried or missing detail kills its usefulness",
+        "Writing an actionable insight deserves deliberate practice"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Five Questions",
+      "title": "A Written Insight Should Answer Five Things",
+      "bullets": [
+        "What was observed and why it matters",
+        "Who it affects and what action is realistically feasible now",
+        "How anyone would know whether that action worked",
+        "Not every insight needs all five spelled out in full formal detail"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Lead With the Point",
+      "title": "Put the Insight First, Not the Visit Story",
+      "bullets": [
+        "Colleagues scanning dozens of reports need the substance up front",
+        "State the insight itself in the first sentence",
+        "Supporting detail and quotes follow, they don't precede it"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Be Honest About Evidence",
+      "title": "State the Evidentiary Basis Explicitly",
+      "bullets": [
+        "Say how many physicians, over what timeframe, how consistently",
+        "Don't imply a broad pattern from a single conversation",
+        "Distinguish clearly between one physician and multiple independent physicians"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Make It Land",
+      "title": "Name a Next Step or Owner",
+      "bullets": [
+        "A concrete suggestion makes an insight far more likely to be used",
+        "Example: flag it to the evidence-generation team for the RWE protocol",
+        "The MSL isn't expected to solve it, just to point the way"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Write for Strangers",
+      "title": "Avoid Jargon Only Your Team Understands",
+      "bullets": [
+        "Insights travel across functions with no first-hand context of the visit",
+        "They reach Medical Advisors, evidence teams and filtered Market Access channels",
+        "The writing itself must carry the full meaning"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "An insight only works if it's written to be understood and acted on by others",
+    "bullets": [
+      "Lead with the insight itself, not the visit narrative",
+      "State the evidentiary basis honestly, not an implied broad pattern",
+      "Name a plausible next step so the insight actually gets used"
+    ],
+    "nextLesson": "How to avoid bias"
+  }
+}

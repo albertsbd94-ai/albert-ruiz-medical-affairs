@@ -1,0 +1,69 @@
+{
+  "moduleNum": 9,
+  "moduleTitle": "Medical Strategy & Medical Plan",
+  "lessonNum": 10,
+  "lessonTitle": "Medical impact narrative",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Beyond the Numbers",
+      "title": "Medical Affairs Must Own Its Value Story",
+      "bullets": [
+        "The impact narrative is the structured, data-backed account of the function's value",
+        "It explains contributions to clinical decisions, evidence, and patient outcomes",
+        "Medical Affairs must define its own impact metrics and own that narrative",
+        "Rather than letting Commercial or Finance define success by default"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Two Kinds of Evidence",
+      "title": "Combining Quantitative Data and Qualitative Cases",
+      "bullets": [
+        "KPIs provide objectivity and comparability, but rarely tell the full story",
+        "A case where an MSL insight changed a study's design adds real context",
+        "A KOL testimonial about a collaboration makes the impact memorable"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "A Methodological Discipline",
+      "title": "Correlation Is Not Attribution",
+      "bullets": [
+        "It's easy to show medical activity and good outcomes coexist in time",
+        "It's much harder to prove medical activity directly caused those outcomes",
+        "An honest narrative acknowledges that limit rather than overselling causality",
+        "The same discipline a rigorous MSL applies to clinical evidence"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "How to Structure It",
+      "title": "A Value-Chain Narrative",
+      "bullets": [
+        "Start from the activity performed, such as insights on an evidence gap",
+        "Show the strategic decision that activity informed, such as a new study",
+        "Close the loop with the documented outcome, when it can be shown"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "For the MSL",
+      "title": "Good Documentation Is the Raw Material",
+      "bullets": [
+        "Contributing isn't extra work on top of the job",
+        "It's the natural extension of documenting insights and results well",
+        "Every well-documented field case can become the example that proves the value"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Medical Affairs proves its value by owning a disciplined, evidence-backed impact narrative",
+    "bullets": [
+      "Quantitative KPIs and qualitative cases work together, not separately",
+      "A credible narrative distinguishes correlation from proven attribution",
+      "Well-documented field work is the raw material the whole narrative depends on"
+    ]
+  }
+}

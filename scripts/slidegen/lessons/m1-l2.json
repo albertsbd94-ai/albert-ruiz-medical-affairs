@@ -1,0 +1,92 @@
+{
+  "moduleNum": 1,
+  "moduleTitle": "Medical Affairs Foundations & Strategic Role",
+  "lessonNum": 2,
+  "lessonTitle": "Differences between Medical, Commercial, Market Access and R&D",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Core Problem",
+      "title": "Confusing These Roles Damages MSL Credibility",
+      "bullets": [
+        "Four functions touch a medicine at different points in its life",
+        "Confusing their roles is one of the fastest ways to lose credibility",
+        "Knowing the precise boundaries enables compliant, effective work"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "R&D's Role",
+      "title": "R&D Builds the Foundation Everyone Uses",
+      "bullets": [
+        "Designs and runs the pivotal clinical trials",
+        "Defines the Target Product Profile",
+        "Hands off a medicine with a regulator-approved label",
+        "Longest time horizon; the dossier becomes everyone else's foundation"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Medical Affairs' Role",
+      "title": "Medical Affairs Translates the Dossier Into Real-World Value",
+      "bullets": [
+        "Interprets the evidence for practising clinicians",
+        "Generates post-approval evidence: RWE, registries, investigator studies",
+        "Maintains scientific exchange independent of sales targets",
+        "McKinsey: a strategic pillar, not an interface or compliance buffer"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Market Access' Role",
+      "title": "Market Access Builds the Economic Case",
+      "bullets": [
+        "Sits between the science and the health system's economics",
+        "Builds pricing, reimbursement and health-economic value propositions",
+        "Persuades payers, HTA bodies and hospital formularies",
+        "Uses clinical and real-world evidence Medical Affairs often helped generate"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Commercial's Role",
+      "title": "Commercial Owns the Promotional Relationship",
+      "bullets": [
+        "Sales representatives communicate approved, on-label messages",
+        "Goal: drive appropriate use and volume",
+        "Commercial's conversations are promotional by design and regulation",
+        "Medical Affairs' conversations must never be"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Firewall",
+      "title": "Governance Controls Protect Medical Independence",
+      "bullets": [
+        "Separate reporting lines, restricted data sharing, documented rules of engagement",
+        "HHS OIG guidance: keep \"a respectful distance\" from sales and marketing",
+        "Sharing prescriber-level insights for sales targeting is a genuine compliance risk"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "For You, as an MSL",
+      "title": "Know Which Conversation Belongs to Which Function",
+      "bullets": [
+        "Redirect commercial questions to the right colleague",
+        "Protect the independence that makes your scientific input credible",
+        "Your job is knowing exactly where each function's line sits"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Medical Affairs sits structurally apart from R&D, Market Access and Commercial, and the firewall protecting that separation is non-negotiable",
+    "bullets": [
+      "R&D builds the evidence base; Medical Affairs translates it into scientific value",
+      "Market Access monetizes evidence; Commercial promotes on-label messages",
+      "A protected firewall keeps Medical Affairs' exchange free of sales influence"
+    ],
+    "nextLesson": "The evolution of Medical Affairs: from scientific support to strategic partner"
+  }
+}

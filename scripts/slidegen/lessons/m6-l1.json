@@ -1,0 +1,81 @@
+{
+  "moduleNum": 6,
+  "moduleTitle": "Evidence-Based Medicine for MSLs",
+  "lessonNum": 1,
+  "lessonTitle": "Hierarchy of evidence",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Mental Map",
+      "title": "A Pyramid for Weighing Evidence",
+      "bullets": [
+        "In vitro and animal studies generate hypotheses, not proof in humans",
+        "Case series and observational studies show real-world associations without full confounder control",
+        "Randomized controlled trials are the standard for establishing causality",
+        "Systematic reviews and meta-analyses sit at the top, combining multiple RCTs"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why It Matters",
+      "title": "Not All Evidence Carries Equal Weight",
+      "bullets": [
+        "The hierarchy lets an MSL answer how strong is this evidence honestly",
+        "An observational association can be genuinely useful without proving causality",
+        "Treating both levels as equally strong is a scientific and ethical error"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Nuance",
+      "title": "The Ladder Is Not Rigid",
+      "bullets": [
+        "Not every systematic review outranks a single well-designed RCT",
+        "Review quality depends on which studies were included and how they were combined",
+        "A small RCT with a wide confidence interval can be less certain than a large, well-controlled observational study",
+        "Recent methodology treats the hierarchy as a flexible guide, not a strict ladder"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "What To Combine",
+      "title": "Critical Appraisal Still Comes First",
+      "bullets": [
+        "Design, sample size, risk of bias and clinical relevance must be weighed alongside pyramid level",
+        "Propensity score matching and other advanced methods can strengthen observational evidence",
+        "A high position in the hierarchy is a starting point, not a final verdict"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Filtering Information",
+      "title": "Prioritize What Deserves a Close Read",
+      "bullets": [
+        "Use the hierarchy to triage the flood of available scientific literature",
+        "A recent high-impact meta-analysis deserves more attention than an isolated case report",
+        "Match language to design: association for observational data, effect only when design supports it",
+        "Anticipate design questions from critical HCPs before they ask them"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Payoff",
+      "title": "Precision Builds Trust",
+      "bullets": [
+        "The hierarchy is the shared language between MSLs and the medical community",
+        "Speaking it precisely builds scientific credibility",
+        "Using it selectively to reinforce a commercial message erodes that trust"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "The hierarchy of evidence tells an MSL how much weight to give any single data point",
+    "bullets": [
+      "Randomization is what separates RCTs from studies that only show association",
+      "Meta-analyses sit at the top but still require critical appraisal, not blind trust",
+      "Matching your language to the study design keeps scientific communication honest"
+    ],
+    "nextLesson": "Clinical trials"
+  }
+}

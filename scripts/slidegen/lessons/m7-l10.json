@@ -1,0 +1,92 @@
+{
+  "moduleNum": 7,
+  "moduleTitle": "Clinical Research, RWE & Evidence Generation",
+  "lessonNum": 10,
+  "lessonTitle": "Good Scientific and Ethical Practice",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Foundation",
+      "title": "Why These Principles Are Non-Negotiable",
+      "bullets": [
+        "MSL credibility rests on ethical and scientific practice principles",
+        "Applied consistently across all research-related activity",
+        "Not bureaucratic add-ons, but what separates Medical Affairs from Commercial",
+        "They sustain long-term trust with the scientific community"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Principle One",
+      "title": "Investigator Independence, Always",
+      "bullets": [
+        "Design, execution, analysis, and interpretation stay with the investigator",
+        "True across IIS, registries, and observational studies alike",
+        "The sponsor cannot condition support on favorable results",
+        "Applies whether published conclusions favor the product or not"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Principle Two",
+      "title": "A Strict Wall From Commercial",
+      "bullets": [
+        "Research support must never link, even implicitly, to prescription volume",
+        "Study information must not be shared with commercial teams for sales use",
+        "Approval decisions run through independent scientific review committees"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Principle Three",
+      "title": "Transparency and Public Registration",
+      "bullets": [
+        "Trials, and increasingly relevant observational studies, register publicly",
+        "On platforms like ClinicalTrials.gov or the EU Clinical Trials Register",
+        "Registration happens before recruitment begins",
+        "Results publish regardless of favorable or unfavorable outcome"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Principle Four",
+      "title": "Good Clinical Practice as the Standard",
+      "bullets": [
+        "GCP is the international standard for ethical trial conduct",
+        "Governs design, conduct, recording, and reporting of human studies",
+        "Protects participants' rights, safety, and wellbeing",
+        "Underpins the reliability of the data generated"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Principle Five",
+      "title": "Honest Conflict-of-Interest Management",
+      "bullets": [
+        "The most day-to-day relevant principle for an MSL",
+        "Every collaboration, funding, or support relationship must be transparent",
+        "Declared by both investigator and company",
+        "In publications and to relevant ethics committees"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Long Game",
+      "title": "Integrity, Visit After Visit",
+      "bullets": [
+        "These principles matter most when no one is supervising",
+        "Applied consistently, study after study, visit after visit",
+        "They build a reputation no communication strategy can substitute"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Independence, separation from commercial, transparency, GCP, and honest conflict management are what make Medical Affairs credible",
+    "bullets": [
+      "Investigator independence and commercial separation are the core wall",
+      "Public registration and GCP protect the integrity of the evidence itself",
+      "Consistent, unsupervised application is what earns lasting credibility"
+    ]
+  }
+}

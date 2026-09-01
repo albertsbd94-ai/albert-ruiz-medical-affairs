@@ -1,0 +1,69 @@
+{
+  "moduleNum": 4,
+  "moduleTitle": "Scientific Exchange & High-Impact Conversations",
+  "lessonNum": 5,
+  "lessonTitle": "Strategic Questions",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Defining the Skill",
+      "title": "Questions Chosen to Inform a Real Decision",
+      "bullets": [
+        "Exploratory or reflective questions deliberately aimed at a decision the organisation needs to make",
+        "What separates a pleasant conversation from one that produces an actionable insight",
+        "Sets up the medical insight skills covered in full in Module 5"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Risk",
+      "title": "A Good Conversation Isn't Automatically Useful",
+      "bullets": [
+        "A technically excellent exploratory conversation can still produce nothing actionable",
+        "Real value connects to an evidence-generation priority, an unmet need, or a safety signal",
+        "Open dialogue alone does not guarantee organisational value"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Before the Visit",
+      "title": "Preparation Is Where Strategy Starts",
+      "bullets": [
+        "Review what the current Medical Plan and evidence-generation agenda are trying to learn",
+        "Revisit open questions the last few visits with this expert left unresolved",
+        "Identify the therapy area's biggest current uncertainty",
+        "Design two or three strategic questions from that preparation"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Seeing the Difference",
+      "title": "Generic Warm-Up vs Strategic Question",
+      "bullets": [
+        "A generic question like how do you approach this condition is fine as a warm-up, not strategic",
+        "A strategic version ties the same territory to a specific evidence-generation gap",
+        "Still genuinely open, with no predetermined right answer"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Keeping Balance",
+      "title": "Strategic, Not Extractive",
+      "bullets": [
+        "Strategic questions must stay balanced across visits",
+        "Too much transactional focus makes the relationship feel purely extractive",
+        "Weaving a few strategic questions into genuine curiosity marks a senior-level MSL skill"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Strategic questions turn open, curious conversation into insight the organisation can actually act on",
+    "bullets": [
+      "Preparation before the visit is what makes a question strategic",
+      "Strategic questions stay genuinely open, not leading",
+      "Balance strategic intent with real curiosity so the relationship doesn't feel extractive"
+    ],
+    "nextLesson": "Active listening"
+  }
+}

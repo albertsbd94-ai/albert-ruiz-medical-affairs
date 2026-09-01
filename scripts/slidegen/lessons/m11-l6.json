@@ -1,0 +1,71 @@
+{
+  "moduleNum": 11,
+  "moduleTitle": "AI for Medical Affairs",
+  "lessonNum": 6,
+  "lessonTitle": "Consensus, Elicit and Scite for evidence",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "A Specialized Category",
+      "title": "Purpose-Built Tools for Scientific Evidence",
+      "bullets": [
+        "Distinct from the general purpose assistants covered earlier in this module",
+        "Designed specifically for finding, extracting, and evaluating evidence",
+        "Can dramatically speed up work that once took hours of manual search",
+        "Still bound by the evidence hierarchy discipline from Module 6"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Consensus",
+      "title": "Fast Answers to Yes-or-No Evidence Questions",
+      "bullets": [
+        "Answers direction-of-effect questions like does X reduce the risk of Y",
+        "Synthesizes whether literature supports, contradicts, or is split",
+        "Delivers an evidence-based answer in seconds",
+        "Best for a first orientation before reading individual studies"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Elicit",
+      "title": "Systematic-Review-Style Data Extraction",
+      "bullets": [
+        "Summarizes articles and extracts data into comparable tables",
+        "Especially accurate on well-structured empirical studies",
+        "Speeds up comparing design, population, and results across trials"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Scite",
+      "title": "Seeing How a Study Is Cited, Not Just That It Is",
+      "bullets": [
+        "Smart Citations show whether later studies support, contradict, or mention neutrally",
+        "A heavily cited study can still be substantially contradicted",
+        "Critical signal before presenting a study as solid evidence to an HCP"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Shared Discipline",
+      "title": "Acceleration, Not a Substitute for Judgment",
+      "bullets": [
+        "All three speed up search and organization of evidence",
+        "None replaces critical judgment on methodological quality",
+        "Reading the most relevant studies directly is still necessary",
+        "Module 6 criteria on bias and limitations still apply"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Consensus, Elicit, and Scite each accelerate one part of evidence work, not the judgment behind it",
+    "bullets": [
+      "Consensus for quick direction-of-effect answers, Elicit for structured extraction, Scite for citation context",
+      "All three save time on search, none replaces reading the key studies",
+      "Evidence hierarchy and bias criteria from Module 6 still govern every use"
+    ],
+    "nextLesson": "Canva AI for medical infographics"
+  }
+}

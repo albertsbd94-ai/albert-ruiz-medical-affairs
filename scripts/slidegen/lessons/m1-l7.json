@@ -1,0 +1,79 @@
+{
+  "moduleNum": 1,
+  "moduleTitle": "Medical Affairs Foundations & Strategic Role",
+  "lessonNum": 7,
+  "lessonTitle": "The role of Medical Excellence",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Function",
+      "title": "Medical Excellence Sets the Standard for the Whole Team",
+      "bullets": [
+        "Owns standards, training, tools and quality frameworks",
+        "Judged on whether the whole organisation performs consistently",
+        "A structurally different problem than an individual MSL's own quality"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Core Responsibilities",
+      "title": "Competency Frameworks and Training",
+      "bullets": [
+        "Defines what \"good\" looks like in exchange, insights, compliance, engagement",
+        "Builds training curricula and certification programs",
+        "Designs SOPs and governance frameworks for compliant field activity"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Tech Stack",
+      "title": "Often Owns the CRM MSLs Use Every Day",
+      "bullets": [
+        "Owns systems like Veeva for planning, insight capture, territory data",
+        "Consistent data quality depends on a well-designed, well-trained-on system",
+        "Not just individual diligence"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Quality Assurance",
+      "title": "Audits, Calibration and Onboarding",
+      "bullets": [
+        "Audits scientific interactions and materials",
+        "Runs calibration so different MSLs interpret compliance the same way",
+        "Identifies skill gaps from performance data, not anecdote",
+        "Often owns structured onboarding for new MSLs"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why It Matters to You",
+      "title": "It Sets the Bar You're Measured Against",
+      "bullets": [
+        "Defines the quality bar and builds the training you go through",
+        "Designs the tools that shape your day-to-day work",
+        "Understanding it turns compliance into something constructive"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Career Path",
+      "title": "A Natural Senior Route for Experienced MSLs",
+      "bullets": [
+        "Lets you shape how an entire Medical Affairs organisation operates",
+        "Beyond managing just your own individual territory",
+        "Explored further in Module 12"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Medical Excellence builds the standards, training and tools that let the whole Medical Affairs organisation perform consistently",
+    "bullets": [
+      "It owns competency frameworks, SOPs and often the CRM itself",
+      "Quality assurance runs on audits, calibration and performance data",
+      "It is also a genuine senior-career path for experienced MSLs"
+    ],
+    "nextLesson": "How the impact of Medical Affairs is measured"
+  }
+}

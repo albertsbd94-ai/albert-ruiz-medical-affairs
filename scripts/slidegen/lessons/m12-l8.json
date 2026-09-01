@@ -1,0 +1,81 @@
+{
+  "moduleNum": 12,
+  "moduleTitle": "Medical Affairs Leadership & Career Accelerator",
+  "lessonNum": 8,
+  "lessonTitle": "Interviewing for MSL and Medical Advisor roles",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Process",
+      "title": "A Predictable, Four-Stage Structure",
+      "bullets": [
+        "An initial phone screening interview usually comes first",
+        "A deeper interview with the hiring team follows",
+        "Psychometric aptitude and work-style tests are common",
+        "A final stage often includes a clinical presentation and a role-play simulation"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Role-Play",
+      "title": "Prepare for the KOL Visit Simulation",
+      "bullets": [
+        "The panel evaluates conversational skill, not just scientific knowledge",
+        "Apply the scientific exchange and active listening principles from earlier in the course",
+        "Avoid a sales pitch disguised as scientific conversation",
+        "Experienced evaluators spot that error easily"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Clinical Presentation",
+      "title": "Choose a Topic That Shows Depth and Clarity",
+      "bullets": [
+        "Pick a topic that demonstrates both scientific depth and clear communication",
+        "Structure it using the executive communication principles from this module",
+        "Start with the central message and use well-selected, visually clear data",
+        "Be ready to defend methodology and limitations under follow-up questions"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Stay Current",
+      "title": "Updated Sector Knowledge Sets Candidates Apart",
+      "bullets": [
+        "Track recent drug approvals, notable congress abstracts and indication expansions",
+        "Concrete, current references demonstrate genuine active interest in the field",
+        "Recruiters consistently value this over purely theoretical knowledge"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Your Turn to Ask",
+      "title": "Questions to the Interviewer Signal Judgment",
+      "bullets": [
+        "Ask genuinely about career progression opportunities within the organization",
+        "Ask how success is measured in the role",
+        "Ask about the product's Medical Plan structure and priorities",
+        "This signals strategic reflection, not just interest in any open position"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Full Circle",
+      "title": "The Interview Applies the Whole Course",
+      "bullets": [
+        "Preparing this thoroughly is not an isolated exercise",
+        "It is a practical application of nearly every competency built throughout this course"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Interview preparation is a live rehearsal of nearly every skill this course has built",
+    "bullets": [
+      "The role-play tests genuine scientific exchange, not a disguised sales pitch",
+      "The clinical presentation should apply executive communication principles",
+      "Current sector knowledge and thoughtful questions signal real, active interest"
+    ],
+    "nextLesson": "Professional development plan"
+  }
+}

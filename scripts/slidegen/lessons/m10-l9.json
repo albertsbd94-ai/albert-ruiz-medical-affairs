@@ -1,0 +1,73 @@
+{
+  "moduleNum": 10,
+  "moduleTitle": "Omnichannel Medical & Digital Opinion Leaders",
+  "lessonNum": 9,
+  "lessonTitle": "Digital compliance",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Why It Matters",
+      "title": "More Channels Means More Risk to Manage",
+      "bullets": [
+        "Digital activity multiplies touchpoints with the scientific community",
+        "It also multiplies regulatory, legal and reputational risk",
+        "Same discipline as in-person activity applies, or more",
+        "Compliance enables sustainable digital growth, not blocks it"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Pillar One",
+      "title": "MLR Review Applies to Every Digital Piece",
+      "bullets": [
+        "Same MLR review as print material or visit presentations",
+        "Digital demands faster, more scalable review processes",
+        "Volume and speed of content push adoption of dedicated platforms",
+        "Rigor stays intact even as review gets more efficient"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Pillar Two",
+      "title": "Transparency in Every DOL Collaboration",
+      "bullets": [
+        "Same disclosure standards as any traditional KOL relationship",
+        "Conflicts of interest must be disclosed clearly",
+        "Scientific support must stay separate from promotional activity",
+        "Compliance teams should partner with DOLs, not just police them"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Pillar Three",
+      "title": "Traceability That Survives an Audit",
+      "bullets": [
+        "Shared content and third-party interactions must be recorded",
+        "Medical listening findings used in decisions need documentation",
+        "Must hold up under internal audit or regulatory inspection",
+        "Connects to broader industry transparency obligations"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "For the MSL",
+      "title": "Compliance Lives in Every Personal Interaction",
+      "bullets": [
+        "Not the exclusive job of a specialized team",
+        "A LinkedIn comment carries the same standard as a field visit",
+        "Same rigor, affiliation transparency, and non-promotional separation",
+        "Adapted to a public, permanent, faster environment"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Digital compliance is what makes sustainable digital scientific engagement possible",
+    "bullets": [
+      "MLR review, DOL transparency and traceability are the three pillars",
+      "DOL collaborations need the same disclosure standards as traditional KOLs",
+      "Every MSL digital interaction carries the same compliance standard as the field"
+    ],
+    "nextLesson": "Content personalization"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "moduleNum": 4,
+  "moduleTitle": "Scientific Exchange & High-Impact Conversations",
+  "lessonNum": 4,
+  "lessonTitle": "Reflective Questions",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "A Different Purpose",
+      "title": "Confirming Understanding, Not Asking New Questions",
+      "bullets": [
+        "Reflective questions show the MSL genuinely understood what the physician said",
+        "They invite the physician to confirm, correct or deepen that understanding",
+        "Drawn directly from motivational interviewing, an evidence-based communication framework"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Framework",
+      "title": "OARS and the Hardest Skill",
+      "bullets": [
+        "Open questions, Affirmations, Reflective listening, Summarising",
+        "Reflective listening is widely described as the most crucial and most difficult skill in OARS"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Not Just Repeating",
+      "title": "Rephrase the Meaning, Not the Words",
+      "bullets": [
+        "Verbatim repetition can feel mechanical or patronising",
+        "Rephrasing captures the underlying meaning behind what was said",
+        "Often gently surfaces something the physician implied but did not state",
+        "Confirms understanding while inviting elaboration or correction"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why It Pays Off",
+      "title": "More Insight, Same Conversation Time",
+      "bullets": [
+        "Mostly reflecting, with occasional exploring, beats mostly informing",
+        "MSLs typically learn considerably more in the same amount of time",
+        "Physicians experience it as more engaging real intellectual work, not passive listening"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "A Quieter Benefit",
+      "title": "Reflection Slows the Rush to Rebuttal",
+      "bullets": [
+        "Reflective listening naturally slows a conversation down",
+        "Reduces the temptation to jump to a data point when a concern is raised",
+        "One of the most effective ways to avoid drifting into the persuading mode"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Building the Skill",
+      "title": "Practice Through Your Own Call Notes",
+      "bullets": [
+        "Reflective questioning is a skill that improves with deliberate practice",
+        "Review call notes for moments where an informing response replaced a reflective one",
+        "Look for where reflection would have opened a richer conversation"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Reflective questions keep a conversation two-way without adding new content, and they keep it honest",
+    "bullets": [
+      "Reflecting accurately confirms understanding and invites deeper answers",
+      "It surfaces more insight than informing in the same amount of time",
+      "It slows the rush to rebuttal, guarding against drift into persuading"
+    ],
+    "nextLesson": "Strategic questions"
+  }
+}

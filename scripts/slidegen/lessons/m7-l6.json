@@ -1,0 +1,82 @@
+{
+  "moduleNum": 7,
+  "moduleTitle": "Clinical Research, RWE & Evidence Generation",
+  "lessonNum": 6,
+  "lessonTitle": "Evidence Gaps",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Definition",
+      "title": "What Counts as an Evidence Gap",
+      "bullets": [
+        "A relevant clinical question current evidence doesn't answer well",
+        "Matters to practice, patients, payers, or regulators",
+        "Systematic identification is one of an MSL's most strategic contributions",
+        "It links field work directly to future research planning"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Two Origins",
+      "title": "Population and Comparative Gaps",
+      "bullets": [
+        "Population gaps: pivotals exclude elderly, comorbid, renal or hepatic patients",
+        "Also pregnant patients and underrepresented ethnic groups",
+        "Comparative gaps: trials often used placebo or an outdated comparator",
+        "Leaves how it compares to today's standard of care unanswered"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Two More Origins",
+      "title": "Outcome and Implementation Gaps",
+      "bullets": [
+        "Outcome gaps: missing long-term, quality-of-life, or patient-reported data",
+        "Also missing economic and healthcare-burden impact data",
+        "Implementation gaps: unclear how to apply treatment optimally in practice",
+        "Beyond simply whether it works under ideal conditions"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Finding Them Rigorously",
+      "title": "Three Sources, Combined",
+      "bullets": [
+        "A systematic or scoping literature review maps what's already answered",
+        "Clinical guidelines often flag areas of consensus-based uncertainty",
+        "MSL field insights frequently surface gaps before literature does"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Not Automatic",
+      "title": "From Gap to Study Takes Evaluation",
+      "bullets": [
+        "A gap doesn't automatically justify a new study",
+        "Assess clinical relevance: how many patients, how much impact",
+        "Assess methodological feasibility and strategic alignment",
+        "A joint call by Medical Affairs, HEOR, and evidence teams"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why Documentation Matters",
+      "title": "Structured Beats Anecdotal",
+      "bullets": [
+        "Documenting gaps structurally raises the odds they become real studies",
+        "Anecdotal mentions are far easier to lose in the pipeline",
+        "The MSL's field perspective validates or nuances a gap's true relevance"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Evidence gaps are relevant unanswered questions, and MSLs who document them systematically help turn them into real studies",
+    "bullets": [
+      "Gaps arise from population, comparator, outcome, or implementation limits",
+      "Literature review, guidelines, and field insight together surface them",
+      "Relevance, feasibility, and strategy fit decide which gaps get studied"
+    ],
+    "nextLesson": "The Evidence Generation Plan"
+  }
+}

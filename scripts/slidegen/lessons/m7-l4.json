@@ -1,0 +1,83 @@
+{
+  "moduleNum": 7,
+  "moduleTitle": "Clinical Research, RWE & Evidence Generation",
+  "lessonNum": 4,
+  "lessonTitle": "Patient Registries",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Definition",
+      "title": "A Registry, Precisely Defined",
+      "bullets": [
+        "An organized system collecting uniform data for a defined population",
+        "Defined by a specific disease, condition, or exposure",
+        "Serves a predetermined scientific, clinical, or policy purpose",
+        "AHRQ's classic definition, and a richly underused MSL tool"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Unique Value",
+      "title": "What Only a Registry Can Do",
+      "bullets": [
+        "Maps natural history and phenotypic diversity of a disease",
+        "Especially vital in rare disease, where no single center sees enough",
+        "Sharpens case definitions, risk stratification, severity prediction",
+        "Shows real long-term impact of preventive and therapeutic strategies",
+        "Informs clinical guidelines and health policy decisions"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Rare Disease",
+      "title": "Pooling Data Across Borders",
+      "bullets": [
+        "Often coordinated at European or international scale",
+        "Pools patients across countries to reach a usable sample size",
+        "Considered a key evidence-based-medicine instrument in rare disease"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "How Data Builds",
+      "title": "Longitudinal by Design",
+      "bullets": [
+        "Combines retrospective and prospective data collection",
+        "Exams, labs, treatments, outcomes, increasingly patient-reported outcomes",
+        "Captures quality-of-life measures alongside clinical data",
+        "Reveals natural history no cross-sectional design could show"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "MSL Opportunities",
+      "title": "Where Registries Create Value",
+      "bullets": [
+        "Prime source for identifying genuine, specific evidence gaps",
+        "A natural collaboration point with scientific societies and patient groups",
+        "Feed secondary analyses for publications, congresses, the Medical Plan"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "A Practical Skill",
+      "title": "Know Your Registries, Proactively",
+      "bullets": [
+        "Know what registries exist in your own therapeutic area",
+        "Know who manages them and what variables they collect",
+        "Know how to access analyses or propose a collaboration",
+        "Treat this as an active competency, not a reactive one"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Registries capture natural history and pool rare-disease data at a scale no single study can, and MSLs should track them proactively",
+    "bullets": [
+      "Their longitudinal design reveals what cross-sectional studies cannot",
+      "They are a direct route to evidence gaps and society collaborations",
+      "Knowing your area's registries is an active, ongoing competency"
+    ],
+    "nextLesson": "Real-World Evidence in Medical Strategy"
+  }
+}

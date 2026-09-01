@@ -1,0 +1,80 @@
+{
+  "moduleNum": 8,
+  "moduleTitle": "Congress Excellence",
+  "lessonNum": 7,
+  "lessonTitle": "Insight capture",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Opportunity",
+      "title": "The Most Intense Insight Window of the Year",
+      "bullets": [
+        "Dozens of conversations with KOLs, poster authors, and colleagues in just days",
+        "The densest insight-capture opportunity in the entire annual calendar",
+        "Applying the Module 5 insight framework here is what makes it count"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Real Challenge",
+      "title": "The Problem Is Volume, Not Scarcity",
+      "bullets": [
+        "The challenge at a congress is not too little information but too much",
+        "Without a system, recalling exactly what each person said becomes impossible",
+        "The fundamental discipline is capturing insights as close to the moment as possible"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Discipline",
+      "title": "Capture Immediately, Never at Day's End",
+      "bullets": [
+        "Right after a conversation, between one session and the next",
+        "Never wait until the end of the day",
+        "Definitely never wait until the end of the congress"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "What Counts as Quality",
+      "title": "A Real Insight Has Context and Implication",
+      "bullets": [
+        "Not a generic opinion or an isolated quote",
+        "A specific observation with context: who said it, in what situation",
+        "A clear implication for medical strategy",
+        "Examples: a spontaneous evidence gap, a critical audience reaction, an unmet need"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "A Higher-Level Signal",
+      "title": "The Collective Conversation Is an Insight Too",
+      "bullets": [
+        "Themes repeating across sessions, hallways, and the congress hashtag",
+        "The most recurring questions after presentations",
+        "That aggregate pattern often outranks any single conversation in strategic value"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Close the Loop Daily",
+      "title": "Review Every Evening, Not After You Get Home",
+      "bullets": [
+        "Do a brief systematic review of the day's captured insights",
+        "Verify each one is complete and well contextualized",
+        "Flag the highest-relevance ones for the team debrief",
+        "Waiting until the return home lets the original context fade"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "A congress generates more insight raw material than any other moment of the year",
+    "bullets": [
+      "The discipline of capturing immediately is what preserves its value",
+      "Quality insights need context and a clear strategic implication",
+      "Recurring themes across the event can matter more than any single quote"
+    ],
+    "nextLesson": "Internal debrief"
+  }
+}

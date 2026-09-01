@@ -1,0 +1,81 @@
+{
+  "moduleNum": 10,
+  "moduleTitle": "Omnichannel Medical & Digital Opinion Leaders",
+  "lessonNum": 2,
+  "lessonTitle": "Difference between multichannel and omnichannel",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "A Common Confusion",
+      "title": "Same Word, Different Strategy",
+      "bullets": [
+        "Multichannel and omnichannel are often used as synonyms",
+        "The distinction has real consequences for planning and execution",
+        "Confusing the two leads to activity without integration"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Multichannel Defined",
+      "title": "One Message, Many Channels",
+      "bullets": [
+        "The same or similar message pushed across visits, email, congresses, networks",
+        "Channels are not coordinated beyond sharing a core message",
+        "Goal is maximizing reach and frequency of exposure",
+        "Channels don't know what happened on the others"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Omnichannel Defined",
+      "title": "One Journey, Built From Data",
+      "bullets": [
+        "Channels integrate around a coherent, personalized HCP journey",
+        "Prior interactions decide the next content, format and sequence",
+        "A field visit can build on what the HCP already read online",
+        "Redundancy drops, relevance of each contact rises"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "How Success Is Measured",
+      "title": "Activity Metrics vs Journey Metrics",
+      "bullets": [
+        "Multichannel leans on per-channel activity: opens, visits, attendance",
+        "Those metrics are evaluated largely in isolation",
+        "Omnichannel needs metrics for the cumulative journey",
+        "Journey metrics are harder to build, requiring integrated data"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Honest Reality",
+      "title": "Most Organizations Are Still in Between",
+      "bullets": [
+        "Multiple channels are already deployed almost everywhere",
+        "True data integration around the HCP remains a work in progress",
+        "The literature treats it as a goal, not an achieved state"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "For the MSL",
+      "title": "Spot Coordination, Don't Just Add a Channel",
+      "bullets": [
+        "Understanding the difference reveals coordination opportunities in your territory",
+        "Look for ways to connect with other channels reaching the same HCPs",
+        "Avoid operating as one more isolated channel"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Multichannel maximizes reach; omnichannel coordinates a single coherent HCP journey",
+    "bullets": [
+      "Multichannel repeats a message; omnichannel adapts it to prior interactions",
+      "Journey-level metrics are harder but are what omnichannel requires",
+      "Most organizations still have channels without full integration"
+    ],
+    "nextLesson": "DOLs"
+  }
+}

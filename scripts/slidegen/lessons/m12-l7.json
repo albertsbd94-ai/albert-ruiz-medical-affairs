@@ -1,0 +1,79 @@
+{
+  "moduleNum": 12,
+  "moduleTitle": "Medical Affairs Leadership & Career Accelerator",
+  "lessonNum": 7,
+  "lessonTitle": "LinkedIn thought leadership",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Beyond One-Off Posts",
+      "title": "Thought Leadership Needs a Deliberate Strategy",
+      "bullets": [
+        "Being recognized as a thought leader takes a sustained content strategy, not occasional posts",
+        "The goal is a recognizable presence built over time",
+        "It always stays within scientific rigor and non-promotion limits"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Element One",
+      "title": "Define a Precise Area of Focus",
+      "bullets": [
+        "Pick a specific area to be known for: a therapeutic area, AI in Medical Affairs, insight excellence",
+        "Trying to cover everything dispersedly dilutes recognition",
+        "A clear focus helps the audience associate you with that topic"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Element Two",
+      "title": "Consistency Beats Sporadic Bursts",
+      "bullets": [
+        "Regular activity, even at moderate frequency, builds visibility far more effectively",
+        "Content doesn't have to be fully original",
+        "Commenting substantively on relevant publications or summarizing a congress finding works just as well"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Element Three",
+      "title": "Format for the Platform",
+      "bullets": [
+        "Short, visually clear, directly useful content drives more genuine interaction",
+        "Lengthy or overly technical text tends to underperform",
+        "A short video or infographic can show both scientific knowledge and communication skill"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Element Four",
+      "title": "Compliance Comes Before Every Post",
+      "bullets": [
+        "Follow internal digital communication policies before publishing anything",
+        "Avoid any appearance of product promotion",
+        "Keep personal scientific opinion clearly separate from official company positioning",
+        "Verify sources with the same rigor as any scientific communication"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why It Matters",
+      "title": "A Tool That Opens Doors",
+      "bullets": [
+        "Thought leadership is not an end in itself, it amplifies personal brand",
+        "Done well and sustained, it opens new collaborations and relevant invitations",
+        "It builds visibility with hiring decision-makers long before you look for a new role"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "LinkedIn thought leadership amplifies personal brand when built with focus and consistency",
+    "bullets": [
+      "A precise area of focus makes recognition possible",
+      "Consistency, even moderate, beats sporadic original content",
+      "Compliance and format discipline protect credibility while building visibility"
+    ],
+    "nextLesson": "Interviewing for MSL and Medical Advisor roles"
+  }
+}

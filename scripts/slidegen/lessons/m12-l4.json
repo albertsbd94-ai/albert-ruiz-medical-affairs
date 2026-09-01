@@ -1,0 +1,78 @@
+{
+  "moduleNum": 12,
+  "moduleTitle": "Medical Affairs Leadership & Career Accelerator",
+  "lessonNum": 4,
+  "lessonTitle": "Executive communication",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "A Different Register",
+      "title": "Executive Audiences Need a Different Style",
+      "bullets": [
+        "Scientific conversations with a KOL allow technical depth and a progressive build-up",
+        "A steering committee or senior leadership needs synthesis and immediate clarity",
+        "Time and attention are limited, so the format has to change"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Core Principle",
+      "title": "Start With the Conclusion",
+      "bullets": [
+        "Lead with the main message and the decision or action expected, in the first seconds",
+        "This inverts the usual scientific narrative that builds toward a conclusion",
+        "This synthesis discipline doesn't come naturally to many technically strong professionals"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "What Matters to Them",
+      "title": "Strategic Relevance Over Operational Detail",
+      "bullets": [
+        "Leadership needs the implications for their decisions, not every step of the process",
+        "Translate detailed field work into the language of impact and decision",
+        "Keep the underlying rigor while cutting irrelevant detail"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Show, Don't Overload",
+      "title": "Disciplined Use of Visual Aids",
+      "bullets": [
+        "Simple charts or diagrams communicate at a glance what a paragraph would take to explain",
+        "Avoid overloading a single slide or page with information",
+        "This is a common gap for professionals used to dense academic publications"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Non-Negotiable",
+      "title": "Synthesis Without Sacrificing Rigor",
+      "bullets": [
+        "Synthesis does not mean simplifying until precision is lost",
+        "Relevant limitations of evidence or a recommendation still need to be surfaced",
+        "Select what's essential for the decision, but never sacrifice scientific honesty"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Building the Skill",
+      "title": "Practice It Deliberately",
+      "bullets": [
+        "Actively seek opportunities to present to leadership audiences",
+        "Ask for specific feedback on clarity and synthesis",
+        "Critically review your own presentations before delivering them"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Executive communication trades narrative build-up for immediate, rigorous synthesis",
+    "bullets": [
+      "Start with the conclusion and the decision needed, not the supporting detail",
+      "Translate field work into impact and decision language without losing rigor",
+      "Deliberate practice with real leadership audiences is what builds this skill"
+    ],
+    "nextLesson": "Managing internal stakeholders"
+  }
+}

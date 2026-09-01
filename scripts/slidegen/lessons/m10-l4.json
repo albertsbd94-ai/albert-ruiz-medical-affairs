@@ -1,0 +1,72 @@
+{
+  "moduleNum": 10,
+  "moduleTitle": "Omnichannel Medical & Digital Opinion Leaders",
+  "lessonNum": 4,
+  "lessonTitle": "Digital medical education",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Shift Online",
+      "title": "Medical Education Moves to Digital Channels",
+      "bullets": [
+        "Same goal as the medical education plan: close real knowledge gaps",
+        "Non-promotional formative activities, now delivered online",
+        "Digital adds scale, flexible access, and personalization",
+        "Complements in-person training rather than replacing it"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Format Range",
+      "title": "Three Ways HCPs Learn Digitally",
+      "bullets": [
+        "Live webinars gather dispersed audiences with real-time Q&A",
+        "Asynchronous videos, infographics and podcasts fit a busy schedule",
+        "Structured e-learning offers progressive modules with formal accreditation",
+        "Each format suits a different depth and availability"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "What Never Changes",
+      "title": "Rigor and Independence Still Apply",
+      "bullets": [
+        "Content must rest on balanced, evidence-based material",
+        "Same MLR review as any other scientific material",
+        "Must stay clearly separate from promotional content",
+        "Applies to design, labeling and distribution alike"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Digital Advantage",
+      "title": "Personalization In-Person Can't Match",
+      "bullets": [
+        "Format and depth adapt to each HCP's known profile",
+        "Modules sequence according to demonstrated knowledge level",
+        "Completion and interest are measured with precision",
+        "That data feeds the design of future content"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The MSL's Role",
+      "title": "Recommend It, Then Build On It",
+      "bullets": [
+        "Spot from field conversations which content fits a specific HCP",
+        "Recommend it as a starting point or a follow-up",
+        "Reinforces the omnichannel logic across every channel"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Digital medical education keeps the rigor of in-person training while adding scale and personalization",
+    "bullets": [
+      "Webinars, asynchronous content and e-learning each serve a different need",
+      "MLR review and separation from promotion still apply online",
+      "MSLs connect field conversations to the right digital content"
+    ],
+    "nextLesson": "Scientific content journeys"
+  }
+}

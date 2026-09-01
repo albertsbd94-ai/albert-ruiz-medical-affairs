@@ -1,0 +1,71 @@
+{
+  "moduleNum": 3,
+  "moduleTitle": "KOL Mapping, Segmentation & Engagement",
+  "lessonNum": 2,
+  "lessonTitle": "What a DOL is",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "A New Channel",
+      "title": "Influence Built Through Digital Platforms",
+      "bullets": [
+        "DOL influence runs through social media, podcasts, video and blogs",
+        "LinkedIn and X are especially relevant platforms",
+        "This can operate instead of, or alongside, the traditional academic path",
+        "The traditional path relies on publications, congresses and guideline committees"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "How It's Measured",
+      "title": "Digital Footprint Replaces Academic Standing",
+      "bullets": [
+        "Follower counts on relevant platforms",
+        "Engagement rates on scientific content",
+        "Reach and resonance of posts discussing clinical topics",
+        "Depth of community interaction matters more than raw audience size"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Two Archetypes",
+      "title": "From Global Voices to Micro-Influencers",
+      "bullets": [
+        "Globally recognised clinical authorities with large, engaged followings",
+        "Micro-influencers with smaller but highly engaged niche audiences",
+        "Micro-influencer recommendations carry weight because the audience trusts them deeply"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Not Either/Or",
+      "title": "KOL and DOL Status Often Overlap",
+      "bullets": [
+        "Many senior academic KOLs have also built substantial digital followings",
+        "Many DOLs lack an equivalent traditional academic profile",
+        "Treating digital influence as a lesser, supplementary category is a mistake",
+        "Digital scientific exchange still follows the same compliance and balance standards"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "For the MSL",
+      "title": "Mapping Must Add a Digital Dimension",
+      "bullets": [
+        "Identify the relevant DOLs in a territory",
+        "Understand which digital channels and communities actually shape local practice",
+        "Influence today is measured across both traditional and digital indicators"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "DOLs shape clinical opinion through digital channels, not just academic ones",
+    "bullets": [
+      "Follower reach, engagement quality and community trust are the key indicators",
+      "KOL and DOL status frequently overlap in the same person",
+      "Territory mapping must now explicitly include the digital dimension"
+    ],
+    "nextLesson": "Differences between KOL, rising star, clinical champion and scientific influencer"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "moduleNum": 8,
+  "moduleTitle": "Congress Excellence",
+  "lessonNum": 3,
+  "lessonTitle": "KOL meetings",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Density Problem",
+      "title": "20 to 30 Minutes That Replace Months of Visits",
+      "bullets": [
+        "A congress KOL meeting is often the year's densest interaction with that person",
+        "It packs into 20 to 30 minutes what field visits would take months to cover",
+        "That density demands preparation different from an ordinary field visit"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Before the Meeting",
+      "title": "Define the Specific Purpose First",
+      "bullets": [
+        "Is this an insight-exploration conversation on a new area?",
+        "Is it a chance to present and discuss recent product data?",
+        "Is it a first contact to gauge interest in a research collaboration?",
+        "Or is it maintenance of an already consolidated relationship?",
+        "Each purpose demands a different structure, per Module 4 exchange principles"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "During the Meeting",
+      "title": "Go Straight to the Essential",
+      "bullets": [
+        "Interruptions and packed agendas are the norm at a congress",
+        "Open with a question genuinely relevant to the KOL, ideally tied to their own recent work",
+        "Listen actively and leave deliberate space for their perspective",
+        "Never let the company message monopolize the limited time"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Reading the Moment",
+      "title": "Connect to What's Happening Right Now",
+      "bullets": [
+        "The KOL likely just left, or is heading to, a session with new data",
+        "A prepared MSL links the conversation to what the congress is discussing that moment",
+        "This shows genuine immersion, not a fixed company agenda"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "After the Meeting",
+      "title": "Document Immediately, Before Memory Fades",
+      "bullets": [
+        "Capture key points and insights right after, or as soon as possible",
+        "Follow the insight-capture framework from Module 5",
+        "Waiting until the end of the congress risks losing nuance",
+        "It also risks mixing up details between different interlocutors"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Congress KOL meetings pack a year's worth of relationship value into minutes",
+    "bullets": [
+      "A clear purpose defined beforehand shapes how the conversation runs",
+      "Genuine, real-time engagement beats reciting a fixed agenda",
+      "Immediate documentation is what keeps that value from being lost"
+    ],
+    "nextLesson": "Session tracking"
+  }
+}

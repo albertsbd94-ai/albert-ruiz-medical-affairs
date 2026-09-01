@@ -1,0 +1,68 @@
+{
+  "moduleNum": 1,
+  "moduleTitle": "Medical Affairs Foundations & Strategic Role",
+  "lessonNum": 5,
+  "lessonTitle": "Patient centricity and health value",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Beyond the Slogan",
+      "title": "Patient Centricity Has a Precise Working Definition",
+      "bullets": [
+        "An organizational culture that places patients at the centre of decisions",
+        "Responds to needs patients articulate themselves",
+        "Still drives legitimate business outcomes",
+        "Changes what counts as good scientific work for Medical Affairs"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Shift",
+      "title": "From Thinking About the Pill to Thinking About Health",
+      "bullets": [
+        "Considers the physical, mental, social and emotional sides of a condition",
+        "A drug can hit its trial endpoint and still fail patients in daily life",
+        "MSLs hear directly from clinicians how treatment plays out for real patients"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Outcome",
+      "title": "Health Value Means More Than \"Does It Work\"",
+      "bullets": [
+        "Asks whether the drug improves outcomes and experience patients care about",
+        "Delivered in a system that can sustain that improvement",
+        "Patient-reported outcomes and quality-of-life measures make it measurable"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "In the Field",
+      "title": "Three Ways It Changes an MSL's Practice",
+      "bullets": [
+        "Adherence-barrier or subgroup observations count as valuable insights",
+        "Justifies partnering with patient advocacy groups where compliant",
+        "Reshapes evidence-generation priorities to include patient-reported endpoints"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Test",
+      "title": "Ask What the Conversation Changes for the Patient",
+      "bullets": [
+        "Keep patient centricity genuinely operational, not decorative",
+        "Every scientific exchange should trace back to the patient behind the prescription"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Patient centricity reframes medical value around what actually matters to patients, not just trial endpoints",
+    "bullets": [
+      "Health value means outcomes and experience, not only efficacy",
+      "Adherence and quality-of-life observations are genuine medical insights",
+      "Every scientific exchange should trace back to patient impact"
+    ],
+    "nextLesson": "Medical Affairs as a translator between science, clinical practice and strategy"
+  }
+}

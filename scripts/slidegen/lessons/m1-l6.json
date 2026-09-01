@@ -1,0 +1,69 @@
+{
+  "moduleNum": 1,
+  "moduleTitle": "Medical Affairs Foundations & Strategic Role",
+  "lessonNum": 6,
+  "lessonTitle": "Medical Affairs as a translator between science, clinical practice and strategy",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Core Function",
+      "title": "Medical Affairs' Irreplaceable Job Is Translation",
+      "bullets": [
+        "Moves information across three languages: science, clinical practice, strategy",
+        "These languages rarely speak to each other directly",
+        "Losing accuracy in any one direction is where MSLs most often fail"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Science to Practice",
+      "title": "A Trial Result Is Not Yet a Clinical Answer",
+      "bullets": [
+        "Translates hazard ratios and confidence intervals into a real consultation decision",
+        "Trial populations and endpoints don't map cleanly onto one patient",
+        "Reciting the headline result is not translation, just repetition"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Practice to Insight",
+      "title": "Field Observations Aren't Insights Until Structured",
+      "bullets": [
+        "Captures unmet needs, barriers, safety signals, guideline gaps from the field",
+        "Raw observations must be filtered, validated and tied to a decision",
+        "This exact step is the focus of Module 5"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Insight to Strategy",
+      "title": "Field Intelligence Shapes the Medical Plan",
+      "bullets": [
+        "Connects field insight to the Medical Plan and evidence-generation agenda",
+        "Feeds publication planning and, where compliant, corporate strategy",
+        "This is the layer where Medical Affairs becomes a true strategic pillar"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Skill Set",
+      "title": "Three Languages, One Professional",
+      "bullets": [
+        "Scientific and statistical literacy to interpret evidence correctly",
+        "Field communication skills for real two-way dialogue",
+        "Business and strategic literacy to know what the organisation needs",
+        "Weakness in any one language creates a ceiling on impact"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Medical Affairs' core value is translating accurately between science, clinical practice and strategy",
+    "bullets": [
+      "A trial result only matters once translated into a real clinical decision",
+      "Field observations become insights only when structured and validated",
+      "Weakness in any one of the three languages caps an MSL's impact"
+    ],
+    "nextLesson": "The role of Medical Excellence"
+  }
+}

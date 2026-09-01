@@ -1,0 +1,70 @@
+{
+  "moduleNum": 10,
+  "moduleTitle": "Omnichannel Medical & Digital Opinion Leaders",
+  "lessonNum": 10,
+  "lessonTitle": "Content personalization",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Mechanism",
+      "title": "What Makes Omnichannel's Promise Real",
+      "bullets": [
+        "Personalization delivers the right content to the right HCP at the right moment",
+        "Replaces one generic message for the whole audience",
+        "The technical engine behind the omnichannel journey"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Three Levels of Data",
+      "title": "From Basic Profile to Predictive Signal",
+      "bullets": [
+        "Basic level: specialty, facility type, approximate patient volume",
+        "Advanced level: past content consumed and questions asked",
+        "Most sophisticated: AI-enabled tools predicting relevance dynamically",
+        "Each level builds on richer data about the HCP"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Critical Line",
+      "title": "Scientific Relevance, Never Commercial Potential",
+      "bullets": [
+        "Personalization must rest on clinical profile and information need",
+        "Never on prescription volume or business potential",
+        "Preserves the non-promotional nature of all medical activity",
+        "Guaranteed by data governance and compliance processes"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "A Hidden Risk",
+      "title": "Personalization Can Become an Echo Chamber",
+      "bullets": [
+        "Only offering familiar content limits exposure to new evidence",
+        "HCPs may miss clinically valuable data they never searched for",
+        "Responsible design deliberately adds diversity and balance",
+        "Relevance alone is not enough"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The MSL's Role",
+      "title": "The Most Nuanced Personalization Is Still Human",
+      "bullets": [
+        "Personalization does not reduce the MSL's role",
+        "A direct conversation captures needs no data history predicts",
+        "MSLs recommend the exact right piece from the full content journey"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Content personalization delivers the right science to the right HCP, guided by need, not business potential",
+    "bullets": [
+      "Personalization ranges from basic profile data to AI-driven prediction",
+      "Scientific relevance must always outrank commercial signals like prescribing volume",
+      "MSLs provide the human personalization no automated system can replicate"
+    ]
+  }
+}

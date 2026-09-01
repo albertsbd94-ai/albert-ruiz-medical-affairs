@@ -1,0 +1,67 @@
+{
+  "moduleNum": 5,
+  "moduleTitle": "Medical Insights Excellence",
+  "lessonNum": 8,
+  "lessonTitle": "How to turn insights into strategy",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Payoff",
+      "title": "Insight Only Matters If It Reshapes Strategy",
+      "bullets": [
+        "Connecting field insight to the Medical Plan is the final step",
+        "Without it, excellent insight is just an elaborate listening exercise",
+        "This is what justifies everything earlier in the module"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "How It Really Happens",
+      "title": "Strategy Shifts Through Convergence, Not One Insight",
+      "bullets": [
+        "Rarely driven by a single dramatic insight",
+        "More often, multiple MSLs independently surface the same pattern",
+        "Significance comes from validation and accumulation, not one conversation"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Making It Systematic",
+      "title": "Convergence Needs a Structured Review Process",
+      "bullets": [
+        "Leadership reviews aggregated insight on a regular cadence, often quarterly",
+        "Aligned with the Medical Plan review cycle from Module 9",
+        "They ask what the field intelligence suggests about current priorities"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "For the Individual MSL",
+      "title": "Field Work Feeds a Larger Intelligence Process",
+      "bullets": [
+        "The strategic connection happens above any one MSL's direct control",
+        "Still, treat insight generation as genuine contribution, not admin reporting",
+        "Makes accurate capture, honest bias-checking and clear writing matter more"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Senior Question",
+      "title": "Ask What Pattern Is Emerging Over Time",
+      "bullets": [
+        "Periodically review several months of insights, not one at a time",
+        "Ask what the accumulated pattern points toward",
+        "This shift marks the move from tactical execution to strategic partnership"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Individual insights become strategy through convergence, structured review and discipline",
+    "bullets": [
+      "Strategy shifts when multiple independently sourced insights converge",
+      "Structured, regular review by leadership turns insight into decisions",
+      "Treat insight generation as strategic contribution, not administrative reporting"
+    ]
+  }
+}

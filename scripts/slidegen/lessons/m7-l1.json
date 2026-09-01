@@ -1,0 +1,83 @@
+{
+  "moduleNum": 7,
+  "moduleTitle": "Clinical Research, RWE & Evidence Generation",
+  "lessonNum": 1,
+  "lessonTitle": "Phases of Clinical Research",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Core Problem",
+      "title": "The Continuum Beyond Approval",
+      "bullets": [
+        "Clinical development doesn't stop at regulatory approval",
+        "It runs from first-in-human studies to years post-launch",
+        "MSLs need the full picture, not just the pivotal trials",
+        "An evidence-generation view lets you place any new study in context"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Early Phases",
+      "title": "Reducing Risk Before Scaling Up",
+      "bullets": [
+        "Phase I and II generate initial safety and tolerability data",
+        "Small, tightly controlled studies with preliminary efficacy signals",
+        "Their job is to de-risk before larger investment",
+        "Phase III delivers the confirmatory, pivotal evidence behind approval"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Where MSLs Live",
+      "title": "The Evidence That Fills Your Day",
+      "bullets": [
+        "Phase IIIb studies start around or after pivotal completion",
+        "They explore new populations, comparators, and secondary endpoints",
+        "Phase IV, post-marketing, answers real-practice questions",
+        "Together they generate much of an MSL's daily evidence"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Never Finished",
+      "title": "A Cycle, Not a Finish Line",
+      "bullets": [
+        "Phase IV findings spark new research questions",
+        "These feed subgroup analyses, extension studies, new trials",
+        "Knowing the cycle helps you set honest expectations",
+        "It explains why some subgroup questions still lack answers"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Newer Designs",
+      "title": "Pragmatic and Adaptive Trials",
+      "bullets": [
+        "Pragmatic trials mimic real practice while staying randomized",
+        "Broader inclusion criteria and non-specialist centers",
+        "Adaptive trials adjust dose, sample size, or criteria mid-study",
+        "Adaptive designs speed development without sacrificing rigor"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why It Matters",
+      "title": "Mastering the Full Map",
+      "bullets": [
+        "Knowing the full development trajectory builds real credibility",
+        "Lets you contextualize any new publication for an HCP",
+        "Goes beyond repeating the latest study's headline data"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Clinical development is a continuum MSLs must map end to end, not just the pivotal trials",
+    "bullets": [
+      "Phase IIIb and IV generate the evidence MSLs use most",
+      "The cycle never stops — each phase raises new questions",
+      "Pragmatic and adaptive designs are increasingly part of that map"
+    ],
+    "nextLesson": "Investigator-Initiated Studies (IIS)"
+  }
+}

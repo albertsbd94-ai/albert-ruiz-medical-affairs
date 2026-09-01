@@ -1,0 +1,78 @@
+{
+  "moduleNum": 5,
+  "moduleTitle": "Medical Insights Excellence",
+  "lessonNum": 7,
+  "lessonTitle": "How to share insights internally",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Final Step",
+      "title": "An Unshared Insight Has No Impact",
+      "bullets": [
+        "A great insight that never reaches the right audience achieves nothing",
+        "Sharing deserves as much deliberate attention as generating and writing it",
+        "It is a distinct final step, not an afterthought"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Route It Right",
+      "title": "Send Insight to the Right Owner, Not Just a System",
+      "bullets": [
+        "Safety observations need immediate escalation through pharmacovigilance",
+        "That's a compliance obligation, not a judgment call",
+        "Evidence gaps go to the evidence-generation team, education gaps to education planning"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Beyond the CRM",
+      "title": "A Database Entry Alone Is a Passive Channel",
+      "bullets": [
+        "Important insights often need an active nudge to be seen",
+        "A direct message or raising it in a team huddle helps",
+        "Especially critical when there's time pressure"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Know Your Audience",
+      "title": "Frame the Same Insight Differently for Different Readers",
+      "bullets": [
+        "A Medical Advisor needs the full data-to-implication chain and context",
+        "A cross-functional colleague needs a concise, decision-focused version",
+        "Sent through appropriately compliant, filtered channels"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Beyond One MSL",
+      "title": "Contribute to Collective Learning, Not Just Reporting",
+      "bullets": [
+        "Communities of practice check one territory's pattern against others",
+        "Case discussions, insight reviews and congress debriefs do this work",
+        "This turns individual observation into validated, aggregated intelligence"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Close the Loop",
+      "title": "Feedback on Impact Reinforces Good Insight",
+      "bullets": [
+        "When an insight visibly leads to action, tell the MSL who found it",
+        "This reinforces the behaviour that generates high-value insight",
+        "Good organisations make this feedback loop explicit, not left to chance"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Insight only creates value once it reaches the right person in the right form",
+    "bullets": [
+      "Route insight to its proper owner, with safety escalated immediately",
+      "Frame the same insight differently for different internal audiences",
+      "Contribute to shared forums, and close the loop when insight leads to action"
+    ],
+    "nextLesson": "How to turn insights into strategy"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "moduleNum": 5,
+  "moduleTitle": "Medical Insights Excellence",
+  "lessonNum": 3,
+  "lessonTitle": "Difference between data, observation, insight and implication",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Core Problem",
+      "title": "Confusing Four Layers Weakens Every Report",
+      "bullets": [
+        "Data, observation, insight and implication form a layered hierarchy",
+        "Confusing them is the most common cause of weak field reporting",
+        "Knowing where each layer ends lets an MSL build something strategic"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Layer One",
+      "title": "Data Is Raw and Uninterpreted",
+      "bullets": [
+        "A number, fact or directly recorded statement, nothing more",
+        "Example: three physicians this quarter asked about elderly dosing",
+        "Verifiable, but inert until something is done with it"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Layer Two",
+      "title": "Observation Notices the Pattern",
+      "bullets": [
+        "A first layer of pattern recognition across the data",
+        "Example: more physicians raised this question than in prior quarters",
+        "Still does not explain why the pattern exists"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Layer Three",
+      "title": "Insight Reasons Through the Why",
+      "bullets": [
+        "Genuine understanding, informed by scientific knowledge and field context",
+        "Example: uncertainty stems from poorly communicated real-world safety data",
+        "Explains the underlying why, not just a restatement of the pattern"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Layer Four",
+      "title": "Implication Names the Actionable Consequence",
+      "bullets": [
+        "The specific, actionable so-what the insight points toward",
+        "Example: a targeted education initiative and a real-world evidence sub-analysis",
+        "Lets someone inside the organisation decide whether and how to act"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Dependency",
+      "title": "Each Layer Needs the One Below It",
+      "bullets": [
+        "Implication without real insight is a recommendation dressed as analysis",
+        "Insight without solid data and observation is speculation",
+        "Skipping a layer produces weak output at the next one"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "In Practice",
+      "title": "Move Through All Four Layers Deliberately",
+      "bullets": [
+        "Don't jump from one conversation straight to a sweeping implication",
+        "Consciously work up through data, observation, insight, implication",
+        "This discipline is what capture, writing and bias lessons protect"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Data, observation, insight and implication build on each other in strict order",
+    "bullets": [
+      "Data is raw, observation notices a pattern, insight explains why",
+      "Implication is the concrete so-what that enables a decision",
+      "Skipping a layer turns analysis into speculation or an unsupported recommendation"
+    ],
+    "nextLesson": "How to capture insights during a visit"
+  }
+}

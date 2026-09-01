@@ -1,0 +1,74 @@
+{
+  "moduleNum": 11,
+  "moduleTitle": "AI for Medical Affairs",
+  "lessonNum": 9,
+  "lessonTitle": "Risks, compliance and privacy",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Why It Matters",
+      "title": "Careless AI Use Carries Real Consequences",
+      "bullets": [
+        "Generative AI use in Medical Affairs is not risk-free",
+        "Consequences can reach confidential information and scientific credibility",
+        "Unlike a minor typo, these risks can cause lasting damage",
+        "Every MSL must know these risks precisely before daily use"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Risk One",
+      "title": "Hallucination Is Still the Most Cited Risk",
+      "bullets": [
+        "Models can generate plausible, well-written but factually wrong content",
+        "Includes invented figures or references that do not exist",
+        "Especially dangerous when communicated confidently to an HCP",
+        "Retrieval-Augmented Generation anchors answers in verified sources",
+        "Even with RAG, final human verification against the original stays essential"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Risk Two",
+      "title": "Privacy and Information Security",
+      "bullets": [
+        "Prompt data can be stored or used to train future models",
+        "Never enter confidential company data or unpublished study results",
+        "Never enter identifiable patient information",
+        "Never enter identifiable HCP data without explicit consent and safeguards",
+        "Equivalent protections to HIPAA in the US or GDPR in Europe apply"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Risk Three",
+      "title": "Algorithmic Bias in Model Training Data",
+      "bullets": [
+        "Models learn from text that can reflect existing biases",
+        "Can underrepresent certain patient populations or clinical perspectives",
+        "Same critical thinking on representativeness as evidence gaps in Module 7"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Discipline",
+      "title": "A Governance Framework, Not Avoidance",
+      "bullets": [
+        "Know and follow internal policy on approved tools and privacy settings",
+        "Never enter confidential or patient information",
+        "Always verify clinical claims against the primary source before sharing",
+        "The MSL keeps final professional responsibility for everything shared"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Hallucination, privacy, and bias are manageable risks under a clear governance framework",
+    "bullets": [
+      "Hallucination is mitigated by RAG but still needs human verification",
+      "Confidential and patient data must never enter an AI prompt",
+      "Final professional responsibility for shared information stays with the MSL"
+    ],
+    "nextLesson": "How to build an AI Medical Affairs Operating System"
+  }
+}

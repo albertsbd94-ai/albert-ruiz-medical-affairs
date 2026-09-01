@@ -1,0 +1,79 @@
+{
+  "moduleNum": 1,
+  "moduleTitle": "Medical Affairs Foundations & Strategic Role",
+  "lessonNum": 4,
+  "lessonTitle": "Medical value across the product lifecycle",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Mental Model",
+      "title": "Medical Value Shifts at Every Lifecycle Stage",
+      "bullets": [
+        "Medical Affairs' relationship with a medicine spans its entire life",
+        "The nature of medical value changes substantially at each stage",
+        "The same scientific question needs a different response depending on timing"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Pre-Launch",
+      "title": "Shaping the Product Before Launch Is Possible",
+      "bullets": [
+        "Contributes to shaping the Target Product Profile",
+        "Early KOL engagement uncovers unmet needs",
+        "Builds disease-state education independent of any specific product",
+        "Begins mapping the evidence landscape and its gaps"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "At Launch",
+      "title": "Peak Intensity for Translation and Education",
+      "bullets": [
+        "Turns dense trial data into something a clinician can use in consultation",
+        "New mechanism, dosing and safety profile need rapid, accurate communication",
+        "The prescriber base has no prior experience with the product"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Growth and Maturity",
+      "title": "The Center of Gravity Shifts to Real-World Evidence",
+      "bullets": [
+        "Pivotal trials can't answer everything about everyday, varied patients",
+        "Registries, RWE studies and investigator-sponsored research become primary",
+        "Often directly informed by insights MSLs bring back from the field"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Loss of Exclusivity",
+      "title": "Sustaining Differentiation as Generics Enter",
+      "bullets": [
+        "Focus shifts to long-term safety and subpopulation data generics can't copy",
+        "New formulations or delivery methods become a differentiator",
+        "Supports appropriate continuity of care, not pure promotion"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "A Mark of Maturity",
+      "title": "Reading the Stage Correctly Is a Senior Skill",
+      "bullets": [
+        "Asking for RWE input six weeks after launch is premature",
+        "Running pure disease education three years post-launch wastes an opportunity",
+        "Adjusting the conversation to the stage marks a mature MSL, not a junior one"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Medical value changes shape across four lifecycle stages, and reading the right stage is a core MSL skill",
+    "bullets": [
+      "Pre-launch builds the evidence landscape and disease education",
+      "Launch is peak translation; maturity shifts to real-world evidence",
+      "Loss of exclusivity defends differentiation that generics can't replicate"
+    ],
+    "nextLesson": "Patient centricity and health value"
+  }
+}

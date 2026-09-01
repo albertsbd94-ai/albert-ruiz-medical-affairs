@@ -1,0 +1,81 @@
+{
+  "moduleNum": 9,
+  "moduleTitle": "Medical Strategy & Medical Plan",
+  "lessonNum": 5,
+  "lessonTitle": "Medical education plan",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Purpose & Place",
+      "title": "Closing Knowledge Gaps, Not Selling",
+      "bullets": [
+        "Closes knowledge gaps in the clinical community through non-promotional activities",
+        "Covers disease understanding, mechanism of action, diagnostics, appropriate use",
+        "One of three tactical vehicles, alongside the publication and congress plans"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Where It Starts",
+      "title": "Identifying Educational Gaps",
+      "bullets": [
+        "MSL-collected insights from the field",
+        "Formal surveys of healthcare professionals",
+        "Recurring questions observed at congresses",
+        "Utilization data suggesting suboptimal use driven by lack of knowledge"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Matching Format to Audience",
+      "title": "Four Channels for Medical Education",
+      "bullets": [
+        "Accredited CME/CPD programs for institutional credibility and broad reach",
+        "Webinars and virtual sessions for dispersed audiences at lower cost",
+        "Satellite symposia that leverage concentrated congress audiences",
+        "Digital asynchronous content: videos, infographics, e-learning platforms"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "A Non-Negotiable Line",
+      "title": "Independence from Promotional Content",
+      "bullets": [
+        "Must be based on balanced evidence, including limitations and alternatives",
+        "Designed and supervised by medical and scientific professionals, not Commercial",
+        "Follows the same non-promotional principles as all Medical Affairs communication",
+        "Often explicitly regulated, with accreditation and funding transparency rules"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "For the MSL",
+      "title": "A Role in Design, Delivery, and Sometimes the Podium",
+      "bullets": [
+        "Identify concrete training needs in your own territory",
+        "Connect expert speakers with the organizers of educational activities",
+        "Occasionally contribute as a speaker within the non-promotional framework"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Open Question",
+      "title": "Measuring Impact Beyond Attendance",
+      "bullets": [
+        "Attendance figures alone don't show whether the activity changed anything",
+        "The real goal is a measurable change in understanding or clinical practice",
+        "This measurement challenge is picked up in this module's KPI lesson"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "The medical education plan closes clinical knowledge gaps through non-promotional formats",
+    "bullets": [
+      "It starts from identified educational, not scientific, gaps",
+      "Format choice depends on audience reach, cost, and accreditation needs",
+      "Its independence from promotional content is strict and often regulated"
+    ],
+    "nextLesson": "Publication plan"
+  }
+}

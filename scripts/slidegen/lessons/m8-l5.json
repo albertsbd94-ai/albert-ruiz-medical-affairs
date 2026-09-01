@@ -1,0 +1,82 @@
+{
+  "moduleNum": 8,
+  "moduleTitle": "Congress Excellence",
+  "lessonNum": 5,
+  "lessonTitle": "Poster walks",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Why Posters Matter",
+      "title": "The Highest-Density Floor at a Congress",
+      "bullets": [
+        "Hundreds of researchers present data in a compact, accessible format",
+        "The author is often standing right by their poster",
+        "That direct conversation is rarely possible after an oral presentation"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Prepare First",
+      "title": "Walking 400 Posters With No Plan Means Reviewing None",
+      "bullets": [
+        "Review the scheduled poster list and published abstracts in advance",
+        "Prioritize by relevance to your product or comparator",
+        "Prioritize authors who are mapped KOLs or DOLs",
+        "Prioritize topics tied to known evidence gaps",
+        "Covering 400 posters with no criteria means depth on none of them"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "A Different Conversation",
+      "title": "Poster Authors Are Not Consolidated KOLs",
+      "bullets": [
+        "Many are early-career researchers or emerging scientists",
+        "Some are presenting to an international audience for the first time",
+        "They are often eager to discuss their methodology and findings in depth"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Hidden Value",
+      "title": "A Source of Future Talent and Collaborators",
+      "bullets": [
+        "These conversations often surface early scientific talent",
+        "They can identify potential collaborators for future studies",
+        "Connects directly to the rising-star identification work from Module 3"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Listening Critically",
+      "title": "Ask Beyond What the Poster Shows",
+      "bullets": [
+        "Probe study design, sample size, and acknowledged limitations",
+        "Ask how the author interprets the clinical relevance of their own findings",
+        "Apply the critical-thinking principles on evidence from Module 6",
+        "These conversations often reveal nuance the abstract never mentions"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Don't Lose It",
+      "title": "Document Before the Value Disappears",
+      "bullets": [
+        "Record every relevant conversation with the same rigor as a formal meeting",
+        "Capture the author, the core message, and any nuance or limitation discussed",
+        "Note any follow-up opportunity, relational or research-based",
+        "Without immediate documentation, dozens of conversations fade within days"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "A poster walk is a structured intelligence exercise, not a stroll through a hall",
+    "bullets": [
+      "Prioritizing which posters to visit is what makes depth possible",
+      "Author conversations often surface talent and nuance no abstract captures",
+      "Immediate documentation is what keeps that value from disappearing"
+    ],
+    "nextLesson": "Ethical competitor intelligence"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "moduleNum": 8,
+  "moduleTitle": "Congress Excellence",
+  "lessonNum": 1,
+  "lessonTitle": "Medical objectives of a congress",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Core Shift",
+      "title": "A Congress Is an Operation, Not an Event",
+      "bullets": [
+        "An MSL does not simply attend a congress",
+        "It is a medical operation with objectives set in advance",
+        "Success is measured in results, not hours of presence",
+        "The non-negotiable question: what do we want to achieve, and how will we know?"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Four Categories",
+      "title": "Every Congress Objective Fits One of Four Buckets",
+      "bullets": [
+        "Scientific intelligence: new data, emerging KOL thinking, rising research questions",
+        "Relationship: strengthen or start priority KOL and DOL relationships",
+        "Insight generation: systematically capture what the community thinks and needs",
+        "Non-promotional dissemination: get company evidence to the right audience with context"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why It Changes Planning",
+      "title": "Objectives Set First Change How You Plan",
+      "bullets": [
+        "Lets you rank must-attend sessions against merely interesting ones",
+        "Clarifies which KOLs need a formal meeting versus a hallway chat",
+        "Sets the insight questions to explore actively in every conversation",
+        "Replaces passively waiting for whatever comes up"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Connecting the Dots",
+      "title": "Objectives Must Align With the Bigger Plan",
+      "bullets": [
+        "Not a solo MSL initiative: tied to the product's global medical plan",
+        "Also tied to the team's annual congress plan and evidence plan",
+        "A pre-launch congress focuses on awareness and unmet-need insights",
+        "A mature-product congress focuses on real-world data and residual evidence gaps"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Proving the Value",
+      "title": "Every Objective Needs a Verifiable Indicator",
+      "bullets": [
+        "Number of qualified interactions with priority KOLs",
+        "Number of quality insights captured and documented",
+        "Coverage of key scientific sessions",
+        "New connections started with potential research collaborators",
+        "Without indicators, evaluation is just a subjective impression"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "A congress delivers medical value only when its objectives are defined before it starts",
+    "bullets": [
+      "Objectives fall into intelligence, relationship, insight, and dissemination goals",
+      "They must connect to the product's medical plan, not stand alone",
+      "Verifiable indicators are what turn attendance into a measurable return"
+    ],
+    "nextLesson": "Pre-congress preparation"
+  }
+}

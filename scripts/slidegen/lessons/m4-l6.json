@@ -1,0 +1,78 @@
+{
+  "moduleNum": 4,
+  "moduleTitle": "Scientific Exchange & High-Impact Conversations",
+  "lessonNum": 6,
+  "lessonTitle": "Active Listening",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Discipline",
+      "title": "Attending to More Than Just the Words",
+      "bullets": [
+        "Active listening attends to emphasis, hesitation and emotional undertone, not just content",
+        "Demonstrating that attention in a way that deepens rather than interrupts the conversation",
+        "The skill that makes exploratory and reflective questioning actually work"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Component One",
+      "title": "Full Attention, Not the Next Talking Point",
+      "bullets": [
+        "Genuinely focus on the speaker rather than preparing the next data point",
+        "A surprisingly common habit among MSLs confident in their scientific content",
+        "Treats conversation as a genuine exchange, not waiting for a turn to speak"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Component Two",
+      "title": "Non-Verbal Signals Matter Too",
+      "bullets": [
+        "Appropriate eye contact and unhurried pacing",
+        "Not glancing at a phone or watch",
+        "Signals attention concretely, and its absence is noticed even when unintentional"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Component Three",
+      "title": "Withhold Judgment Before Responding",
+      "bullets": [
+        "Resist the urge to immediately counter a concern with a data point",
+        "Paraphrasing and reflecting confirms understanding and invites elaboration",
+        "Creates space for a physician to finish a genuinely complex thought"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Advanced Skill",
+      "title": "Listen for What Isn't Said",
+      "bullets": [
+        "A shift in tone or vagueness communicates something real",
+        "Example: enthusiastic on efficacy, noticeably vaguer on tolerability",
+        "Skilled listening notices the shift and gently invites it into the open"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Payoff",
+      "title": "Better Listening, Better Insight Capture",
+      "bullets": [
+        "Active listening improves the accuracy of insight summaries written afterward",
+        "MSLs who listen carefully track substance in the moment, not from memory later",
+        "A direct input into the quality of medical intelligence, not just a soft skill"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Active listening is what turns well-designed questions into real conversational value",
+    "bullets": [
+      "Full attention, non-verbal engagement and withheld judgment are all learnable components",
+      "What a physician doesn't say is often as informative as what they do say",
+      "Careful listening in the moment produces more accurate insight afterward"
+    ],
+    "nextLesson": "Handling scientific objections"
+  }
+}

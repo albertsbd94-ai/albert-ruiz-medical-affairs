@@ -1,0 +1,72 @@
+{
+  "moduleNum": 11,
+  "moduleTitle": "AI for Medical Affairs",
+  "lessonNum": 3,
+  "lessonTitle": "Claude for long documents and artifacts",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Why Claude",
+      "title": "Built for Careful, Long-Document Reasoning",
+      "bullets": [
+        "Claude is known for careful reasoning, safety orientation, and precision",
+        "Particularly strong at analyzing long, complex documents",
+        "These traits map directly onto recurring MSL tasks",
+        "Fits alongside, not instead of, the other tools in this module"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Core Strength",
+      "title": "Processing Entire Long Documents at Once",
+      "bullets": [
+        "Handles full trial protocols, long study reports, and lengthy clinical guidelines",
+        "Can process a large volume of congress notes in one pass",
+        "Extracts key points and flags inconsistencies or gaps",
+        "Cites the specific part of the document behind each answer",
+        "Ranked among the strongest tools for this task in recent comparisons"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Second Use",
+      "title": "Drafting Structured, Well-Formatted Documents",
+      "bullets": [
+        "Congress debrief reports, executive summaries, education material drafts",
+        "Tends to keep a clear structure and consistent professional tone",
+        "MSL still reviews, verifies, and adapts to compliance requirements"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "High-Value Task",
+      "title": "Cross-Checking Two Documents at Once",
+      "bullets": [
+        "Compare an approved label against a recent scientific article",
+        "Systematically surfaces similarities, differences, and subtle nuances",
+        "Saves preparation time ahead of an important meeting"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Boundary",
+      "title": "General Knowledge Still Needs Verification",
+      "bullets": [
+        "Strong on documents provided directly, not on very recent general knowledge",
+        "Never assume its background knowledge is automatically up to date",
+        "Verify any clinical claim against the primary source before using it with an HCP",
+        "Same confidentiality rules apply: no company, unpublished, or patient data in prompts"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Claude's edge is disciplined analysis of long documents, with verification still owned by the MSL",
+    "bullets": [
+      "Best suited to full document analysis, structured drafting, and cross-checking sources",
+      "General knowledge on recent or specific data is not guaranteed current",
+      "Confidentiality rules apply exactly as with any other AI tool"
+    ],
+    "nextLesson": "Perplexity for landscape research"
+  }
+}

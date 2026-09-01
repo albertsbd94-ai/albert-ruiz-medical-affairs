@@ -1,0 +1,81 @@
+{
+  "moduleNum": 8,
+  "moduleTitle": "Congress Excellence",
+  "lessonNum": 2,
+  "lessonTitle": "Pre-congress preparation",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Why It Matters Most",
+      "title": "Preparation Decides the Value You Get",
+      "bullets": [
+        "Preparation is the single biggest driver of congress value",
+        "The time window is short and KOL agendas fill weeks ahead",
+        "Improvising on the ground means arriving late to the best opportunities"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Block One",
+      "title": "Map Your Objectives and Your People",
+      "bullets": [
+        "Review the priority KOL and DOL list likely to attend",
+        "Decide who to see first and start coordinating meetings early",
+        "Speaker and leader agendas fill fast, so waiting costs you the meeting",
+        "Builds on the CRM and KOL mapping system kept updated year-round"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Block Two",
+      "title": "Immerse Yourself in the Scientific Program",
+      "bullets": [
+        "Review the full program: plenaries, oral communications, posters",
+        "Study abstracts released weeks in advance where available",
+        "Anticipate what new data will be presented",
+        "Prepare informed questions instead of reacting on the spot"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Block Three",
+      "title": "Align the Internal Team First",
+      "bullets": [
+        "Join the Medical Affairs pre-congress briefing",
+        "Ensure MSLs and stand or communications staff share one narrative",
+        "Same approved data, same approved language across the team",
+        "Prevents inconsistent messages that damage credibility"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Block Four",
+      "title": "Sort Logistics and Materials in Advance",
+      "bullets": [
+        "Line up approved scientific materials: FAQs, backup literature, decks",
+        "Review congress-specific compliance rules on HCP interaction and hospitality",
+        "Plan movement between sessions in a schedule with constant overlap"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Payoff",
+      "title": "Preparation Is What the KOL Actually Feels",
+      "bullets": [
+        "A well-prepared MSL uses limited time far more effectively",
+        "Every KOL senses the conversation was designed specifically for them",
+        "That feeling alone strengthens the scientific relationship"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "What happens before the congress determines what you get out of it",
+    "bullets": [
+      "Mapping people and content early beats improvising on site",
+      "Internal alignment protects the organization's scientific credibility",
+      "Logistics and materials prep frees up time for what actually matters"
+    ],
+    "nextLesson": "KOL meetings"
+  }
+}

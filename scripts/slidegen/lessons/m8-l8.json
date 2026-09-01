@@ -1,0 +1,72 @@
+{
+  "moduleNum": 8,
+  "moduleTitle": "Congress Excellence",
+  "lessonNum": 8,
+  "lessonTitle": "Internal debrief",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Why It's Needed",
+      "title": "Debrief Turns Individual Experience Into Shared Knowledge",
+      "bullets": [
+        "Without a structured debrief, most congress value stays scattered",
+        "It lives only in each MSL's personal notes and memory",
+        "That value fades progressively over the following weeks"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Who's in the Room",
+      "title": "Debrief Reaches Beyond the Field Team",
+      "bullets": [
+        "MSLs and Medical Affairs leadership at minimum",
+        "Medical strategy teams as well",
+        "Commercial or market access teams, when formal non-confidential channels justify it",
+        "This ensures insights flow into wider organizational decisions"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Structure",
+      "title": "Five Blocks Every Debrief Should Cover",
+      "bullets": [
+        "Scientific coverage: what was covered, what was missed, and why",
+        "Insight summary, prioritized by strategic impact, not chronology",
+        "Competitive intelligence from public sources, properly channeled",
+        "KOL and DOL relationship review: new contacts, strengthened ties, commitments",
+        "Research collaboration or evidence generation opportunities identified"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Real Test",
+      "title": "A Good Debrief Connects Facts to Decisions",
+      "bullets": [
+        "Not just documenting what happened",
+        "Naming which insights need immediate follow-up action",
+        "Naming which relationships need a specific cultivation plan",
+        "Spelling out what competitive intelligence means for product positioning"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Making It Practical",
+      "title": "Asynchronous Tools Keep the Debrief Flowing",
+      "bullets": [
+        "Shared documents, insight platforms, and team messaging channels help",
+        "No need to find one common slot for the whole team right after the congress",
+        "Information can flow continuously, even while some are still traveling back"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "The debrief is what converts one congress into knowledge the whole organization can use",
+    "bullets": [
+      "It needs a cross-functional audience, not just the field team",
+      "A fixed structure keeps insights prioritized instead of just listed",
+      "Its value comes from linking findings to concrete next actions"
+    ],
+    "nextLesson": "Executive report"
+  }
+}

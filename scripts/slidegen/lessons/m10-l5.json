@@ -1,0 +1,71 @@
+{
+  "moduleNum": 10,
+  "moduleTitle": "Omnichannel Medical & Digital Opinion Leaders",
+  "lessonNum": 5,
+  "lessonTitle": "Scientific content journeys",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Concept",
+      "title": "A Planned Path From Interest to Depth",
+      "bullets": [
+        "A sequence of content pieces across formats, depth and channels",
+        "Mirrors the personalization at the heart of omnichannel",
+        "Moves an HCP from initial interest to a nuanced understanding"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why One Size Fails",
+      "title": "Different HCPs, Different Starting Points",
+      "bullets": [
+        "HCPs sit at different points of knowledge and need",
+        "Forcing identical content on everyone wastes their time",
+        "A specialist and a newcomer need different starting material",
+        "Both can still value the same advanced content later"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Structure",
+      "title": "Three Layers of Depth",
+      "bullets": [
+        "Introductory content sparks interest and sets context",
+        "Intermediate content covers mechanisms, evidence, comparisons",
+        "Advanced content serves publications, expert webinars, direct MSL talks",
+        "HCPs can enter or exit the journey at any layer"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The Non-Negotiable",
+      "title": "Coherence Across Every Piece",
+      "bullets": [
+        "All pieces must rest on the same approved evidence",
+        "The core scientific message stays consistent throughout",
+        "Contradictions erode HCP trust in the source",
+        "Each piece must also stand alone, since order isn't guaranteed"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The MSL's Role",
+      "title": "Recommend the Piece, Report the Gap",
+      "bullets": [
+        "Suggest the content that matches the HCP's real interest level",
+        "Flag when a conversation reveals a gap the journey doesn't cover",
+        "Closes the loop between field listening and content design"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "A scientific content journey lets each HCP go as deep as their need requires",
+    "bullets": [
+      "Content layers from introductory to advanced, not one-size-fits-all",
+      "Every piece must share the same evidence and stand on its own",
+      "MSLs both recommend content and flag missing pieces to content teams"
+    ],
+    "nextLesson": "LinkedIn for Medical Affairs"
+  }
+}

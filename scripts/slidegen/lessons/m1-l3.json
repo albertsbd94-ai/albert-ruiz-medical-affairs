@@ -1,0 +1,91 @@
+{
+  "moduleNum": 1,
+  "moduleTitle": "Medical Affairs Foundations & Strategic Role",
+  "lessonNum": 3,
+  "lessonTitle": "The evolution of Medical Affairs: from scientific support to strategic partner",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Old Model",
+      "title": "Medical Affairs Began as a Reactive Back Office",
+      "bullets": [
+        "Answered unsolicited medical questions",
+        "Reviewed promotional materials for scientific accuracy",
+        "Supported regulatory dossiers",
+        "Success measured by absence of problems, not positive contribution"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "What Changed",
+      "title": "Three Forces Reshaped the Function",
+      "bullets": [
+        "Specialty, biologic and gene therapies demand deeper scientific dialogue",
+        "Payers now demand real-world outcomes data pivotal trials can't provide",
+        "Pricing pressure made scientific differentiation a key value lever"
+      ]
+    },
+    {
+      "type": "stats",
+      "eyebrow": "A Measurable Shift",
+      "title": "CEO-Reporting Nearly Doubled in Four Years",
+      "stats": [
+        { "value": "~30%", "label": "2019" },
+        { "value": "~60%", "label": "2023", "emphasize": true }
+      ],
+      "caption": "A concrete marker of Medical Affairs' rising strategic weight — McKinsey / MAPS analysis"
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "The New Era",
+      "title": "From Support Function to Strategic Partner",
+      "bullets": [
+        "MAPS describes Medical Affairs as entering a \"third era\"",
+        "Compliance support, then scientific engagement, now strategic partner",
+        "Leadership co-designs launch strategy and evidence plans from early development"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "In Practice",
+      "title": "Reactive Waits; Strategic Anticipates",
+      "bullets": [
+        "Reactive professionals wait for questions and answer them accurately",
+        "Strategic professionals anticipate evidence gaps before they become urgent",
+        "They structure field insights so they actually change internal decisions",
+        "They can explain impact in a boardroom, not just a scientific exchange"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Evidence From the Field",
+      "title": "Local Strategic Positioning Drives Influence",
+      "bullets": [
+        "AstraZeneca Spain case documented in scientific literature",
+        "Teams that understood the local healthcare ecosystem well",
+        "Positioned as strategic partners, not just field scientific responders",
+        "Achieved measurably greater organisational influence"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "For Your Career",
+      "title": "The Bar Has Moved for MSLs",
+      "bullets": [
+        "Scientific accuracy and compliance are the floor, not the ceiling",
+        "Advancement to Medical Advisor, Lead and Director rewards strategic thinking",
+        "Connect field insight to the medical plan and to patient outcomes"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Medical Affairs evolved from a reactive support function into a strategic partner that co-designs launch and evidence strategy",
+    "bullets": [
+      "Three forces drove the shift: complex products, payer demands, pricing pressure",
+      "CEO-reporting for Medical Affairs leaders nearly doubled between 2019 and 2023",
+      "Career advancement now rewards strategic thinking, not just scientific accuracy"
+    ],
+    "nextLesson": "Medical value across the product lifecycle"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "moduleNum": 6,
+  "moduleTitle": "Evidence-Based Medicine for MSLs",
+  "lessonNum": 9,
+  "lessonTitle": "Forest plots",
+  "totalLessons": 10,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Reading the Graph",
+      "title": "The Forest Plot Is the Meta-Analysis, Visualized",
+      "bullets": [
+        "The forest plot is the standard graphic for a meta-analysis",
+        "It looks dense at first glance, but its logic is simple once learned",
+        "Reading it well separates an MSL who can hold an advanced conversation from one who repeats headlines"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Anatomy: The Studies",
+      "title": "Each Line Is One Study",
+      "bullets": [
+        "Every horizontal line represents one study included in the meta-analysis",
+        "The square marks that study's point estimate, and its size reflects its weight in the pooled result",
+        "The horizontal line through the square is that study's 95% confidence interval",
+        "A longer line means a less precise estimate"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Anatomy: The Reference",
+      "title": "The Vertical Line Marks No Effect",
+      "bullets": [
+        "The vertical reference line marks the no-effect value, 1 for ratio measures or 0 for absolute differences",
+        "If a study's confidence interval crosses that line, it didn't reach significance on its own"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Anatomy: The Diamond",
+      "title": "The Diamond Is the Pooled Result",
+      "bullets": [
+        "The diamond at the bottom shows the combined estimate across all studies",
+        "Its width is the pooled 95% confidence interval",
+        "When the diamond doesn't cross the no-effect line, the meta-analysis is significant overall",
+        "That can hold even when some individual studies weren't significant alone"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Reading Heterogeneity",
+      "title": "How Much the Studies Actually Disagree",
+      "bullets": [
+        "Heterogeneity, reported as I-squared or Cochran's Q, shows how much variability isn't due to chance",
+        "Conventionally, I-squared above 50 to 75% signals high heterogeneity",
+        "That means the included studies differ substantially in population, dose, duration or outcome definition",
+        "High heterogeneity calls for caution, or a random-effects rather than fixed-effects model"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "In the Field",
+      "title": "Answering Does This Meta-Analysis Hold Up",
+      "bullets": [
+        "Point to the diamond's position and width to show the pooled effect and its precision",
+        "Comment on the heterogeneity between the included studies",
+        "Check whether one study, by its weight or characteristics, is disproportionately driving the result"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "A forest plot's diamond and heterogeneity tell you whether a meta-analysis truly holds up",
+    "bullets": [
+      "Each line is one study, and the diamond is the pooled result across all of them",
+      "A pooled effect can be significant even when individual studies weren't",
+      "High heterogeneity means the combined result should be read with real caution"
+    ],
+    "nextLesson": "Limitations and biases"
+  }
+}

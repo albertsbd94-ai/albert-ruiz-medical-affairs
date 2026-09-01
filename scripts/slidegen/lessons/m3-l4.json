@@ -1,0 +1,80 @@
+{
+  "moduleNum": 3,
+  "moduleTitle": "KOL Mapping, Segmentation & Engagement",
+  "lessonNum": 4,
+  "lessonTitle": "Segmentation criteria",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "The Core Idea",
+      "title": "Sorting Experts by Consistent Criteria",
+      "bullets": [
+        "Segmentation sorts territory experts into meaningful tiers",
+        "Based on defined, consistent criteria, not who is easiest to reach",
+        "Lets engagement effort be allocated deliberately"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Four Dimensions",
+      "title": "What Segmentation Actually Measures",
+      "bullets": [
+        "Scientific influence: publications, trial leadership, guidelines, congresses",
+        "Digital influence: reach, engagement quality, community trust",
+        "Strategic relevance: fit with current therapeutic priorities",
+        "Relationship stage: established, early, or not yet engaged"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "A Practical Structure",
+      "title": "The Three-Tier Model",
+      "bullets": [
+        "Tier 1: broadest, most established influence, shapes national practice",
+        "Tier 1 engagement often involves senior Medical Affairs leadership",
+        "Tier 2: respected regional or national experts needing local context",
+        "Tier 3: emerging experts and clinical champions with local influence"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Tier by Tier",
+      "title": "What Each Tier Actually Needs",
+      "bullets": [
+        "Tier 1: advisory boards, trial-design input, sustained partnership",
+        "Tier 2: help translating global evidence into local guideline context",
+        "Tier 3: relationship-building and disease-state education"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Why Rigor Matters",
+      "title": "Consistency Protects Scarce Time and Trust",
+      "bullets": [
+        "Explicit criteria applied consistently, not decided meeting by meeting",
+        "Reserves scarce senior time for the experts who truly warrant it",
+        "Creates a defensible, compliance-friendly rationale for engagement"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Not Static",
+      "title": "Segmentation Needs Field Input",
+      "bullets": [
+        "Not a one-time exercise handed down from headquarters",
+        "Territory-level judgment keeps the model accurate over time",
+        "Sets up the next lesson on advanced KOL mapping"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Segmentation allocates engagement effort deliberately, using consistent criteria",
+    "bullets": [
+      "Scientific influence, digital influence, strategic relevance and relationship stage all count",
+      "The three-tier model matches engagement intensity to each tier's real needs",
+      "Field-level judgment keeps segmentation accurate, not headquarters alone"
+    ],
+    "nextLesson": "Advanced KOL mapping"
+  }
+}

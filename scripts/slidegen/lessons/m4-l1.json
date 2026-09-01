@@ -1,0 +1,71 @@
+{
+  "moduleNum": 4,
+  "moduleTitle": "Scientific Exchange & High-Impact Conversations",
+  "lessonNum": 1,
+  "lessonTitle": "What Scientific Exchange Is",
+  "totalLessons": 8,
+  "slides": [
+    {
+      "type": "bullets",
+      "eyebrow": "Building on Module 2",
+      "title": "Adding the Practical Skill Layer",
+      "bullets": [
+        "Scientific exchange is genuine, balanced, non-promotional dialogue about science",
+        "This module adds the conversational techniques behind that definition",
+        "The gap: exchange that generates insight and trust versus exchange that is only technically compliant"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "What Makes It Work",
+      "title": "The Ingredients Experts Agree On",
+      "bullets": [
+        "Careful preparation with a clear purpose",
+        "Thoughtfully crafted open-ended questions",
+        "Active listening",
+        "Adjusting the conversation dynamically, not running a fixed script"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "A Common Shortfall",
+      "title": "Same Script, Every Conversation",
+      "bullets": [
+        "Many technically strong MSLs run every visit the same way",
+        "They know the data perfectly but not how to adapt to the person",
+        "Misses whether the expert wants deep statistics, clinical application, or space to raise concerns first"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Four Modes",
+      "title": "Only Two Modes Belong Here",
+      "bullets": [
+        "The spectrum: informing, persuading, exploring and co-creating",
+        "Informing and exploring belong in genuine scientific exchange",
+        "Persuading crosses into promotional territory",
+        "Co-creating is reserved for advisory boards and investigator collaborations"
+      ]
+    },
+    {
+      "type": "bullets",
+      "eyebrow": "Beyond One Visit",
+      "title": "Exchange Has a Shape Over Time",
+      "bullets": [
+        "Skilled MSLs do not treat each visit as a self-contained event",
+        "They reference and deepen prior conversations",
+        "They track open questions across visits",
+        "What they remember and follow up on proves the relationship is cumulative"
+      ]
+    }
+  ],
+  "takeaway": {
+    "title": "Scientific exchange is a practical skill built on preparation, real listening and honest limits",
+    "bullets": [
+      "Genuine exchange requires purpose, open questions, listening and adaptability",
+      "Only informing and exploring belong in routine scientific exchange",
+      "Good exchange builds a relationship across visits, not a single conversation"
+    ],
+    "nextLesson": "Difference between informing, persuading, exploring and co-creating"
+  }
+}
