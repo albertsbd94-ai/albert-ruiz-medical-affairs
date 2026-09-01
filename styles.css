@@ -1,8 +1,8 @@
 /* =============================================================================
    Albert Ruiz de la Oliva — Medical Affairs × AI × Digital Innovation
    Design System — WHITE + DARK TEXT + PURPLE.
-   Bricolage Grotesque (display/headings) + DM Sans (body) + Spline Sans
-   Mono (eyebrows/labels) — font combination adapted from avatarhype.ai.
+   Bricolage Grotesque (display/headings) + DM Sans (body) — font combination
+   adapted from avatarhype.ai. Eyebrows/labels use Poppins Bold.
    No dark mode as primary. No glassmorphism/neomorphism.
    ============================================================================= */
 
@@ -45,11 +45,11 @@
 
   /* Type — font combination adapted from avatarhype.ai: Bricolage Grotesque
      for display/headings (their .disp class, weight 800), DM Sans for body
-     (their body{} rule), Spline Sans Mono for small labels (their most-used
-     accent font, 58 references — used here for eyebrows/kickers). */
+     (their body{} rule). Eyebrows/kickers use Poppins Bold instead of the
+     original Spline Sans Mono accent. */
   --font-sans: "DM Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-mono: "Spline Sans Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --font-mono: "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
 
   /* Easing */
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
@@ -139,7 +139,7 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.15; letter-spacing: -0.02em;
 .eyebrow {
   display: inline-flex; align-items: center; gap: .5rem;
   font-family: var(--font-mono);
-  font-size: .8125rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase;
+  font-size: .8125rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
   color: hsl(var(--primary));
   background: hsl(var(--primary) / 0.08);
   border: 1px solid hsl(var(--primary) / 0.16);
