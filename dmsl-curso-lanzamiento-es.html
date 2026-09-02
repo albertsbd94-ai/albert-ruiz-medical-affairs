@@ -18,6 +18,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Bricolage+Grotesque:wght@600;700;800&family=Poppins:wght@700;800&display=swap">
 <link rel="stylesheet" href="/styles.css?v=20260825">
+<style>
+/* Cost-comparison rows: side-by-side on wider screens, stacked on narrow
+   ones so the value never gets clipped by the row's rounded container. */
+.compare-row{
+  display:flex; flex-direction:column; gap:.25rem;
+  padding:1.1rem 1.4rem; border-bottom:1px solid hsl(var(--border));
+}
+.compare-row:last-child{ border-bottom:none; }
+.compare-row .compare-label{ color:hsl(var(--muted-foreground)); }
+.compare-row .compare-value{ font-weight:700; }
+@media (min-width: 560px){
+  .compare-row{ flex-direction:row; align-items:center; justify-content:space-between; gap:1rem; }
+  .compare-row .compare-value{ white-space:nowrap; }
+}
+</style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
 {"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.albertruizdelaoliva.com/index-es.html"},
@@ -170,10 +185,10 @@
       <span class="eyebrow">Sin letra pequeña</span>
       <h2 class="section-title" style="margin:1rem 0 1.5rem;">Lo que cuesta esto, frente a lo que cuesta lo otro</h2>
       <div style="display:grid; gap:0; border:1px solid hsl(var(--border)); border-radius:var(--radius-md); overflow:hidden; background:hsl(var(--card));">
-        <div style="display:flex; justify-content:space-between; gap:1rem; padding:1.1rem 1.4rem; border-bottom:1px solid hsl(var(--border));"><span style="color:hsl(var(--muted-foreground));">Un Executive Master especializado en Market Access / Medical Affairs</span><span style="font-weight:700; white-space:nowrap;">suele rondar 8.000–15.000 €</span></div>
-        <div style="display:flex; justify-content:space-between; gap:1rem; padding:1.1rem 1.4rem; border-bottom:1px solid hsl(var(--border));"><span style="color:hsl(var(--muted-foreground));">Aprender solo por ensayo y error en tu primer puesto</span><span style="font-weight:700; white-space:nowrap;">gratis, pero lento</span></div>
-        <div style="display:flex; justify-content:space-between; gap:1rem; padding:1.1rem 1.4rem; border-bottom:1px solid hsl(var(--border));"><span style="color:hsl(var(--muted-foreground));">DMSL Course, modalidad online, pago único</span><span style="font-weight:800; white-space:nowrap; color:hsl(var(--primary));">800 €</span></div>
-        <div style="display:flex; justify-content:space-between; gap:1rem; padding:1.1rem 1.4rem;"><span style="color:hsl(var(--muted-foreground));">Matrícula universitaria adicional que necesitas para hacerlo</span><span style="font-weight:700; white-space:nowrap;">0 €</span></div>
+        <div class="compare-row"><span class="compare-label">Un Executive Master especializado en Market Access / Medical Affairs</span><span class="compare-value">suele rondar 8.000–15.000 €</span></div>
+        <div class="compare-row"><span class="compare-label">Aprender solo por ensayo y error en tu primer puesto</span><span class="compare-value">gratis, pero lento</span></div>
+        <div class="compare-row"><span class="compare-label">DMSL Course, modalidad online, pago único</span><span class="compare-value" style="font-weight:800; color:hsl(var(--primary));">800 €</span></div>
+        <div class="compare-row"><span class="compare-label">Matrícula universitaria adicional que necesitas para hacerlo</span><span class="compare-value">0 €</span></div>
       </div>
       <p style="margin-top:1rem; font-size:.8125rem; color:hsl(var(--muted-foreground));">*El rango del Executive Master es una referencia orientativa del mercado, no una comparación con un programa concreto. El DMSL Course no es un título universitario ni lo sustituye — es una formación práctica complementaria.</p>
     </div>
