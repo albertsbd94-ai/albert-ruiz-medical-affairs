@@ -506,6 +506,30 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.15; letter-spacing: -0.02em;
 .content-card .foot { margin-top: auto; display: flex; align-items: center; justify-content: space-between; font-size: .8125rem; color: hsl(var(--muted-foreground)); padding-top: .5rem; border-top: 1px solid hsl(var(--border)); }
 .content-card .foot a { color: hsl(var(--primary)); font-weight: 600; display: inline-flex; align-items: center; gap: .3rem; }
 
+.prompt-drawer { margin-top: -.35rem; }
+.prompt-drawer summary {
+  cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: .4rem;
+  font-family: var(--font-mono); font-size: .75rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase;
+  color: hsl(var(--primary));
+}
+.prompt-drawer summary::-webkit-details-marker { display: none; }
+.prompt-drawer summary svg { flex: none; transition: transform .2s var(--ease-out); }
+.prompt-drawer[open] summary svg { transform: rotate(180deg); }
+.prompt-drawer pre {
+  margin-top: .75rem; padding: 1rem 1.1rem;
+  background: hsl(var(--muted)); border: 1px solid hsl(var(--border)); border-radius: var(--radius-sm);
+  font-family: var(--font-mono); font-size: .75rem; line-height: 1.65;
+  white-space: pre-wrap; word-break: break-word; color: hsl(var(--foreground));
+  max-height: 22rem; overflow-y: auto;
+}
+.prompt-copy-btn {
+  margin-top: .6rem; display: inline-flex; align-items: center; gap: .4rem;
+  padding: .4rem .8rem; border-radius: var(--radius-sm); border: 1px solid hsl(var(--border));
+  background: hsl(var(--card)); font-family: var(--font-sans); font-size: .75rem; font-weight: 600;
+  color: hsl(var(--foreground)); cursor: pointer; transition: border-color .2s var(--ease-out), color .2s var(--ease-out);
+}
+.prompt-copy-btn:hover { border-color: hsl(var(--primary)); color: hsl(var(--primary)); }
+
 .list-row {
   display: flex; align-items: flex-start; gap: 1rem;
   padding: 1.25rem 0;

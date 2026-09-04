@@ -82,6 +82,48 @@
     </div>
   </section>
 
+  <section class="section bg-section-alt">
+    <div class="container">
+      <div class="section-header center reveal">
+        <span class="eyebrow">Antes de explorar</span>
+        <h2 class="section-title" style="margin-top:1rem;">Qué es exactamente cada tipo de recurso</h2>
+        <p class="section-subtitle" style="margin-inline:auto;">Para que sepas qué te vas a encontrar en cada tarjeta antes de abrirla.</p>
+      </div>
+      <div class="grid-3">
+        <div class="expertise-card reveal delay-100">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h3>Prompt</h3>
+          <p>Una instrucción de texto que le das directamente a un asistente de IA (como Claude) para obtener un resultado concreto en una sola conversación. No requiere configuración — se copia, se pega, se adapta a tu caso.</p>
+        </div>
+        <div class="expertise-card reveal delay-200">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" y1="16" x2="8" y2="16"/><line x1="16" y1="16" x2="16" y2="16"/></svg></div>
+          <h3>Agente</h3>
+          <p>Un prompt más elaborado que le asigna a la IA un rol y un proceso de varios pasos para completar una tarea compleja de principio a fin, con una estructura de salida fija que se repite cada vez que lo usas.</p>
+        </div>
+        <div class="expertise-card reveal delay-300">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 12L2 9Z"/><path d="M11 3 8 9l4 12 4-12-3-6"/><path d="M2 9h20"/></svg></div>
+          <h3>Flujo de trabajo</h3>
+          <p>Una secuencia repetible de pasos — que puede incluir uno o varios prompts — para llevar una tarea desde el input en bruto hasta un resultado terminado y listo para usar.</p>
+        </div>
+        <div class="expertise-card reveal delay-100">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6L4 20a1 1 0 0 0 1 2h14a1 1 0 0 0 1-2L15 8V2"/><path d="M9 2h6"/><path d="M8.5 13h7"/></svg></div>
+          <h3>Experimento</h3>
+          <p>Una prueba en marcha para validar si un uso concreto de la IA aporta valor real — todavía sin la fiabilidad de un prompt o flujo de trabajo ya consolidado. Puede no funcionar, y eso también se comparte.</p>
+        </div>
+        <div class="expertise-card reveal delay-200">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
+          <h3>Framework</h3>
+          <p>Una estructura conceptual — no necesariamente un prompt en sí mismo — para organizar cómo se piensa o se trabaja un problema. Sirve de base para construir tus propios prompts y flujos de trabajo.</p>
+        </div>
+        <div class="expertise-card reveal delay-300">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+          <h3>Herramienta</h3>
+          <p>Una utilidad práctica, a veces con su propia página dentro del sitio, construida para resolver una tarea concreta de forma directa — sin necesidad de escribir un prompt desde cero.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section-tight bg-white">
     <div class="container">
       <div class="pill-nav reveal" data-filter-group="[data-lab-item]" role="tablist" aria-label="Filtrar por categoría">
@@ -105,6 +147,26 @@
           <h3>Medical Insights Copilot</h3>
           <p>Un patrón de prompt para clasificar insights de campo por relevancia terapéutica, urgencia y tipo de stakeholder.</p>
           <div class="foot"><span>Estado: activo</span><span class="tag">Insights</span></div>
+          <details class="prompt-drawer">
+            <summary>Ver el prompt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><polyline points="6 9 12 15 18 9"/></svg></summary>
+            <pre>Eres un Medical Science Liaison clasificando insights de campo para el equipo de Medical Affairs.
+
+Te voy a pasar uno o varios insights en bruto, tal y como los capturé tras una interacción con un profesional sanitario. Para cada uno:
+
+1. Resume el insight en una frase clara y accionable (sin jerga ni relleno)
+2. Clasifícalo por:
+   - Relevancia terapéutica: Alta / Media / Baja, y por qué
+   - Urgencia: Inmediata (días) / Próximo ciclo (semanas) / A monitorizar (meses)
+   - Tipo de stakeholder: KOL / DOL / HCP general / Paciente / Payer / Otro
+3. Señala si requiere escalado a Medical, Regulatory o Farmacovigilancia
+4. Propón la siguiente acción concreta (a quién informar, qué decisión podría cambiar)
+
+No inventes datos que no te haya dado. Si falta contexto para clasificar con confianza, dímelo explícitamente en vez de asumir.
+
+Aquí están los insights:
+[pega aquí tus insights de campo, uno por línea]</pre>
+            <button type="button" class="prompt-copy-btn" onclick="copyLabPrompt(this)">Copiar prompt</button>
+          </details>
         </article>
 
         <article class="content-card reveal delay-200" data-lab-item data-category="agents">
@@ -112,6 +174,24 @@
           <h3>Congress Intelligence Agent</h3>
           <p>Estructura las sesiones de un congreso — abstracts, ponencias, pósters — en aprendizajes organizados y acciones de seguimiento.</p>
           <div class="foot"><span>Estado: activo</span><span class="tag">Congresos</span></div>
+          <details class="prompt-drawer">
+            <summary>Ver el prompt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><polyline points="6 9 12 15 18 9"/></svg></summary>
+            <pre>Actúa como un asistente que estructura mis notas de congreso en aprendizajes organizados y próximos pasos.
+
+Te voy a pegar mis notas en bruto de las sesiones a las que asistí en un congreso (abstracts, ponencias, pósters, conversaciones informales). Con ellas, genera:
+
+1. Resumen ejecutivo (máximo 5 líneas): qué cambia realmente para nuestra área terapéutica
+2. Hallazgos por sesión, en tabla: Sesión | Hallazgo clave | Relevancia para nuestro producto/competencia | Nivel de evidencia
+3. Insights para clasificar: los 3-5 puntos más accionables, listos para pasar por un proceso de clasificación de insights
+4. Seguimientos pendientes: contactos a los que debo escribir, preguntas abiertas, literatura que debo revisar
+5. Alertas: cualquier dato de seguridad, señal competitiva o cambio de guideline que deba escalarse ya
+
+Sé conciso y concreto — nada de resúmenes genéricos. Si mis notas son ambiguas o incompletas en algún punto, márcalo en vez de rellenar el hueco por tu cuenta.
+
+Aquí están mis notas del congreso:
+[pega aquí tus notas]</pre>
+            <button type="button" class="prompt-copy-btn" onclick="copyLabPrompt(this)">Copiar prompt</button>
+          </details>
         </article>
 
         <article class="content-card reveal delay-300" data-lab-item data-category="agents">
@@ -119,6 +199,24 @@
           <h3>Scientific Meeting Preparation Agent</h3>
           <p>Construye un briefing repetible previo a la visita: contexto del stakeholder, preguntas probables, evidencia relevante.</p>
           <div class="foot"><span>Estado: activo</span><span class="tag">Reuniones</span></div>
+          <details class="prompt-drawer">
+            <summary>Ver el prompt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><polyline points="6 9 12 15 18 9"/></svg></summary>
+            <pre>Ayúdame a preparar un briefing repetible antes de una visita científica a un profesional sanitario.
+
+Te voy a dar el nombre/perfil del stakeholder y el contexto de la visita. Genera un briefing con esta estructura:
+
+1. Perfil del stakeholder: especialidad, rol (KOL/DOL/HCP), afiliación, intereses científicos conocidos
+2. Historial de interacción: qué sabemos de contactos previos (resume lo que te dé, no inventes)
+3. Objetivo de la visita: en una frase — qué querría llevarme de esta conversación
+4. Preguntas probables que podría plantear, con puntos clave de respuesta basados en la evidencia que te facilite
+5. Evidencia relevante a tener a mano: qué estudios, guías o datos debería revisar antes
+6. Lo que NO debo hacer: recordatorio de límites de compliance relevantes para este tipo de conversación (sin promoción, sin off-label no solicitado)
+
+Aquí tienes el contexto:
+- Stakeholder: [nombre/especialidad/afiliación]
+- Contexto de la visita: [motivo, qué se ha hablado antes, qué evidencia nueva hay]</pre>
+            <button type="button" class="prompt-copy-btn" onclick="copyLabPrompt(this)">Copiar prompt</button>
+          </details>
         </article>
 
         <article class="content-card reveal delay-100" data-lab-item data-category="workflows">
@@ -126,6 +224,25 @@
           <h3>Literature Intelligence Workflow</h3>
           <p>Un proceso repetible para convertir nuevas publicaciones en insights médicos estructurados y verificados.</p>
           <div class="foot"><span>Estado: activo</span><span class="tag">Evidencia</span></div>
+          <details class="prompt-drawer">
+            <summary>Ver el prompt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><polyline points="6 9 12 15 18 9"/></svg></summary>
+            <pre>Quiero convertir una publicación científica nueva en un insight médico estructurado, listo para compartir con mi equipo.
+
+Te voy a pegar el abstract (o texto completo) de un artículo. Genera:
+
+1. Resumen en lenguaje llano (3-4 líneas): qué se estudió, en quién, y qué se encontró
+2. Por qué importa para nuestra área terapéutica o producto — sé específico, no genérico
+3. Nivel de evidencia: tipo de estudio (RCT, observacional, real-world, meta-análisis...), tamaño muestral, limitaciones clave
+4. Contraste con la evidencia existente: ¿confirma, matiza o contradice lo que ya sabíamos?
+5. Implicaciones prácticas: qué podría cambiar en la conversación con HCPs, o en el Plan Médico
+6. Preguntas abiertas que este estudio no resuelve
+
+Basa todo estrictamente en el texto que te doy — si necesitas contexto adicional (comparadores, guías previas) que no tienes, dilo explícitamente en vez de asumir.
+
+Aquí está el artículo:
+[pega aquí el abstract o texto]</pre>
+            <button type="button" class="prompt-copy-btn" onclick="copyLabPrompt(this)">Copiar prompt</button>
+          </details>
         </article>
 
         <article class="content-card reveal delay-200" data-lab-item data-category="workflows">
@@ -133,6 +250,24 @@
           <h3>Stakeholder Research Workflow</h3>
           <p>Un proceso estructurado para entender a un DOL o KOL antes del primer scientific engagement.</p>
           <div class="foot"><span>Estado: activo</span><span class="tag">DOLs</span></div>
+          <details class="prompt-drawer">
+            <summary>Ver el prompt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><polyline points="6 9 12 15 18 9"/></svg></summary>
+            <pre>Ayúdame a preparar una investigación estructurada sobre un KOL o DOL antes de mi primer scientific engagement con él/ella.
+
+A partir de la información pública que te facilite (publicaciones, perfil profesional, actividad en redes/congresos), organiza:
+
+1. Perfil científico: área de especialización, líneas de investigación activas, afiliaciones
+2. Huella de publicaciones: temas recurrentes, coautores habituales, revistas donde publica
+3. Posicionamiento probable: en qué debates o controversias de la especialidad podría tener una opinión formada
+4. Puntos de conexión con nuestra área terapéutica — dónde se solapan sus intereses con lo que yo puedo aportar
+5. Preguntas de apertura que demuestren que he hecho los deberes, sin sonar a guión
+
+No inventes datos biográficos o de publicaciones que no te haya dado — si la información pública que tienes es limitada, dilo y sugiéreme qué buscar yo mismo.
+
+Aquí está la información que tengo sobre este stakeholder:
+[pega aquí lo que sepas: nombre, especialidad, publicaciones, perfil]</pre>
+            <button type="button" class="prompt-copy-btn" onclick="copyLabPrompt(this)">Copiar prompt</button>
+          </details>
         </article>
 
         <article class="content-card reveal delay-300" data-lab-item data-category="frameworks">
@@ -140,6 +275,23 @@
           <h3>Medical Affairs Knowledge OS</h3>
           <p>Una estructura en evolución para organizar contenido científico, insights y material de preparación en un solo sistema coherente.</p>
           <div class="foot"><span>Estado: en curso</span><span class="tag">Conocimiento</span></div>
+          <details class="prompt-drawer">
+            <summary>Ver el prompt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><polyline points="6 9 12 15 18 9"/></svg></summary>
+            <pre>Ayúdame a organizar mi conocimiento de Medical Affairs en una estructura coherente y reutilizable.
+
+Te voy a pasar una lista desordenada de temas, notas, documentos o insights que tengo dispersos. A partir de ahí:
+
+1. Propón una estructura de carpetas/categorías con sentido para mi territorio (ej. por área terapéutica, por tipo de contenido, por fase del ciclo de vida del producto)
+2. Para cada elemento que te pase, indica dónde encajaría en esa estructura y por qué
+3. Señala huecos: qué tipo de contenido parece que me falta para tener una base de conocimiento completa
+4. Sugiere una convención de nombres simple para que futuros documentos sean fáciles de encontrar
+
+El objetivo es un sistema que pueda mantener yo solo, sin herramientas complejas — piensa en algo que funcione con carpetas normales o una nota estructurada.
+
+Aquí está mi lista de contenido disperso:
+[pega aquí tus temas/notas/documentos, uno por línea]</pre>
+            <button type="button" class="prompt-copy-btn" onclick="copyLabPrompt(this)">Copiar prompt</button>
+          </details>
         </article>
 
         <article class="content-card reveal delay-100" data-lab-item data-category="experiments">
@@ -147,6 +299,24 @@
           <h3>AI-Assisted Congress Debrief</h3>
           <p>Probando si un debrief estructurado con IA mejora la velocidad y la consistencia del reporting tras un congreso.</p>
           <div class="foot"><span>Estado: en pruebas</span><span class="tag">Congresos</span></div>
+          <details class="prompt-drawer">
+            <summary>Ver el prompt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><polyline points="6 9 12 15 18 9"/></svg></summary>
+            <pre>Ayúdame a hacer un debrief estructurado tras un congreso, más rápido y consistente que un resumen libre.
+
+Te voy a dar mis notas en bruto (o un audio transcrito) del congreso. Genera un debrief con este formato exacto, para que sea comparable entre congresos:
+
+Congreso: [nombre, fecha]
+Objetivos cumplidos: (de los que me marqué antes de ir, cuáles logré)
+3 hallazgos científicos clave: con relevancia e implicación para cada uno
+Interacciones con stakeholders: resumen de 1 línea por contacto relevante, con seguimiento propuesto
+Comparación con congresos anteriores (si te doy debriefs previos): qué ha cambiado
+
+Sé honesto sobre las limitaciones: si mis notas no dan para completar alguna sección, dilo en vez de inventar contenido.
+
+Aquí están mis notas del congreso:
+[pega aquí tus notas o transcripción]</pre>
+            <button type="button" class="prompt-copy-btn" onclick="copyLabPrompt(this)">Copiar prompt</button>
+          </details>
         </article>
 
         <article class="content-card reveal delay-200" data-lab-item data-category="tools">
@@ -154,6 +324,22 @@
           <h3>Prompt Builder</h3>
           <p>Un framework ligero para construir prompts seguros para Medical Affairs, con el contexto y los guardrails adecuados.</p>
           <div class="foot"><span>Estado: activo</span><a href="/tools.html">Abrir en Herramientas →</a></div>
+          <details class="prompt-drawer">
+            <summary>Ver el prompt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><polyline points="6 9 12 15 18 9"/></svg></summary>
+            <pre>Ayúdame a construir un prompt seguro y eficaz para una tarea concreta de Medical Affairs.
+
+Te voy a describir una tarea que hago habitualmente (o quiero automatizar en parte). A partir de esa descripción:
+
+1. Identifica el rol que debería asumir el asistente para esta tarea
+2. Propón una estructura de salida clara (secciones, tabla, lista) adaptada a cómo usaré el resultado
+3. Añade guardrails explícitos: qué NO debe hacer el asistente (inventar datos, dar recomendaciones clínicas, saltarse compliance)
+4. Deja un hueco claro donde yo pegaré mi información real cada vez que use el prompt
+5. Entrégame el prompt final, listo para copiar y reutilizar
+
+Aquí está la tarea que quiero convertir en un prompt:
+[describe tu tarea: qué información recibes, qué necesitas obtener, para quién es el resultado]</pre>
+            <button type="button" class="prompt-copy-btn" onclick="copyLabPrompt(this)">Copiar prompt</button>
+          </details>
         </article>
 
         <article class="content-card reveal delay-300" data-lab-item data-category="experiments">
@@ -161,6 +347,23 @@
           <h3>Future MSL Workflows</h3>
           <p>Explorando cómo podría ser un flujo de trabajo semanal del MSL totalmente potenciado por IA (nunca sustituido por ella).</p>
           <div class="foot"><span>Estado: temprano</span><span class="tag">Future MSL</span></div>
+          <details class="prompt-drawer">
+            <summary>Ver el prompt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><polyline points="6 9 12 15 18 9"/></svg></summary>
+            <pre>Ayúdame a diseñar cómo podría verse mi semana como MSL si aprovechara la IA en cada etapa — sin que sustituya mi criterio científico.
+
+Te voy a describir mis actividades típicas de una semana normal. Para cada una, sugiere:
+
+1. Si la IA podría ayudar en esa actividad, y cómo exactamente (qué tarea concreta le delegaría)
+2. Qué parte de la actividad debe seguir siendo mía sin excepción (juicio clínico, relación humana, decisión final)
+3. Un prompt o proceso de ejemplo que podría probar esta semana para esa actividad concreta
+4. El riesgo principal de usar IA ahí, y cómo mitigarlo
+
+Al final, dame un resumen de mi semana "aumentada" en una tabla: Actividad | Con ayuda de IA | Sigue siendo 100% mía.
+
+Aquí está mi semana típica:
+[describe tus actividades habituales de una semana, día a día o por tipo de tarea]</pre>
+            <button type="button" class="prompt-copy-btn" onclick="copyLabPrompt(this)">Copiar prompt</button>
+          </details>
         </article>
 
       </div>
@@ -238,5 +441,29 @@
 
 <script defer src="/lib/manifest.js"></script>
 <script defer src="/main.js?v=20260825"></script>
+<script>
+function copyLabPrompt(btn){
+  var pre = btn.previousElementSibling;
+  if(!pre) return;
+  var text = pre.textContent;
+  var original = btn.textContent;
+  function done(ok){
+    btn.textContent = ok ? '¡Copiado!' : 'No se pudo copiar';
+    setTimeout(function(){ btn.textContent = original; }, 1600);
+  }
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(function(){ done(true); }, function(){ done(false); });
+  } else {
+    try{
+      var ta = document.createElement('textarea');
+      ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+      done(true);
+    }catch(e){ done(false); }
+  }
+}
+</script>
 </body>
 </html>
