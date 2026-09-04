@@ -102,3 +102,32 @@
   RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /\ HTTP/
   RewriteRule ^$ /index.html [R=301,L]
 </IfModule>
+
+# ----- Language default swap (2026-09): Spanish moved from *-es.html to the
+# bare URL, English moved to *-en.html. 301 these old -es.html addresses so
+# already-indexed/bookmarked Spanish pages don't 404. -----
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^about-es\.html$ /about.html [R=301,L]
+  RewriteRule ^ai-medical-affairs-es\.html$ /ai-medical-affairs.html [R=301,L]
+  RewriteRule ^community-es\.html$ /community.html [R=301,L]
+  RewriteRule ^digital-medical-affairs-es\.html$ /digital-medical-affairs.html [R=301,L]
+  RewriteRule ^digital-opinion-leaders-es\.html$ /digital-opinion-leaders.html [R=301,L]
+  RewriteRule ^index-es\.html$ /index.html [R=301,L]
+  RewriteRule ^insights-es\.html$ /insights.html [R=301,L]
+  RewriteRule ^insights/ai-should-augment-medical-affairs-es\.html$ /insights/ai-should-augment-medical-affairs.html [R=301,L]
+  RewriteRule ^insights/kol-vs-dol-explained-es\.html$ /insights/kol-vs-dol-explained.html [R=301,L]
+  RewriteRule ^lab-es\.html$ /lab.html [R=301,L]
+  RewriteRule ^legal-es\.html$ /legal.html [R=301,L]
+  RewriteRule ^medical-affairs/future-of-medical-affairs-es\.html$ /medical-affairs/future-of-medical-affairs.html [R=301,L]
+  RewriteRule ^medical-affairs/what-is-medical-affairs-es\.html$ /medical-affairs/what-is-medical-affairs.html [R=301,L]
+  RewriteRule ^msl/what-is-an-msl-es\.html$ /msl/what-is-an-msl.html [R=301,L]
+  RewriteRule ^privacy-es\.html$ /privacy.html [R=301,L]
+  RewriteRule ^projects-es\.html$ /projects.html [R=301,L]
+  RewriteRule ^resources-es\.html$ /resources.html [R=301,L]
+  RewriteRule ^speaking-es\.html$ /speaking.html [R=301,L]
+  RewriteRule ^tools-es\.html$ /tools.html [R=301,L]
+  RewriteRule ^work-with-me-es\.html$ /work-with-me.html [R=301,L]
+  RewriteRule ^dmsl-course-es\.html$ /dmsl-course.html [R=301,L]
+  RewriteRule ^dmsl-course-campus-es\.html$ /dmsl-course-campus.html [R=301,L]
+</IfModule>
