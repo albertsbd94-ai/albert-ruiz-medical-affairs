@@ -67,7 +67,7 @@ function plan_label($plan, $lang) {
 function purchase_code_email_html($name, $code, $plan, $lang) {
   $safeName = htmlspecialchars($name ?: '', ENT_QUOTES, 'UTF-8');
   $es = $lang === 'es';
-  $campusPath = $es ? '/dmsl-course-campus-es.html' : '/dmsl-course-campus.html';
+  $campusPath = $es ? '/dmsl-course-campus.html' : '/dmsl-course-campus-en.html';
   $planLabel = htmlspecialchars(plan_label($plan, $lang), ENT_QUOTES, 'UTF-8');
   $hi = $es ? ('Hola ' . ($safeName !== '' ? $safeName : '')) : ('Hi ' . ($safeName !== '' ? $safeName : 'there'));
   $intro = $es

@@ -211,7 +211,7 @@ if ($action === 'forgot-password' && $method === 'POST') {
   $body = json_body();
   $email = normalize_email($body['email'] ?? '');
   $lang = ($body['lang'] ?? '') === 'es' ? 'es' : 'en';
-  $campusPath = $lang === 'es' ? '/dmsl-course-campus-es.html' : '/dmsl-course-campus.html';
+  $campusPath = $lang === 'es' ? '/dmsl-course-campus.html' : '/dmsl-course-campus-en.html';
   $rec = $db['usuarios'][$email] ?? null;
   // Always respond ok — never reveal whether an account exists for this email.
   if ($rec && !empty($rec['verificado'])) {
