@@ -625,7 +625,7 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.15; letter-spacing: -0.02em;
 .breadcrumb { display: flex; align-items: center; gap: .4rem; font-size: .8125rem; color: hsl(var(--muted-foreground)); flex-wrap: wrap; }
 .breadcrumb a:hover { color: hsl(var(--primary)); }
 .breadcrumb .sep { opacity: .5; }
-.breadcrumb-bar { border-bottom: 1px solid hsl(var(--border)); background: hsl(var(--section-alt)); }
+.breadcrumb-bar { display: none; }
 .breadcrumb-bar .container { padding-block: .85rem; }
 
 /* =============================================================
