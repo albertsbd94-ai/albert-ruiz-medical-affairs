@@ -18,11 +18,11 @@ header('X-Content-Type-Options: nosniff');
 
 require_once __DIR__ . '/dmsl-common.php';
 
-// Lesson counts per module, in COURSE_DATA order (13 modules, 111 lessons
+// Lesson counts per module, in COURSE_DATA order (13 modules, 119 lessons
 // total) — mirrors the campus SPAs' course content. Kept here, not derived,
 // since the course content lives client-side in the campus HTML files.
-const DMSL_MODULE_LESSON_COUNTS = [8, 8, 8, 8, 8, 10, 10, 10, 10, 10, 10, 10, 1];
-const DMSL_TOTAL_LESSONS = 111; // array_sum(DMSL_MODULE_LESSON_COUNTS)
+const DMSL_MODULE_LESSON_COUNTS = [8, 8, 8, 8, 8, 10, 10, 10, 10, 10, 10, 10, 9];
+const DMSL_TOTAL_LESSONS = 119; // array_sum(DMSL_MODULE_LESSON_COUNTS)
 
 function student_completion_percent($progreso) {
   if (!is_array($progreso) || empty($progreso['modules']) || !is_array($progreso['modules'])) return 0;
