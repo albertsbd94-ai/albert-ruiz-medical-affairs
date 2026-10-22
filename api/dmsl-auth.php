@@ -183,7 +183,7 @@ if ($action === 'verify' && $method === 'POST') {
   }
   $token = issue_session($db, $email);
   dmsl_save_db($db);
-  respond(200, ['ok' => true, 'email' => $email, 'name' => $rec['nombre'] ?? '', 'progress' => $db['usuarios'][$email]['progreso']]);
+  respond(200, ['ok' => true, 'email' => $email, 'name' => $rec['nombre'] ?? '', 'progress' => $db['usuarios'][$email]['progreso'], 'notes' => $db['usuarios'][$email]['anotaciones'] ?? []]);
 }
 
 if ($action === 'login' && $method === 'POST') {
@@ -203,7 +203,7 @@ if ($action === 'login' && $method === 'POST') {
   }
   $token = issue_session($db, $email);
   dmsl_save_db($db);
-  respond(200, ['ok' => true, 'email' => $email, 'name' => $rec['nombre'] ?? '', 'progress' => $rec['progreso'] ?? default_progress()]);
+  respond(200, ['ok' => true, 'email' => $email, 'name' => $rec['nombre'] ?? '', 'progress' => $rec['progreso'] ?? default_progress(), 'notes' => $rec['anotaciones'] ?? []]);
 }
 
 if ($action === 'forgot-password' && $method === 'POST') {
@@ -251,7 +251,7 @@ if ($action === 'reset-password' && $method === 'POST') {
   }
   issue_session($db, $email);
   dmsl_save_db($db);
-  respond(200, ['ok' => true, 'email' => $email, 'name' => $rec['nombre'] ?? '', 'progress' => $db['usuarios'][$email]['progreso']]);
+  respond(200, ['ok' => true, 'email' => $email, 'name' => $rec['nombre'] ?? '', 'progress' => $db['usuarios'][$email]['progreso'], 'notes' => $db['usuarios'][$email]['anotaciones'] ?? []]);
 }
 
 if ($action === 'logout' && $method === 'POST') {
@@ -267,7 +267,7 @@ if ($action === 'me' && $method === 'GET') {
   [$email] = $found;
   $rec = $db['usuarios'][$email] ?? null;
   if (!$rec) respond(200, ['ok' => true, 'authenticated' => false]);
-  respond(200, ['ok' => true, 'authenticated' => true, 'email' => $email, 'name' => $rec['nombre'] ?? '', 'progress' => $rec['progreso'] ?? default_progress()]);
+  respond(200, ['ok' => true, 'authenticated' => true, 'email' => $email, 'name' => $rec['nombre'] ?? '', 'progress' => $rec['progreso'] ?? default_progress(), 'notes' => $rec['anotaciones'] ?? []]);
 }
 
 if ($action === 'save-progress' && $method === 'POST') {
@@ -281,6 +281,23 @@ if ($action === 'save-progress' && $method === 'POST') {
   $db['usuarios'][$email]['progreso'] = $progress;
   // Powers the "last active" KPI on the admin Dashboard.
   $db['usuarios'][$email]['actualizado'] = gmdate('c');
+  dmsl_save_db($db);
+  respond(200, ['ok' => true]);
+}
+
+if ($action === 'save-notes' && $method === 'POST') {
+  // Per-student highlights + personal notes on the lesson text ("subrayar
+  // y añadir notas personalizadas" in the campus) — keyed client-side by
+  // "<moduleNum>:<lessonIndex>", stored as an opaque blob exactly like
+  // 'progreso', since only the campus SPA needs to interpret its shape.
+  $found = current_session_email($db);
+  if (!$found) respond(401, ['ok' => false, 'error' => 'Not logged in.']);
+  [$email] = $found;
+  if (!isset($db['usuarios'][$email])) respond(401, ['ok' => false, 'error' => 'Not logged in.']);
+  $body = json_body();
+  $notes = $body['notes'] ?? null;
+  if (!is_array($notes)) respond(400, ['ok' => false, 'error' => 'Invalid notes payload.']);
+  $db['usuarios'][$email]['anotaciones'] = $notes;
   dmsl_save_db($db);
   respond(200, ['ok' => true]);
 }
